@@ -1,5 +1,7 @@
-﻿Public Class prijava
-
+﻿Imports System.Data.SqlClient
+Public Class prijava
+    Public Shared tipNaloga As Integer = 404
+    Public imePozicije As String
 
     Private Sub prijava_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
@@ -35,23 +37,39 @@
     End Sub
 
     Private Sub button1_Click(sender As Object, e As EventArgs) Handles button1.Click
-        Dim con As New SqlConnection
-        Dim cmd As New SqlCommand
+        Dim command As New SqlCommand("select korisnickoIme, Lozinka, Pozicija  from zaposleni where 
+korisnickoIme = @korisnicki_id and  lozinka = @lozinka COLLATE Latin1_General_CS_AS", Baza.connection)
+
+        command.Parameters.Add("@korisnicki_id", SqlDbType.VarChar).Value = textBox1.Text
+        command.Parameters.Add("@lozinka", SqlDbType.VarChar).Value = textBox2.Text
+
+        Dim adapter As New SqlDataAdapter(command)
+        Dim tabela As New DataTable()
         Dim rd As SqlDataReader
 
-        con.ConnectionString = "Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Riki\Desktop\imenikTelefonski\imenikTelefonski\aperionBaza.mdf;Integrated Security=True"
-        cmd.Connection = con
-        con.Open()
-        cmd.CommandText = " select username, pass from korisnici where username = '" & textBox1.Text & "' and pass = '" & textBox2.Text & "'"
+        Dim tipPozicije As Integer
 
-        rd = cmd.ExecuteReader
+        adapter.Fill(tabela)
+        tipPozicije = tabela.Rows(0)(2)
 
-        If rd.HasRows Then
+        Me.tipNaloga = tipPozicije
 
-            prozor.Show()
+        Select Case tipNaloga
+            Case 1
+                imePozicije = "Administrator"
+            Case 2
+                imePozicije = "Vlasnik"
+            Case 3
+                imePozicije = "Konobar"
+            Case 4
+                imePozicije = "Sanker"
+        End Select
+
+
+        If tabela.Rows.Count <> 0 Then
+
+            Form2.Show()
             Me.Hide()
-            textBox1.Text = "Korisničko ime"
-            textBox2.Text = "Lozinka"
         Else
             MessageBox.Show("Neuspješna prijava!")
         End If

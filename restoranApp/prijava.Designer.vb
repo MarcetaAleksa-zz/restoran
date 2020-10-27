@@ -1,10 +1,10 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-<Global.System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1726")> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+<Global.System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1726")>
 Partial Class prijava
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -66,7 +66,7 @@ Partial Class prijava
         '
         Me.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.button2.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.button2.Location = New System.Drawing.Point(436, 459)
+        Me.button2.Location = New System.Drawing.Point(459, 457)
         Me.button2.Name = "button2"
         Me.button2.Size = New System.Drawing.Size(278, 48)
         Me.button2.TabIndex = 42
@@ -77,7 +77,7 @@ Partial Class prijava
         '
         Me.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.button1.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.button1.Location = New System.Drawing.Point(436, 395)
+        Me.button1.Location = New System.Drawing.Point(459, 393)
         Me.button1.Name = "button1"
         Me.button1.Size = New System.Drawing.Size(278, 48)
         Me.button1.TabIndex = 41
@@ -94,7 +94,7 @@ Partial Class prijava
         '
         'textBox2
         '
-        Me.textBox2.BackColor = System.Drawing.SystemColors.Control
+        Me.textBox2.BackColor = System.Drawing.Color.White
         Me.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.textBox2.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.textBox2.Location = New System.Drawing.Point(490, 330)
@@ -113,7 +113,7 @@ Partial Class prijava
         '
         'textBox1
         '
-        Me.textBox1.BackColor = System.Drawing.SystemColors.Control
+        Me.textBox1.BackColor = System.Drawing.Color.White
         Me.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.textBox1.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.textBox1.Location = New System.Drawing.Point(490, 259)
@@ -125,9 +125,9 @@ Partial Class prijava
         'pictureBox2
         '
         Me.pictureBox2.Image = CType(resources.GetObject("pictureBox2.Image"), System.Drawing.Image)
-        Me.pictureBox2.Location = New System.Drawing.Point(436, 12)
+        Me.pictureBox2.Location = New System.Drawing.Point(257, -96)
         Me.pictureBox2.Name = "pictureBox2"
-        Me.pictureBox2.Size = New System.Drawing.Size(278, 200)
+        Me.pictureBox2.Size = New System.Drawing.Size(677, 440)
         Me.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.pictureBox2.TabIndex = 36
         Me.pictureBox2.TabStop = False
@@ -145,9 +145,9 @@ Partial Class prijava
         'pictureBox1
         '
         Me.pictureBox1.Image = CType(resources.GetObject("pictureBox1.Image"), System.Drawing.Image)
-        Me.pictureBox1.Location = New System.Drawing.Point(48, 193)
+        Me.pictureBox1.Location = New System.Drawing.Point(-4, 156)
         Me.pictureBox1.Name = "pictureBox1"
-        Me.pictureBox1.Size = New System.Drawing.Size(296, 160)
+        Me.pictureBox1.Size = New System.Drawing.Size(398, 224)
         Me.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.pictureBox1.TabIndex = 2
         Me.pictureBox1.TabStop = False
@@ -156,6 +156,7 @@ Partial Class prijava
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(800, 537)
         Me.Controls.Add(Me.pictureBox4)
         Me.Controls.Add(Me.pictureBox3)
@@ -165,14 +166,14 @@ Partial Class prijava
         Me.Controls.Add(Me.textBox2)
         Me.Controls.Add(Me.panel4)
         Me.Controls.Add(Me.textBox1)
-        Me.Controls.Add(Me.pictureBox2)
         Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.pictureBox2)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "prijava"
         Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "prijava"
         CType(Me.pictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
