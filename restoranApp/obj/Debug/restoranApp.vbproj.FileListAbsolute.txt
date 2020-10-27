@@ -1,0 +1,12 @@
+C:\Users\Administrator\Desktop\Restoran App\restoranApp\restoranApp\obj\Debug\restoranApp.vbprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\Restoran App\restoranApp\restoranApp\obj\Debug\restoranApp.Resources.resources
+C:\Users\Administrator\Desktop\Restoran App\restoranApp\restoranApp\obj\Debug\restoranApp.prijava.resources
+C:\Users\Administrator\Desktop\Restoran App\restoranApp\restoranApp\obj\Debug\restoranApp.vbproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\Restoran App\restoranApp\restoranApp\obj\Debug\restoranApp.vbproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\Restoran App\restoranApp\restoranApp\bin\Debug\restoranApp.exe.config
+C:\Users\Administrator\Desktop\Restoran App\restoranApp\restoranApp\bin\Debug\restoranApp.exe
+C:\Users\Administrator\Desktop\Restoran App\restoranApp\restoranApp\bin\Debug\restoranApp.pdb
+C:\Users\Administrator\Desktop\Restoran App\restoranApp\restoranApp\bin\Debug\restoranApp.xml
+C:\Users\Administrator\Desktop\Restoran App\restoranApp\restoranApp\obj\Debug\restoranApp.exe
+C:\Users\Administrator\Desktop\Restoran App\restoranApp\restoranApp\obj\Debug\restoranApp.xml
+C:\Users\Administrator\Desktop\Restoran App\restoranApp\restoranApp\obj\Debug\restoranApp.pdb
