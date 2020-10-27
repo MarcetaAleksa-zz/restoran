@@ -22,3 +22,15 @@ C:\Users\Administrator\Desktop\SUTUR\restoran\restoranApp\obj\Debug\restoranApp.
 C:\Users\Administrator\Desktop\SUTUR\restoran\restoranApp\obj\Debug\restoranApp.exe
 C:\Users\Administrator\Desktop\SUTUR\restoran\restoranApp\obj\Debug\restoranApp.xml
 C:\Users\Administrator\Desktop\SUTUR\restoran\restoranApp\obj\Debug\restoranApp.pdb
+C:\Users\marce\Documents\GitHub\restoran\restoranApp\obj\Debug\restoranApp.vbprojAssemblyReference.cache
+C:\Users\marce\Documents\GitHub\restoran\restoranApp\obj\Debug\restoranApp.Resources.resources
+C:\Users\marce\Documents\GitHub\restoran\restoranApp\obj\Debug\restoranApp.prijava.resources
+C:\Users\marce\Documents\GitHub\restoran\restoranApp\obj\Debug\restoranApp.vbproj.GenerateResource.cache
+C:\Users\marce\Documents\GitHub\restoran\restoranApp\obj\Debug\restoranApp.vbproj.CoreCompileInputs.cache
+C:\Users\marce\Documents\GitHub\restoran\restoranApp\obj\Debug\restoranApp.exe
+C:\Users\marce\Documents\GitHub\restoran\restoranApp\obj\Debug\restoranApp.xml
+C:\Users\marce\Documents\GitHub\restoran\restoranApp\obj\Debug\restoranApp.pdb
+C:\Users\marce\Documents\GitHub\restoran\restoranApp\bin\Debug\restoranApp.exe.config
+C:\Users\marce\Documents\GitHub\restoran\restoranApp\bin\Debug\restoranApp.exe
+C:\Users\marce\Documents\GitHub\restoran\restoranApp\bin\Debug\restoranApp.pdb
+C:\Users\marce\Documents\GitHub\restoran\restoranApp\bin\Debug\restoranApp.xml

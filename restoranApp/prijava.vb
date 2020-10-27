@@ -68,8 +68,13 @@ korisnickoIme = @korisnicki_id and  lozinka = @lozinka COLLATE Latin1_General_CS
 
         If tabela.Rows.Count <> 0 Then
 
-            Form2.Show()
-            Me.Hide()
+            If tipNaloga = 1 Then
+                Form2.Show()
+            ElseIf tipNaloga = 1 Then
+                Form3.Show()
+            ElseIf tipNaloga = 2 Then
+                Form4.Show()
+            End If
         Else
             MessageBox.Show("Neuspješna prijava!")
         End If
