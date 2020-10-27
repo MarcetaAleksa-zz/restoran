@@ -34,7 +34,9 @@ Partial Class prijava
         Me.textBox1 = New System.Windows.Forms.TextBox()
         Me.pictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.KoJeOvajPokemon = New System.Windows.Forms.Label()
         Me.pictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
         CType(Me.pictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -135,12 +137,23 @@ Partial Class prijava
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.SystemColors.Highlight
+        Me.Panel1.Controls.Add(Me.TextBox3)
+        Me.Panel1.Controls.Add(Me.KoJeOvajPokemon)
         Me.Panel1.Controls.Add(Me.pictureBox1)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(394, 537)
         Me.Panel1.TabIndex = 35
+        '
+        'KoJeOvajPokemon
+        '
+        Me.KoJeOvajPokemon.AutoSize = True
+        Me.KoJeOvajPokemon.ForeColor = System.Drawing.SystemColors.Highlight
+        Me.KoJeOvajPokemon.Location = New System.Drawing.Point(94, 33)
+        Me.KoJeOvajPokemon.Name = "KoJeOvajPokemon"
+        Me.KoJeOvajPokemon.Size = New System.Drawing.Size(0, 13)
+        Me.KoJeOvajPokemon.TabIndex = 3
         '
         'pictureBox1
         '
@@ -151,6 +164,13 @@ Partial Class prijava
         Me.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.pictureBox1.TabIndex = 2
         Me.pictureBox1.TabStop = False
+        '
+        'TextBox3
+        '
+        Me.TextBox3.Location = New System.Drawing.Point(12, 76)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(478, 20)
+        Me.TextBox3.TabIndex = 4
         '
         'prijava
         '
@@ -179,6 +199,7 @@ Partial Class prijava
         CType(Me.pictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
         CType(Me.pictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -190,10 +211,12 @@ Partial Class prijava
     Private WithEvents button2 As Button
     Private WithEvents button1 As Button
     Private WithEvents panel3 As Panel
-    Private WithEvents textBox2 As TextBox
+    Public WithEvents textBox2 As TextBox
     Private WithEvents panel4 As Panel
-    Private WithEvents textBox1 As TextBox
+    Public WithEvents textBox1 As TextBox
     Private WithEvents pictureBox2 As PictureBox
     Friend WithEvents Panel1 As Panel
     Private WithEvents pictureBox1 As PictureBox
+    Public WithEvents KoJeOvajPokemon As Label
+    Friend WithEvents TextBox3 As TextBox
 End Class

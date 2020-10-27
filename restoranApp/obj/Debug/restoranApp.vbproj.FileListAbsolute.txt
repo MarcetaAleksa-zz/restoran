@@ -34,3 +34,7 @@ C:\Users\marce\Documents\GitHub\restoran\restoranApp\bin\Debug\restoranApp.exe.c
 C:\Users\marce\Documents\GitHub\restoran\restoranApp\bin\Debug\restoranApp.exe
 C:\Users\marce\Documents\GitHub\restoran\restoranApp\bin\Debug\restoranApp.pdb
 C:\Users\marce\Documents\GitHub\restoran\restoranApp\bin\Debug\restoranApp.xml
+C:\Users\Administrator\Desktop\SUTUR\restoran\restoranApp\obj\Debug\restoranApp.admin.resources
+C:\Users\Administrator\Desktop\SUTUR\restoran\restoranApp\obj\Debug\restoranApp.konobar.resources
+C:\Users\Administrator\Desktop\SUTUR\restoran\restoranApp\obj\Debug\restoranApp.sanker.resources
+C:\Users\Administrator\Desktop\SUTUR\restoran\restoranApp\obj\Debug\restoranApp.pregledNarudzbe.resources

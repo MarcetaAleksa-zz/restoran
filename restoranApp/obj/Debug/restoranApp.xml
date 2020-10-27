@@ -22,5 +22,75 @@ restoranApp
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="P:restoranApp.My.Resources.Resources.Choose_file_icon">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="T:restoranApp.KaficDataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:restoranApp.KaficDataSet.NaloziDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:restoranApp.KaficDataSet.NaloziRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:restoranApp.KaficDataSet.NaloziRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:restoranApp.KaficDataSetTableAdapters.NaloziTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:restoranApp.KaficDataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:restoranApp.KaficDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(restoranApp.KaficDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:restoranApp.KaficDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(restoranApp.KaficDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:restoranApp.KaficDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(restoranApp.KaficDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:restoranApp.KaficDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:restoranApp.KaficDataSetTableAdapters.TableAdapterManager.UpdateAll(restoranApp.KaficDataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:restoranApp.KaficDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:restoranApp.KaficDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
 </members>
 </doc>

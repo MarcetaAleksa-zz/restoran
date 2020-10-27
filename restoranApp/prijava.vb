@@ -2,6 +2,10 @@
 Public Class prijava
     Public Shared tipNaloga As Integer = 404
     Public imePozicije As String
+    Public imePrijavljenog As String
+
+
+    Private connPrijava As New SqlConnection("")
 
     Private Sub prijava_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
@@ -37,46 +41,70 @@ Public Class prijava
     End Sub
 
     Private Sub button1_Click(sender As Object, e As EventArgs) Handles button1.Click
+        Enkripcija.EncryptPass()
         Dim command As New SqlCommand("select korisnickoIme, Lozinka, Pozicija  from zaposleni where 
-korisnickoIme = @korisnicki_id and  lozinka = @lozinka COLLATE Latin1_General_CS_AS", Baza.connection)
-
+korisnickoIme = @korisnicki_id and  lozinka = '" + Enkripcija.HashStore + "' COLLATE Latin1_General_CS_AS", Baza.connection)
+        TextBox3.Text = Enkripcija.HashStore
         command.Parameters.Add("@korisnicki_id", SqlDbType.VarChar).Value = textBox1.Text
         command.Parameters.Add("@lozinka", SqlDbType.VarChar).Value = textBox2.Text
 
         Dim adapter As New SqlDataAdapter(command)
         Dim tabela As New DataTable()
-        Dim rd As SqlDataReader
 
         Dim tipPozicije As Integer
 
         adapter.Fill(tabela)
-        tipPozicije = tabela.Rows(0)(2)
+        Try
+            tipPozicije = tabela.Rows(0)(2)
 
-        Me.tipNaloga = tipPozicije
+            Me.tipNaloga = tipPozicije
 
-        Select Case tipNaloga
-            Case 1
-                imePozicije = "Administrator"
-            Case 2
-                imePozicije = "Vlasnik"
-            Case 3
-                imePozicije = "Konobar"
-            Case 4
-                imePozicije = "Sanker"
-        End Select
+            Select Case tipNaloga
+                Case 1
+                    imePozicije = "Administrator"
+                Case 2
+                    imePozicije = "Vlasnik"
+                Case 3
+                    imePozicije = "Konobar"
+                Case 4
+                    imePozicije = "Sanker"
+            End Select
 
 
-        If tabela.Rows.Count <> 0 Then
-
-            If tipNaloga = 1 Then
-                Form2.Show()
-            ElseIf tipNaloga = 1 Then
-                Form3.Show()
-            ElseIf tipNaloga = 2 Then
-                Form4.Show()
+            If tabela.Rows.Count <> 0 Then
+                imePrijavljenog = tabela.Rows(0)(0)
+                KoJeOvajPokemon.Text = textBox1.Text
+                If tipNaloga = 1 Then
+                    admin.Show()
+                    textBox1.Text = "Korisničko ime"
+                    textBox2.Text = "Lozinka"
+                    Me.Hide()
+                ElseIf tipNaloga = 2 Then
+                    sanker.Show()
+                    textBox1.Text = "Korisničko ime"
+                    textBox2.Text = "Lozinka"
+                    Me.Hide()
+                ElseIf tipNaloga = 3 Then
+                    konobar.Show()
+                    textBox1.Text = "Korisničko ime"
+                    textBox2.Text = "Lozinka"
+                    Me.Hide()
+                ElseIf tipNaloga = 4 Then
+                    sanker.Show()
+                    textBox1.Text = "Korisničko ime"
+                    textBox2.Text = "Lozinka"
+                    Me.Hide()
+                End If
+            Else
+                MessageBox.Show("Neuspješna prijava!")
             End If
-        Else
-            MessageBox.Show("Neuspješna prijava!")
-        End If
+        Catch ex As Exception
+
+        End Try
+
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs)
+        pregledNarudzbe.Show()
     End Sub
 End Class
