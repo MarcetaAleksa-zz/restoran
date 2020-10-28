@@ -55,22 +55,24 @@ korisnickoIme = @korisnicki_id and  lozinka = '" + Enkripcija.HashStore + "' COL
 
         adapter.Fill(tabela)
         Try
-            tipPozicije = tabela.Rows(0)(2)
+            Try
+                tipPozicije = tabela.Rows(0)(2)
 
-            Me.tipNaloga = tipPozicije
+                Me.tipNaloga = tipPozicije
 
-            Select Case tipNaloga
-                Case 1
-                    imePozicije = "Administrator"
-                Case 2
-                    imePozicije = "Vlasnik"
-                Case 3
-                    imePozicije = "Konobar"
-                Case 4
-                    imePozicije = "Sanker"
-            End Select
+                Select Case tipNaloga
+                    Case 1
+                        imePozicije = "Administrator"
+                    Case 2
+                        imePozicije = "Vlasnik"
+                    Case 3
+                        imePozicije = "Konobar"
+                    Case 4
+                        imePozicije = "Sanker"
+                End Select
+            Catch ex As Exception
 
-
+            End Try
             If tabela.Rows.Count <> 0 Then
                 imePrijavljenog = tabela.Rows(0)(0)
                 KoJeOvajPokemon.Text = textBox1.Text
@@ -102,8 +104,10 @@ korisnickoIme = @korisnicki_id and  lozinka = '" + Enkripcija.HashStore + "' COL
             Else
                 Enkripcija.HashStore = Nothing
                 MessageBox.Show("Neuspješna prijava!")
+                textBox1.Text = vbEmpty
             End If
         Catch ex As Exception
+            MessageBox.Show(ex.ToString)
 
         End Try
 
