@@ -69,4 +69,12 @@ Public Class konobar
     Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click, Label40.Click, Label35.Click, Label30.Click, Label25.Click
 
     End Sub
+
+    Private Sub Button28_Click(sender As Object, e As EventArgs) Handles Button28.Click
+
+    End Sub
+
+    Private Sub Button31_Click(sender As Object, e As EventArgs) Handles Button31.Click
+
+    End Sub
 End Class
