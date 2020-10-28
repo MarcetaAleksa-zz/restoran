@@ -36,7 +36,6 @@ Partial Class prijava
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.KoJeOvajPokemon = New System.Windows.Forms.Label()
         Me.pictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
         CType(Me.pictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -137,7 +136,6 @@ Partial Class prijava
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.SystemColors.Highlight
-        Me.Panel1.Controls.Add(Me.TextBox3)
         Me.Panel1.Controls.Add(Me.KoJeOvajPokemon)
         Me.Panel1.Controls.Add(Me.pictureBox1)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
@@ -164,13 +162,6 @@ Partial Class prijava
         Me.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.pictureBox1.TabIndex = 2
         Me.pictureBox1.TabStop = False
-        '
-        'TextBox3
-        '
-        Me.TextBox3.Location = New System.Drawing.Point(12, 76)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(478, 20)
-        Me.TextBox3.TabIndex = 4
         '
         'prijava
         '
@@ -218,5 +209,4 @@ Partial Class prijava
     Friend WithEvents Panel1 As Panel
     Private WithEvents pictureBox1 As PictureBox
     Public WithEvents KoJeOvajPokemon As Label
-    Friend WithEvents TextBox3 As TextBox
 End Class

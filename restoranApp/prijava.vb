@@ -44,7 +44,7 @@ Public Class prijava
         Enkripcija.EncryptPass()
         Dim command As New SqlCommand("select korisnickoIme, Lozinka, Pozicija  from zaposleni where 
 korisnickoIme = @korisnicki_id and  lozinka = '" + Enkripcija.HashStore + "' COLLATE Latin1_General_CS_AS", Baza.connection)
-        TextBox3.Text = Enkripcija.HashStore
+        'TextBox3.Text = Enkripcija.HashStore
         command.Parameters.Add("@korisnicki_id", SqlDbType.VarChar).Value = textBox1.Text
         command.Parameters.Add("@lozinka", SqlDbType.VarChar).Value = textBox2.Text
 
@@ -78,24 +78,29 @@ korisnickoIme = @korisnicki_id and  lozinka = '" + Enkripcija.HashStore + "' COL
                     admin.Show()
                     textBox1.Text = "Korisničko ime"
                     textBox2.Text = "Lozinka"
+                    Enkripcija.HashStore = Nothing
                     Me.Hide()
                 ElseIf tipNaloga = 2 Then
                     sanker.Show()
                     textBox1.Text = "Korisničko ime"
                     textBox2.Text = "Lozinka"
+                    Enkripcija.HashStore = Nothing
                     Me.Hide()
                 ElseIf tipNaloga = 3 Then
                     konobar.Show()
                     textBox1.Text = "Korisničko ime"
                     textBox2.Text = "Lozinka"
+                    Enkripcija.HashStore = Nothing
                     Me.Hide()
                 ElseIf tipNaloga = 4 Then
                     sanker.Show()
                     textBox1.Text = "Korisničko ime"
                     textBox2.Text = "Lozinka"
+                    Enkripcija.HashStore = Nothing
                     Me.Hide()
                 End If
             Else
+                Enkripcija.HashStore = Nothing
                 MessageBox.Show("Neuspješna prijava!")
             End If
         Catch ex As Exception
@@ -108,3 +113,4 @@ korisnickoIme = @korisnicki_id and  lozinka = '" + Enkripcija.HashStore + "' COL
         pregledNarudzbe.Show()
     End Sub
 End Class
+'

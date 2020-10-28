@@ -29,7 +29,7 @@ Partial Class pregledNarudzbe
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
+        Me.tab1 = New System.Windows.Forms.TableLayoutPanel()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
@@ -75,7 +75,7 @@ Partial Class pregledNarudzbe
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.Location = New System.Drawing.Point(980, 98)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(57, 16)
+        Me.Label4.Size = New System.Drawing.Size(55, 16)
         Me.Label4.TabIndex = 3
         Me.Label4.Text = "Label4"
         '
@@ -85,7 +85,7 @@ Partial Class pregledNarudzbe
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.Location = New System.Drawing.Point(980, 114)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(57, 16)
+        Me.Label5.Size = New System.Drawing.Size(55, 16)
         Me.Label5.TabIndex = 4
         Me.Label5.Text = "Label5"
         '
@@ -95,7 +95,7 @@ Partial Class pregledNarudzbe
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.Location = New System.Drawing.Point(980, 130)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(57, 16)
+        Me.Label6.Size = New System.Drawing.Size(55, 16)
         Me.Label6.TabIndex = 5
         Me.Label6.Text = "Label6"
         '
@@ -108,20 +108,20 @@ Partial Class pregledNarudzbe
         Me.Button1.Text = "Nazad"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'TableLayoutPanel1
+        'tab1
         '
-        Me.TableLayoutPanel1.ColumnCount = 4
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.16474!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.17632!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.56242!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.0!))
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(103, 142)
-        Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
-        Me.TableLayoutPanel1.RowCount = 2
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50.0!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(777, 374)
-        Me.TableLayoutPanel1.TabIndex = 7
+        Me.tab1.ColumnCount = 4
+        Me.tab1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.16474!))
+        Me.tab1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.17632!))
+        Me.tab1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.56242!))
+        Me.tab1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.0!))
+        Me.tab1.Location = New System.Drawing.Point(103, 142)
+        Me.tab1.Name = "tab1"
+        Me.tab1.RowCount = 2
+        Me.tab1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50.0!))
+        Me.tab1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50.0!))
+        Me.tab1.Size = New System.Drawing.Size(777, 374)
+        Me.tab1.TabIndex = 7
         '
         'Label7
         '
@@ -205,7 +205,7 @@ Partial Class pregledNarudzbe
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.Controls.Add(Me.tab1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
@@ -229,7 +229,7 @@ Partial Class pregledNarudzbe
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Button1 As Button
-    Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
+    Friend WithEvents tab1 As TableLayoutPanel
     Friend WithEvents Label7 As Label
     Friend WithEvents Label8 As Label
     Friend WithEvents Label9 As Label

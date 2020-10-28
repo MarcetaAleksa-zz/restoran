@@ -57,4 +57,16 @@ Public Class konobar
     Private Sub konobar_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Label2.Text = prijava.imePrijavljenog
     End Sub
+
+    Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click, Label20.Click, Label1.Click, Label39.Click, Label38.Click, Label37.Click, Label34.Click, Label33.Click, Label32.Click, Label29.Click, Label28.Click, Label27.Click, Label24.Click, Label23.Click, Label22.Click
+
+    End Sub
+
+    Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click, Label36.Click, Label31.Click, Label26.Click, Label21.Click
+
+    End Sub
+
+    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click, Label40.Click, Label35.Click, Label30.Click, Label25.Click
+
+    End Sub
 End Class
