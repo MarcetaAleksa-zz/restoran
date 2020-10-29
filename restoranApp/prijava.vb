@@ -48,6 +48,7 @@ korisnickoIme = @korisnicki_id and  lozinka = '" + Enkripcija.HashPrijava + "' C
         command.Parameters.Add("@korisnicki_id", SqlDbType.VarChar).Value = textBox1.Text
         command.Parameters.Add("@lozinka", SqlDbType.VarChar).Value = textBox2.Text
 
+
         Dim adapter As New SqlDataAdapter(command)
         Dim tabela As New DataTable()
 
@@ -73,6 +74,7 @@ korisnickoIme = @korisnicki_id and  lozinka = '" + Enkripcija.HashPrijava + "' C
             Catch ex As Exception
 
             End Try
+            MessageBox.Show(Enkripcija.HashPrijava)
             If tabela.Rows.Count <> 0 Then
                 imePrijavljenog = tabela.Rows(0)(0)
                 KoJeOvajPokemon.Text = textBox1.Text

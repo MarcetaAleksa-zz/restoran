@@ -30,6 +30,7 @@ Public Class admin
         Dim table As New DataTable
         Dim adapter As New SqlDataAdapter()
         Dim holdit As Integer
+        Enkripcija.HashNoviK = Nothing
         Try
             Try
                 Select Case PozicijaComboBox.Text
@@ -46,16 +47,20 @@ Public Class admin
                 End Select
             Catch ex As Exception
             End Try
+
+
             If TextBox5.Text = "" Or TextBox2.Text = "" Or PozicijaComboBox.Text = "" Then
                 MsgBox("Polja nisu ispunjena!")
             Else
+
                 Try
-                    Enkripcija.EncryptPass()
+
                     Baza.connection.Open()
+                    Enkripcija.EncryptPass()
                     Dim command As New SqlCommand("INSERT INTO dbo.Zaposleni (korisnickoIme, lozinka, pozicija, ime, prezime, sluzbeniEmail, mobitel, sluzbeniMobitel) 
 VALUES ('" & TextBox5.Text & "','" & Enkripcija.HashNoviK & "', '" & holdit & "' , '" & imeTextBox.Text & "' , '" & TextBox1.Text & "' , '" & TextBox3.Text & "', '" & TextBox6.Text & "', '" & TextBox4.Text & "')", Baza.connection)
                     command.ExecuteNonQuery()
-                    Enkripcija.HashNoviK = String.Empty
+                    Enkripcija.HashNoviK = Nothing
                     MsgBox("Uspjesno ste dodali korisnika!")
 
                     Me.Controls.Clear() 'removes all the controls on the form
@@ -65,6 +70,8 @@ VALUES ('" & TextBox5.Text & "','" & Enkripcija.HashNoviK & "', '" & holdit & "'
 
                 Catch ex As Exception
                     MessageBox.Show(ex.ToString)
+
+                Finally
                     Baza.connection.Close()
                 End Try
             End If
