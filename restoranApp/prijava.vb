@@ -104,7 +104,8 @@ korisnickoIme = @korisnicki_id and  lozinka = '" + Enkripcija.HashPrijava + "' C
             Else
                 Enkripcija.HashPrijava = Nothing
                 MessageBox.Show("Neuspješna prijava!")
-                textBox1.Text = vbEmpty
+                textBox1.Text = "Korisničko ime"
+                textBox2.Text = "Lozinka"
             End If
         Catch ex As Exception
             MessageBox.Show(ex.ToString)

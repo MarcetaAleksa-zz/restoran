@@ -1,5 +1,6 @@
 ﻿Imports System.Data.SqlClient
 Public Class konobar
+    Public Shared counter As Integer = 0
     Public Sub Sumiranje(i As String, b As Integer)
         'Dim nazivPica As Label = New Label
         'With nazivPica
@@ -45,34 +46,56 @@ Public Class konobar
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
         ' Dim Command As New SqlCommand("SELECT * FROM NarudzbaK", Baza.connection)
-        Dim Command1 As New SqlCommand("SELECT * FROM NarudzbaS", Baza.connection)
+
+
+        Dim commandS As New SqlCommand("SELECT Max(brojNarudzbe) FROM NarudzbaS", Baza.connection)
+
+        Dim adapterS As New SqlDataAdapter(commandS)
+        Dim tableS As New DataTable
+        adapterS.Fill(tableS)
+
+        Dim vrijednostID As Integer
+        vrijednostID = tableS.Rows(0)(0)
+        vrijednostID += 1
+
+
+
+
 
         Label2.Text = prijava.imePrijavljenog
-        Label7.Text = TimeOfDay.ToString("hh:mm tt")
-
-
-
         Try
             Baza.connection.Open()
-            Dim Command As New SqlCommand("INSERT INTO NarudzbaK (redniBroj, konobar, CocaCola, Pepsi, Fanta, RedBUll, Schweppes, Sprite, Mineralna, Juice, Jabuka, Visnja, Borovnica, Multivitamin, Cijedjenisok, Ledenicaj, Vodasokusom, Izvorskavoda, Esspresso, Espressosmlijekom, Macchiato, Cappuccino, Nesscafe, Toplacokolada, Caj, Heineken, Nektar, Jelen, Staropramen, Banjalucko, Tuborg, Becks, JackDaniels, Belvedere, GreyGooz, VigorVodka, Jagermeister, Absinth, Viljamovka, Gin, BadelKonjak, RubinovVinjak ) VALUES  (" + TextBox1.Text + ", '" + prijava.KoJeOvajPokemon.Text + "' , " + CocaColaL.Text + ", " + PepsiL.Text + ", " + FantaL.Text + "," + RedBullL.Text + ", " + SchweppesL.Text + ", " + SpriteL.Text + ",  " + MineralnaL.Text + ", " + JuiceL.Text + ", " + JabukaL.Text + "," + VisnjaL.Text + ", " + BorovnicaL.Text + ", " + MultivitaminL.Text + ", " + CijedjenisokL.Text + ", " + LedeniCajL.Text + ", " + VodasokusomL.Text + "," + IzvorskavodaL.Text + ", " + EsspressoL.Text + ", " + EspressosmlijekomL.Text + ",  " + MacchiatoL.Text + ", " + CappuccinoL.Text + ", " + NesscafeL.Text + "," + ToplacokoladaL.Text + ", " + CajL.Text + ", " + HeinekenL.Text + " , " + NektarL.Text + "," + JelenL.Text + ", " + StaropramenL.Text + ", " + BanjaluckoL.Text + ", " + TuborgL.Text + ", " + BecksL.Text + " , " + JackDanielsL.Text + "," + BelvedereL.Text + ", " + GreygooseL.Text + ", " + VigorVodkaL.Text + ", " + JagermeisterL.Text + ", " + AbsinthL.Text + ", " + ViljamovkaL.Text + " , " + GinL.Text + "," + BadelKonjakL.Text + ", " + RubinovVinjakL.Text + ") ", Baza.connection)
 
-            Command1.CommandText = "INSERT INTO NarudzbaS (brojNarudzbe, konobar, vrijemeNarudzbe) VALUES (" + TextBox1.Text + ", '" + prijava.KoJeOvajPokemon.Text + "', '" + Label7.Text + "') "
+            Dim Command As New SqlCommand("INSERT INTO NarudzbaK (redniBroj, konobar, CocaCola, Pepsi, Fanta, RedBUll, Schweppes, Sprite, Mineralna, Juice, Jabuka, Visnja, Borovnica, Multivitamin, Cijedjenisok, Ledenicaj, Vodasokusom, Izvorskavoda, Esspresso, Espressosmlijekom, Macchiato, Cappuccino, Nesscafe, Toplacokolada, Caj, Heineken, Nektar, Jelen, Staropramen, Banjalucko, Tuborg, Becks, JackDaniels, Belvedere, GreyGooz, VigorVodka, Jagermeister, Absinth, Viljamovka, Gin, BadelKonjak, RubinovVinjak ) VALUES  (" + vrijednostID.ToString + ", '" + prijava.KoJeOvajPokemon.Text + "' , " + CocaColaL.Text + ", " + PepsiL.Text + ", " + FantaL.Text + "," + RedBullL.Text + ", " + SchweppesL.Text + ", " + SpriteL.Text + ",  " + MineralnaL.Text + ", " + JuiceL.Text + ", " + JabukaL.Text + "," + VisnjaL.Text + ", " + BorovnicaL.Text + ", " + MultivitaminL.Text + ", " + CijedjenisokL.Text + ", " + LedeniCajL.Text + ", " + VodasokusomL.Text + "," + IzvorskavodaL.Text + ", " + EsspressoL.Text + ", " + EspressosmlijekomL.Text + ",  " + MacchiatoL.Text + ", " + CappuccinoL.Text + ", " + NesscafeL.Text + "," + ToplacokoladaL.Text + ", " + CajL.Text + ", " + HeinekenL.Text + " , " + NektarL.Text + "," + JelenL.Text + ", " + StaropramenL.Text + ", " + BanjaluckoL.Text + ", " + TuborgL.Text + ", " + BecksL.Text + " , " + JackDanielsL.Text + "," + BelvedereL.Text + ", " + GreygooseL.Text + ", " + VigorVodkaL.Text + ", " + JagermeisterL.Text + ", " + AbsinthL.Text + ", " + ViljamovkaL.Text + " , " + GinL.Text + "," + BadelKonjakL.Text + ", " + RubinovVinjakL.Text + ") ", Baza.connection)
+            Dim brojac As Integer
+            brojac = 0
+            brojac += 1
+            Dim Command1 As New SqlCommand("INSERT INTO NarudzbaS (brojNarudzbe, konobar, vrijemeNarudzbe) VALUES (" + vrijednostID.ToString + ", '" + prijava.KoJeOvajPokemon.Text + "', '" + Label1.Text + "') ", Baza.connection)
+            brojac += 1
 
-            Command1.ExecuteNonQuery()
-            Command.ExecuteNonQuery()
 
-            Baza.connection.Close()
+            If brojac = 2 And counter < 40 Then
+                Command1.ExecuteNonQuery()
+                Command.ExecuteNonQuery()
 
-            MsgBox("Narudzba poslata sankeru!")
+                Baza.connection.Close()
 
-            Me.Controls.Clear() 'removes all the controls on the form
-            InitializeComponent() 'load all the controls again
-            konobar_Load(e, e)
+                MsgBox("Narudzba poslata sankeru!")
 
+                Me.Controls.Clear() 'removes all the controls on the form
+                InitializeComponent() 'load all the controls again
+                konobar_Load(e, e)
+            ElseIf counter = 40 Then
+                MsgBox("Ne mozete poslati praznu narudzbu!")
+                Baza.connection.Close()
+            End If
         Catch ex As Exception
             Baza.connection.Close()
             MessageBox.Show(ex.ToString)
         End Try
+
+
+
     End Sub
 
     Private Sub konobar_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -86,13 +109,22 @@ Public Class konobar
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+
+        counter = 0
+
         For Each Label In Me.Controls
             If Label.text = "0" Then
                 Label.visible = False
+                counter += 1
             Else
                 Label.visible = True
             End If
+
+
+
         Next
+
+        Label1.Text = TimeOfDay.ToString("hh:mm tt")
     End Sub
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click

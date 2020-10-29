@@ -116,6 +116,7 @@ Partial Class konobar
         Me.GinL = New System.Windows.Forms.Label()
         Me.Button43 = New System.Windows.Forms.Button()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Button1
@@ -158,7 +159,7 @@ Partial Class konobar
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(23, 22)
         Me.Label2.TabIndex = 4
-        Me.Label2.Text = "0"
+        Me.Label2.Text = "n"
         '
         'CocaColaL
         '
@@ -227,15 +228,17 @@ Partial Class konobar
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(288, 9)
+        Me.Label7.Font = New System.Drawing.Font("Lucida Fax", 14.25!, System.Drawing.FontStyle.Bold)
+        Me.Label7.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.Label7.Location = New System.Drawing.Point(696, 10)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(41, 13)
+        Me.Label7.Size = New System.Drawing.Size(88, 22)
         Me.Label7.TabIndex = 9
         Me.Label7.Text = "Vrijeme"
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(295, 32)
+        Me.TextBox1.Location = New System.Drawing.Point(946, 22)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(36, 20)
         Me.TextBox1.TabIndex = 10
@@ -1111,13 +1114,25 @@ Partial Class konobar
         '
         Me.Timer1.Enabled = True
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Lucida Fax", 14.25!, System.Drawing.FontStyle.Bold)
+        Me.Label1.ForeColor = System.Drawing.Color.Black
+        Me.Label1.Location = New System.Drawing.Point(696, 32)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(23, 22)
+        Me.Label1.TabIndex = 54
+        Me.Label1.Text = "n"
+        '
         'konobar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.SeaGreen
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(816, 728)
+        Me.ClientSize = New System.Drawing.Size(844, 728)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button43)
         Me.Controls.Add(Me.TABLA)
         Me.Controls.Add(Me.Panel1)
@@ -1312,4 +1327,5 @@ Partial Class konobar
     Friend WithEvents GinL As Label
     Friend WithEvents Button43 As Button
     Friend WithEvents Timer1 As Timer
+    Friend WithEvents Label1 As Label
 End Class
