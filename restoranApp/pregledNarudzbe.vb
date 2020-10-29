@@ -115,4 +115,8 @@ Public Class pregledNarudzbe
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         'skidas sa stanje ucitanu tabelu
     End Sub
+
+    Private Sub tab1_Paint(sender As Object, e As PaintEventArgs) Handles tab1.Paint
+
+    End Sub
 End Class

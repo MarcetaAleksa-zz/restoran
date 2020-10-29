@@ -22,7 +22,6 @@ Partial Class konobar
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(konobar))
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
@@ -71,13 +70,11 @@ Partial Class konobar
         Me.Label30 = New System.Windows.Forms.Label()
         Me.Label31 = New System.Windows.Forms.Label()
         Me.Label32 = New System.Windows.Forms.Label()
-        Me.Label33 = New System.Windows.Forms.Label()
         Me.Label34 = New System.Windows.Forms.Label()
         Me.Label35 = New System.Windows.Forms.Label()
         Me.Label36 = New System.Windows.Forms.Label()
         Me.Label37 = New System.Windows.Forms.Label()
         Me.Label38 = New System.Windows.Forms.Label()
-        Me.Label39 = New System.Windows.Forms.Label()
         Me.Label40 = New System.Windows.Forms.Label()
         Me.Button28 = New System.Windows.Forms.Button()
         Me.Button29 = New System.Windows.Forms.Button()
@@ -97,24 +94,28 @@ Partial Class konobar
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.TABLA = New System.Windows.Forms.TableLayoutPanel()
         Me.SuspendLayout()
         '
         'Button1
         '
+        Me.Button1.AccessibleName = ""
         Me.Button1.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Button1.Location = New System.Drawing.Point(12, 125)
+        Me.Button1.Location = New System.Drawing.Point(12, 174)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(99, 35)
+        Me.Button1.Size = New System.Drawing.Size(99, 49)
         Me.Button1.TabIndex = 0
+        Me.Button1.Tag = "0"
         Me.Button1.Text = "Coca Cola"
         Me.Button1.UseVisualStyleBackColor = False
         '
         'Button2
         '
         Me.Button2.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Button2.Location = New System.Drawing.Point(122, 125)
+        Me.Button2.Location = New System.Drawing.Point(122, 174)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(99, 35)
+        Me.Button2.Size = New System.Drawing.Size(99, 49)
         Me.Button2.TabIndex = 1
         Me.Button2.Text = "Pepsi"
         Me.Button2.UseVisualStyleBackColor = False
@@ -122,9 +123,9 @@ Partial Class konobar
         'Button3
         '
         Me.Button3.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Button3.Location = New System.Drawing.Point(237, 125)
+        Me.Button3.Location = New System.Drawing.Point(237, 174)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(99, 35)
+        Me.Button3.Size = New System.Drawing.Size(99, 49)
         Me.Button3.TabIndex = 2
         Me.Button3.Text = "Fanta"
         Me.Button3.UseVisualStyleBackColor = False
@@ -143,7 +144,7 @@ Partial Class konobar
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.SystemColors.AppWorkspace
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(88, 133)
+        Me.Label3.Location = New System.Drawing.Point(88, 196)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(18, 20)
         Me.Label3.TabIndex = 5
@@ -161,9 +162,9 @@ Partial Class konobar
         'Button5
         '
         Me.Button5.ForeColor = System.Drawing.Color.Green
-        Me.Button5.Location = New System.Drawing.Point(814, 252)
+        Me.Button5.Location = New System.Drawing.Point(880, 531)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(62, 238)
+        Me.Button5.Size = New System.Drawing.Size(273, 83)
         Me.Button5.TabIndex = 7
         Me.Button5.Text = "NARUCI"
         Me.Button5.UseVisualStyleBackColor = True
@@ -173,7 +174,7 @@ Partial Class konobar
         Me.Label4.AutoSize = True
         Me.Label4.BackColor = System.Drawing.SystemColors.AppWorkspace
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.Label4.Location = New System.Drawing.Point(199, 133)
+        Me.Label4.Location = New System.Drawing.Point(199, 196)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(18, 20)
         Me.Label4.TabIndex = 3
@@ -184,7 +185,7 @@ Partial Class konobar
         Me.Label5.AutoSize = True
         Me.Label5.BackColor = System.Drawing.SystemColors.AppWorkspace
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.Label5.Location = New System.Drawing.Point(314, 132)
+        Me.Label5.Location = New System.Drawing.Point(314, 195)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(18, 20)
         Me.Label5.TabIndex = 3
@@ -218,9 +219,9 @@ Partial Class konobar
         'Button6
         '
         Me.Button6.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Button6.Location = New System.Drawing.Point(356, 125)
+        Me.Button6.Location = New System.Drawing.Point(356, 174)
         Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(99, 35)
+        Me.Button6.Size = New System.Drawing.Size(99, 49)
         Me.Button6.TabIndex = 11
         Me.Button6.Text = "Red Bull"
         Me.Button6.UseVisualStyleBackColor = False
@@ -228,9 +229,9 @@ Partial Class konobar
         'Button7
         '
         Me.Button7.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Button7.Location = New System.Drawing.Point(703, 125)
+        Me.Button7.Location = New System.Drawing.Point(703, 174)
         Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(99, 35)
+        Me.Button7.Size = New System.Drawing.Size(99, 49)
         Me.Button7.TabIndex = 12
         Me.Button7.Text = "Mineralna voda"
         Me.Button7.UseVisualStyleBackColor = False
@@ -238,9 +239,9 @@ Partial Class konobar
         'Button8
         '
         Me.Button8.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Button8.Location = New System.Drawing.Point(122, 179)
+        Me.Button8.Location = New System.Drawing.Point(122, 228)
         Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(99, 35)
+        Me.Button8.Size = New System.Drawing.Size(99, 49)
         Me.Button8.TabIndex = 13
         Me.Button8.Text = "Jabuka"
         Me.Button8.UseVisualStyleBackColor = False
@@ -248,9 +249,9 @@ Partial Class konobar
         'Button9
         '
         Me.Button9.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Button9.Location = New System.Drawing.Point(12, 229)
+        Me.Button9.Location = New System.Drawing.Point(12, 278)
         Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(99, 35)
+        Me.Button9.Size = New System.Drawing.Size(99, 49)
         Me.Button9.TabIndex = 14
         Me.Button9.Text = "Voda s okusom"
         Me.Button9.UseVisualStyleBackColor = False
@@ -258,9 +259,9 @@ Partial Class konobar
         'Button10
         '
         Me.Button10.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Button10.Location = New System.Drawing.Point(122, 229)
+        Me.Button10.Location = New System.Drawing.Point(122, 278)
         Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(99, 35)
+        Me.Button10.Size = New System.Drawing.Size(99, 49)
         Me.Button10.TabIndex = 15
         Me.Button10.Text = "Izvorska voda"
         Me.Button10.UseVisualStyleBackColor = False
@@ -268,9 +269,9 @@ Partial Class konobar
         'Button11
         '
         Me.Button11.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Button11.Location = New System.Drawing.Point(12, 179)
+        Me.Button11.Location = New System.Drawing.Point(12, 228)
         Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(99, 35)
+        Me.Button11.Size = New System.Drawing.Size(99, 49)
         Me.Button11.TabIndex = 16
         Me.Button11.Text = "Juice"
         Me.Button11.UseVisualStyleBackColor = False
@@ -278,9 +279,9 @@ Partial Class konobar
         'Button12
         '
         Me.Button12.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Button12.Location = New System.Drawing.Point(237, 179)
+        Me.Button12.Location = New System.Drawing.Point(237, 228)
         Me.Button12.Name = "Button12"
-        Me.Button12.Size = New System.Drawing.Size(99, 35)
+        Me.Button12.Size = New System.Drawing.Size(99, 49)
         Me.Button12.TabIndex = 17
         Me.Button12.Text = "Visnja"
         Me.Button12.UseVisualStyleBackColor = False
@@ -288,9 +289,9 @@ Partial Class konobar
         'Button13
         '
         Me.Button13.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Button13.Location = New System.Drawing.Point(356, 179)
+        Me.Button13.Location = New System.Drawing.Point(356, 228)
         Me.Button13.Name = "Button13"
-        Me.Button13.Size = New System.Drawing.Size(99, 35)
+        Me.Button13.Size = New System.Drawing.Size(99, 49)
         Me.Button13.TabIndex = 18
         Me.Button13.Text = "Borovnica"
         Me.Button13.UseVisualStyleBackColor = False
@@ -298,9 +299,9 @@ Partial Class konobar
         'Button14
         '
         Me.Button14.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Button14.Location = New System.Drawing.Point(589, 181)
+        Me.Button14.Location = New System.Drawing.Point(589, 230)
         Me.Button14.Name = "Button14"
-        Me.Button14.Size = New System.Drawing.Size(99, 35)
+        Me.Button14.Size = New System.Drawing.Size(99, 49)
         Me.Button14.TabIndex = 19
         Me.Button14.Text = "Cijedjeni sok"
         Me.Button14.UseVisualStyleBackColor = False
@@ -308,9 +309,9 @@ Partial Class konobar
         'Button15
         '
         Me.Button15.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Button15.Location = New System.Drawing.Point(473, 179)
+        Me.Button15.Location = New System.Drawing.Point(473, 228)
         Me.Button15.Name = "Button15"
-        Me.Button15.Size = New System.Drawing.Size(99, 35)
+        Me.Button15.Size = New System.Drawing.Size(99, 49)
         Me.Button15.TabIndex = 20
         Me.Button15.Text = "Multivitamin"
         Me.Button15.UseVisualStyleBackColor = False
@@ -318,9 +319,9 @@ Partial Class konobar
         'Button16
         '
         Me.Button16.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Button16.Location = New System.Drawing.Point(7, 332)
+        Me.Button16.Location = New System.Drawing.Point(7, 359)
         Me.Button16.Name = "Button16"
-        Me.Button16.Size = New System.Drawing.Size(99, 35)
+        Me.Button16.Size = New System.Drawing.Size(99, 49)
         Me.Button16.TabIndex = 21
         Me.Button16.Text = "Esspresso"
         Me.Button16.UseVisualStyleBackColor = False
@@ -328,9 +329,9 @@ Partial Class konobar
         'Button17
         '
         Me.Button17.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Button17.Location = New System.Drawing.Point(356, 331)
+        Me.Button17.Location = New System.Drawing.Point(356, 358)
         Me.Button17.Name = "Button17"
-        Me.Button17.Size = New System.Drawing.Size(99, 35)
+        Me.Button17.Size = New System.Drawing.Size(99, 49)
         Me.Button17.TabIndex = 22
         Me.Button17.Text = "Cappuccino"
         Me.Button17.UseVisualStyleBackColor = False
@@ -338,9 +339,9 @@ Partial Class konobar
         'Button18
         '
         Me.Button18.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Button18.Location = New System.Drawing.Point(698, 331)
+        Me.Button18.Location = New System.Drawing.Point(698, 358)
         Me.Button18.Name = "Button18"
-        Me.Button18.Size = New System.Drawing.Size(99, 35)
+        Me.Button18.Size = New System.Drawing.Size(99, 49)
         Me.Button18.TabIndex = 23
         Me.Button18.Text = "Caj"
         Me.Button18.UseVisualStyleBackColor = False
@@ -348,9 +349,9 @@ Partial Class konobar
         'Button19
         '
         Me.Button19.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Button19.Location = New System.Drawing.Point(589, 332)
+        Me.Button19.Location = New System.Drawing.Point(589, 359)
         Me.Button19.Name = "Button19"
-        Me.Button19.Size = New System.Drawing.Size(99, 35)
+        Me.Button19.Size = New System.Drawing.Size(99, 49)
         Me.Button19.TabIndex = 24
         Me.Button19.Text = "Topla cokolada"
         Me.Button19.UseVisualStyleBackColor = False
@@ -358,9 +359,9 @@ Partial Class konobar
         'Button20
         '
         Me.Button20.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Button20.Location = New System.Drawing.Point(113, 331)
+        Me.Button20.Location = New System.Drawing.Point(113, 358)
         Me.Button20.Name = "Button20"
-        Me.Button20.Size = New System.Drawing.Size(99, 35)
+        Me.Button20.Size = New System.Drawing.Size(99, 49)
         Me.Button20.TabIndex = 25
         Me.Button20.Text = "Esspreso s mlijekom"
         Me.Button20.UseVisualStyleBackColor = False
@@ -368,9 +369,9 @@ Partial Class konobar
         'Button21
         '
         Me.Button21.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Button21.Location = New System.Drawing.Point(237, 331)
+        Me.Button21.Location = New System.Drawing.Point(237, 358)
         Me.Button21.Name = "Button21"
-        Me.Button21.Size = New System.Drawing.Size(99, 35)
+        Me.Button21.Size = New System.Drawing.Size(99, 49)
         Me.Button21.TabIndex = 26
         Me.Button21.Text = "Macchiato"
         Me.Button21.UseVisualStyleBackColor = False
@@ -378,9 +379,9 @@ Partial Class konobar
         'Button22
         '
         Me.Button22.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Button22.Location = New System.Drawing.Point(473, 332)
+        Me.Button22.Location = New System.Drawing.Point(473, 359)
         Me.Button22.Name = "Button22"
-        Me.Button22.Size = New System.Drawing.Size(99, 35)
+        Me.Button22.Size = New System.Drawing.Size(99, 49)
         Me.Button22.TabIndex = 27
         Me.Button22.Text = "Nesscafe"
         Me.Button22.UseVisualStyleBackColor = False
@@ -390,7 +391,7 @@ Partial Class konobar
         Me.Button23.BackColor = System.Drawing.SystemColors.AppWorkspace
         Me.Button23.Location = New System.Drawing.Point(117, 448)
         Me.Button23.Name = "Button23"
-        Me.Button23.Size = New System.Drawing.Size(99, 35)
+        Me.Button23.Size = New System.Drawing.Size(99, 49)
         Me.Button23.TabIndex = 28
         Me.Button23.Text = "Nektar"
         Me.Button23.UseVisualStyleBackColor = False
@@ -400,7 +401,7 @@ Partial Class konobar
         Me.Button24.BackColor = System.Drawing.SystemColors.AppWorkspace
         Me.Button24.Location = New System.Drawing.Point(117, 506)
         Me.Button24.Name = "Button24"
-        Me.Button24.Size = New System.Drawing.Size(99, 35)
+        Me.Button24.Size = New System.Drawing.Size(99, 49)
         Me.Button24.TabIndex = 29
         Me.Button24.Text = "Belvedere"
         Me.Button24.UseVisualStyleBackColor = False
@@ -410,7 +411,7 @@ Partial Class konobar
         Me.Button25.BackColor = System.Drawing.SystemColors.AppWorkspace
         Me.Button25.Location = New System.Drawing.Point(7, 448)
         Me.Button25.Name = "Button25"
-        Me.Button25.Size = New System.Drawing.Size(99, 35)
+        Me.Button25.Size = New System.Drawing.Size(99, 49)
         Me.Button25.TabIndex = 30
         Me.Button25.Text = "Heineken"
         Me.Button25.UseVisualStyleBackColor = False
@@ -420,7 +421,7 @@ Partial Class konobar
         Me.Button26.BackColor = System.Drawing.SystemColors.AppWorkspace
         Me.Button26.Location = New System.Drawing.Point(7, 506)
         Me.Button26.Name = "Button26"
-        Me.Button26.Size = New System.Drawing.Size(99, 35)
+        Me.Button26.Size = New System.Drawing.Size(99, 49)
         Me.Button26.TabIndex = 31
         Me.Button26.Text = "Jack Daniels"
         Me.Button26.UseVisualStyleBackColor = False
@@ -430,7 +431,7 @@ Partial Class konobar
         Me.Button27.BackColor = System.Drawing.SystemColors.AppWorkspace
         Me.Button27.Location = New System.Drawing.Point(698, 506)
         Me.Button27.Name = "Button27"
-        Me.Button27.Size = New System.Drawing.Size(99, 35)
+        Me.Button27.Size = New System.Drawing.Size(99, 49)
         Me.Button27.TabIndex = 32
         Me.Button27.Text = "Viljamovka"
         Me.Button27.UseVisualStyleBackColor = False
@@ -440,7 +441,7 @@ Partial Class konobar
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.SystemColors.AppWorkspace
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.Label1.Location = New System.Drawing.Point(550, 133)
+        Me.Label1.Location = New System.Drawing.Point(550, 196)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(18, 20)
         Me.Label1.TabIndex = 3
@@ -451,7 +452,7 @@ Partial Class konobar
         Me.Label20.AutoSize = True
         Me.Label20.BackColor = System.Drawing.SystemColors.AppWorkspace
         Me.Label20.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.Label20.Location = New System.Drawing.Point(437, 133)
+        Me.Label20.Location = New System.Drawing.Point(437, 196)
         Me.Label20.Name = "Label20"
         Me.Label20.Size = New System.Drawing.Size(18, 20)
         Me.Label20.TabIndex = 3
@@ -462,7 +463,7 @@ Partial Class konobar
         Me.Label21.AutoSize = True
         Me.Label21.BackColor = System.Drawing.SystemColors.AppWorkspace
         Me.Label21.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.Label21.Location = New System.Drawing.Point(670, 187)
+        Me.Label21.Location = New System.Drawing.Point(666, 246)
         Me.Label21.Name = "Label21"
         Me.Label21.Size = New System.Drawing.Size(18, 20)
         Me.Label21.TabIndex = 3
@@ -473,7 +474,7 @@ Partial Class konobar
         Me.Label22.AutoSize = True
         Me.Label22.BackColor = System.Drawing.SystemColors.AppWorkspace
         Me.Label22.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.Label22.Location = New System.Drawing.Point(88, 187)
+        Me.Label22.Location = New System.Drawing.Point(88, 250)
         Me.Label22.Name = "Label22"
         Me.Label22.Size = New System.Drawing.Size(18, 20)
         Me.Label22.TabIndex = 3
@@ -484,7 +485,7 @@ Partial Class konobar
         Me.Label23.AutoSize = True
         Me.Label23.BackColor = System.Drawing.SystemColors.AppWorkspace
         Me.Label23.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.Label23.Location = New System.Drawing.Point(670, 131)
+        Me.Label23.Location = New System.Drawing.Point(665, 195)
         Me.Label23.Name = "Label23"
         Me.Label23.Size = New System.Drawing.Size(18, 20)
         Me.Label23.TabIndex = 3
@@ -495,7 +496,7 @@ Partial Class konobar
         Me.Label24.AutoSize = True
         Me.Label24.BackColor = System.Drawing.SystemColors.AppWorkspace
         Me.Label24.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.Label24.Location = New System.Drawing.Point(203, 185)
+        Me.Label24.Location = New System.Drawing.Point(203, 248)
         Me.Label24.Name = "Label24"
         Me.Label24.Size = New System.Drawing.Size(18, 20)
         Me.Label24.TabIndex = 3
@@ -506,7 +507,7 @@ Partial Class konobar
         Me.Label25.AutoSize = True
         Me.Label25.BackColor = System.Drawing.SystemColors.AppWorkspace
         Me.Label25.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label25.Location = New System.Drawing.Point(314, 187)
+        Me.Label25.Location = New System.Drawing.Point(314, 250)
         Me.Label25.Name = "Label25"
         Me.Label25.Size = New System.Drawing.Size(18, 20)
         Me.Label25.TabIndex = 5
@@ -517,7 +518,7 @@ Partial Class konobar
         Me.Label26.AutoSize = True
         Me.Label26.BackColor = System.Drawing.SystemColors.AppWorkspace
         Me.Label26.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.Label26.Location = New System.Drawing.Point(194, 337)
+        Me.Label26.Location = New System.Drawing.Point(194, 364)
         Me.Label26.Name = "Label26"
         Me.Label26.Size = New System.Drawing.Size(18, 20)
         Me.Label26.TabIndex = 3
@@ -528,7 +529,7 @@ Partial Class konobar
         Me.Label27.AutoSize = True
         Me.Label27.BackColor = System.Drawing.SystemColors.AppWorkspace
         Me.Label27.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.Label27.Location = New System.Drawing.Point(309, 337)
+        Me.Label27.Location = New System.Drawing.Point(309, 364)
         Me.Label27.Name = "Label27"
         Me.Label27.Size = New System.Drawing.Size(18, 20)
         Me.Label27.TabIndex = 3
@@ -539,7 +540,7 @@ Partial Class konobar
         Me.Label28.AutoSize = True
         Me.Label28.BackColor = System.Drawing.SystemColors.AppWorkspace
         Me.Label28.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.Label28.Location = New System.Drawing.Point(545, 337)
+        Me.Label28.Location = New System.Drawing.Point(545, 364)
         Me.Label28.Name = "Label28"
         Me.Label28.Size = New System.Drawing.Size(18, 20)
         Me.Label28.TabIndex = 3
@@ -550,7 +551,7 @@ Partial Class konobar
         Me.Label29.AutoSize = True
         Me.Label29.BackColor = System.Drawing.SystemColors.AppWorkspace
         Me.Label29.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.Label29.Location = New System.Drawing.Point(428, 338)
+        Me.Label29.Location = New System.Drawing.Point(428, 365)
         Me.Label29.Name = "Label29"
         Me.Label29.Size = New System.Drawing.Size(18, 20)
         Me.Label29.TabIndex = 3
@@ -561,7 +562,7 @@ Partial Class konobar
         Me.Label30.AutoSize = True
         Me.Label30.BackColor = System.Drawing.SystemColors.AppWorkspace
         Me.Label30.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label30.Location = New System.Drawing.Point(83, 338)
+        Me.Label30.Location = New System.Drawing.Point(83, 365)
         Me.Label30.Name = "Label30"
         Me.Label30.Size = New System.Drawing.Size(18, 20)
         Me.Label30.TabIndex = 5
@@ -572,7 +573,7 @@ Partial Class konobar
         Me.Label31.AutoSize = True
         Me.Label31.BackColor = System.Drawing.SystemColors.AppWorkspace
         Me.Label31.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.Label31.Location = New System.Drawing.Point(433, 187)
+        Me.Label31.Location = New System.Drawing.Point(433, 250)
         Me.Label31.Name = "Label31"
         Me.Label31.Size = New System.Drawing.Size(18, 20)
         Me.Label31.TabIndex = 3
@@ -583,29 +584,18 @@ Partial Class konobar
         Me.Label32.AutoSize = True
         Me.Label32.BackColor = System.Drawing.SystemColors.AppWorkspace
         Me.Label32.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.Label32.Location = New System.Drawing.Point(665, 338)
+        Me.Label32.Location = New System.Drawing.Point(665, 365)
         Me.Label32.Name = "Label32"
         Me.Label32.Size = New System.Drawing.Size(18, 20)
         Me.Label32.TabIndex = 3
         Me.Label32.Text = "0"
-        '
-        'Label33
-        '
-        Me.Label33.AutoSize = True
-        Me.Label33.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Label33.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.Label33.Location = New System.Drawing.Point(779, 304)
-        Me.Label33.Name = "Label33"
-        Me.Label33.Size = New System.Drawing.Size(18, 20)
-        Me.Label33.TabIndex = 3
-        Me.Label33.Text = "0"
         '
         'Label34
         '
         Me.Label34.AutoSize = True
         Me.Label34.BackColor = System.Drawing.SystemColors.AppWorkspace
         Me.Label34.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.Label34.Location = New System.Drawing.Point(550, 132)
+        Me.Label34.Location = New System.Drawing.Point(550, 195)
         Me.Label34.Name = "Label34"
         Me.Label34.Size = New System.Drawing.Size(18, 20)
         Me.Label34.TabIndex = 3
@@ -616,7 +606,7 @@ Partial Class konobar
         Me.Label35.AutoSize = True
         Me.Label35.BackColor = System.Drawing.SystemColors.AppWorkspace
         Me.Label35.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label35.Location = New System.Drawing.Point(550, 187)
+        Me.Label35.Location = New System.Drawing.Point(550, 250)
         Me.Label35.Name = "Label35"
         Me.Label35.Size = New System.Drawing.Size(18, 20)
         Me.Label35.TabIndex = 5
@@ -638,7 +628,7 @@ Partial Class konobar
         Me.Label37.AutoSize = True
         Me.Label37.BackColor = System.Drawing.SystemColors.AppWorkspace
         Me.Label37.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.Label37.Location = New System.Drawing.Point(784, 131)
+        Me.Label37.Location = New System.Drawing.Point(784, 187)
         Me.Label37.Name = "Label37"
         Me.Label37.Size = New System.Drawing.Size(18, 20)
         Me.Label37.TabIndex = 3
@@ -655,17 +645,6 @@ Partial Class konobar
         Me.Label38.TabIndex = 3
         Me.Label38.Text = "0"
         '
-        'Label39
-        '
-        Me.Label39.AutoSize = True
-        Me.Label39.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Label39.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.Label39.Location = New System.Drawing.Point(786, 187)
-        Me.Label39.Name = "Label39"
-        Me.Label39.Size = New System.Drawing.Size(18, 20)
-        Me.Label39.TabIndex = 3
-        Me.Label39.Text = "0"
-        '
         'Label40
         '
         Me.Label40.AutoSize = True
@@ -680,9 +659,9 @@ Partial Class konobar
         'Button28
         '
         Me.Button28.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Button28.Location = New System.Drawing.Point(473, 125)
+        Me.Button28.Location = New System.Drawing.Point(473, 174)
         Me.Button28.Name = "Button28"
-        Me.Button28.Size = New System.Drawing.Size(99, 35)
+        Me.Button28.Size = New System.Drawing.Size(99, 49)
         Me.Button28.TabIndex = 33
         Me.Button28.Text = "Schweppes"
         Me.Button28.UseVisualStyleBackColor = False
@@ -690,9 +669,9 @@ Partial Class konobar
         'Button29
         '
         Me.Button29.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Button29.Location = New System.Drawing.Point(589, 125)
+        Me.Button29.Location = New System.Drawing.Point(589, 174)
         Me.Button29.Name = "Button29"
-        Me.Button29.Size = New System.Drawing.Size(99, 35)
+        Me.Button29.Size = New System.Drawing.Size(99, 49)
         Me.Button29.TabIndex = 34
         Me.Button29.Text = "Sprite"
         Me.Button29.UseVisualStyleBackColor = False
@@ -702,7 +681,7 @@ Partial Class konobar
         Me.Button30.BackColor = System.Drawing.SystemColors.AppWorkspace
         Me.Button30.Location = New System.Drawing.Point(7, 565)
         Me.Button30.Name = "Button30"
-        Me.Button30.Size = New System.Drawing.Size(99, 35)
+        Me.Button30.Size = New System.Drawing.Size(99, 49)
         Me.Button30.TabIndex = 35
         Me.Button30.Text = "Gin"
         Me.Button30.UseVisualStyleBackColor = False
@@ -712,7 +691,7 @@ Partial Class konobar
         Me.Button31.BackColor = System.Drawing.SystemColors.AppWorkspace
         Me.Button31.Location = New System.Drawing.Point(232, 448)
         Me.Button31.Name = "Button31"
-        Me.Button31.Size = New System.Drawing.Size(99, 35)
+        Me.Button31.Size = New System.Drawing.Size(99, 49)
         Me.Button31.TabIndex = 36
         Me.Button31.Text = "Jelen"
         Me.Button31.UseVisualStyleBackColor = False
@@ -722,7 +701,7 @@ Partial Class konobar
         Me.Button32.BackColor = System.Drawing.SystemColors.AppWorkspace
         Me.Button32.Location = New System.Drawing.Point(351, 448)
         Me.Button32.Name = "Button32"
-        Me.Button32.Size = New System.Drawing.Size(99, 35)
+        Me.Button32.Size = New System.Drawing.Size(99, 49)
         Me.Button32.TabIndex = 37
         Me.Button32.Text = "Staropramen"
         Me.Button32.UseVisualStyleBackColor = False
@@ -732,7 +711,7 @@ Partial Class konobar
         Me.Button33.BackColor = System.Drawing.SystemColors.AppWorkspace
         Me.Button33.Location = New System.Drawing.Point(468, 448)
         Me.Button33.Name = "Button33"
-        Me.Button33.Size = New System.Drawing.Size(99, 35)
+        Me.Button33.Size = New System.Drawing.Size(99, 49)
         Me.Button33.TabIndex = 38
         Me.Button33.Text = "Banjalucko pivo"
         Me.Button33.UseVisualStyleBackColor = False
@@ -742,7 +721,7 @@ Partial Class konobar
         Me.Button34.BackColor = System.Drawing.SystemColors.AppWorkspace
         Me.Button34.Location = New System.Drawing.Point(584, 448)
         Me.Button34.Name = "Button34"
-        Me.Button34.Size = New System.Drawing.Size(99, 35)
+        Me.Button34.Size = New System.Drawing.Size(99, 49)
         Me.Button34.TabIndex = 39
         Me.Button34.Text = "Tuborg"
         Me.Button34.UseVisualStyleBackColor = False
@@ -752,7 +731,7 @@ Partial Class konobar
         Me.Button35.BackColor = System.Drawing.SystemColors.AppWorkspace
         Me.Button35.Location = New System.Drawing.Point(698, 448)
         Me.Button35.Name = "Button35"
-        Me.Button35.Size = New System.Drawing.Size(99, 35)
+        Me.Button35.Size = New System.Drawing.Size(99, 49)
         Me.Button35.TabIndex = 40
         Me.Button35.Text = "Becks"
         Me.Button35.UseVisualStyleBackColor = False
@@ -762,7 +741,7 @@ Partial Class konobar
         Me.Button36.BackColor = System.Drawing.SystemColors.AppWorkspace
         Me.Button36.Location = New System.Drawing.Point(228, 506)
         Me.Button36.Name = "Button36"
-        Me.Button36.Size = New System.Drawing.Size(99, 35)
+        Me.Button36.Size = New System.Drawing.Size(99, 49)
         Me.Button36.TabIndex = 41
         Me.Button36.Text = "Grey Goose"
         Me.Button36.UseVisualStyleBackColor = False
@@ -772,7 +751,7 @@ Partial Class konobar
         Me.Button37.BackColor = System.Drawing.SystemColors.AppWorkspace
         Me.Button37.Location = New System.Drawing.Point(351, 506)
         Me.Button37.Name = "Button37"
-        Me.Button37.Size = New System.Drawing.Size(99, 35)
+        Me.Button37.Size = New System.Drawing.Size(99, 49)
         Me.Button37.TabIndex = 42
         Me.Button37.Text = "Vigor vodka"
         Me.Button37.UseVisualStyleBackColor = False
@@ -782,7 +761,7 @@ Partial Class konobar
         Me.Button38.BackColor = System.Drawing.SystemColors.AppWorkspace
         Me.Button38.Location = New System.Drawing.Point(468, 506)
         Me.Button38.Name = "Button38"
-        Me.Button38.Size = New System.Drawing.Size(99, 35)
+        Me.Button38.Size = New System.Drawing.Size(99, 49)
         Me.Button38.TabIndex = 43
         Me.Button38.Text = "Jagermeister"
         Me.Button38.UseVisualStyleBackColor = False
@@ -792,7 +771,7 @@ Partial Class konobar
         Me.Button39.BackColor = System.Drawing.SystemColors.AppWorkspace
         Me.Button39.Location = New System.Drawing.Point(584, 506)
         Me.Button39.Name = "Button39"
-        Me.Button39.Size = New System.Drawing.Size(99, 35)
+        Me.Button39.Size = New System.Drawing.Size(99, 49)
         Me.Button39.TabIndex = 44
         Me.Button39.Text = "Absinth"
         Me.Button39.UseVisualStyleBackColor = False
@@ -800,9 +779,9 @@ Partial Class konobar
         'Button40
         '
         Me.Button40.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Button40.Location = New System.Drawing.Point(705, 181)
+        Me.Button40.Location = New System.Drawing.Point(705, 230)
         Me.Button40.Name = "Button40"
-        Me.Button40.Size = New System.Drawing.Size(99, 35)
+        Me.Button40.Size = New System.Drawing.Size(99, 49)
         Me.Button40.TabIndex = 45
         Me.Button40.Text = "Ledeni caj"
         Me.Button40.UseVisualStyleBackColor = False
@@ -812,7 +791,7 @@ Partial Class konobar
         Me.Button41.BackColor = System.Drawing.SystemColors.AppWorkspace
         Me.Button41.Location = New System.Drawing.Point(117, 565)
         Me.Button41.Name = "Button41"
-        Me.Button41.Size = New System.Drawing.Size(99, 35)
+        Me.Button41.Size = New System.Drawing.Size(99, 49)
         Me.Button41.TabIndex = 46
         Me.Button41.Text = "Badel konjak"
         Me.Button41.UseVisualStyleBackColor = False
@@ -822,7 +801,7 @@ Partial Class konobar
         Me.Button42.BackColor = System.Drawing.SystemColors.AppWorkspace
         Me.Button42.Location = New System.Drawing.Point(228, 565)
         Me.Button42.Name = "Button42"
-        Me.Button42.Size = New System.Drawing.Size(99, 35)
+        Me.Button42.Size = New System.Drawing.Size(99, 49)
         Me.Button42.TabIndex = 47
         Me.Button42.Text = "Rubinov vinjak"
         Me.Button42.UseVisualStyleBackColor = False
@@ -833,7 +812,7 @@ Partial Class konobar
         Me.Label8.BackColor = System.Drawing.Color.Transparent
         Me.Label8.Font = New System.Drawing.Font("Lucida Fax", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label8.Location = New System.Drawing.Point(12, 83)
+        Me.Label8.Location = New System.Drawing.Point(12, 146)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(276, 22)
         Me.Label8.TabIndex = 48
@@ -845,7 +824,7 @@ Partial Class konobar
         Me.Label9.BackColor = System.Drawing.Color.Transparent
         Me.Label9.Font = New System.Drawing.Font("Lucida Fax", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label9.Location = New System.Drawing.Point(12, 302)
+        Me.Label9.Location = New System.Drawing.Point(12, 329)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(131, 22)
         Me.Label9.TabIndex = 49
@@ -863,14 +842,57 @@ Partial Class konobar
         Me.Label10.TabIndex = 50
         Me.Label10.Text = "Alkoholna pica"
         '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.PaleGreen
+        Me.Panel1.Location = New System.Drawing.Point(835, 19)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(4, 594)
+        Me.Panel1.TabIndex = 51
+        '
+        'TABLA
+        '
+        Me.TABLA.ColumnCount = 2
+        Me.TABLA.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70.0!))
+        Me.TABLA.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.0!))
+        Me.TABLA.Location = New System.Drawing.Point(892, 82)
+        Me.TABLA.Name = "TABLA"
+        Me.TABLA.RowCount = 23
+        Me.TABLA.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TABLA.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TABLA.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TABLA.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TABLA.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TABLA.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TABLA.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TABLA.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TABLA.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TABLA.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TABLA.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TABLA.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TABLA.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TABLA.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TABLA.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TABLA.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TABLA.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TABLA.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TABLA.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TABLA.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TABLA.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TABLA.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TABLA.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TABLA.Size = New System.Drawing.Size(241, 443)
+        Me.TABLA.TabIndex = 52
+        '
         'konobar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.BackColor = System.Drawing.Color.SeaGreen
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(888, 668)
+        Me.ClientSize = New System.Drawing.Size(1197, 626)
+        Me.Controls.Add(Me.TABLA)
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label8)
@@ -897,14 +919,12 @@ Partial Class konobar
         Me.Controls.Add(Me.Label25)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label39)
         Me.Controls.Add(Me.Label34)
         Me.Controls.Add(Me.Label29)
         Me.Controls.Add(Me.Label24)
         Me.Controls.Add(Me.Label20)
         Me.Controls.Add(Me.Label38)
         Me.Controls.Add(Me.Label37)
-        Me.Controls.Add(Me.Label33)
         Me.Controls.Add(Me.Label32)
         Me.Controls.Add(Me.Label28)
         Me.Controls.Add(Me.Label27)
@@ -1002,13 +1022,11 @@ Partial Class konobar
     Friend WithEvents Label30 As Label
     Friend WithEvents Label31 As Label
     Friend WithEvents Label32 As Label
-    Friend WithEvents Label33 As Label
     Friend WithEvents Label34 As Label
     Friend WithEvents Label35 As Label
     Friend WithEvents Label36 As Label
     Friend WithEvents Label37 As Label
     Friend WithEvents Label38 As Label
-    Friend WithEvents Label39 As Label
     Friend WithEvents Label40 As Label
     Friend WithEvents Button28 As Button
     Friend WithEvents Button29 As Button
@@ -1028,4 +1046,6 @@ Partial Class konobar
     Friend WithEvents Label8 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents Label10 As Label
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents TABLA As TableLayoutPanel
 End Class

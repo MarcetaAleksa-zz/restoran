@@ -1,8 +1,33 @@
 ﻿Imports System.Data.SqlClient
 Public Class konobar
+    Public Sub Sumiranje(i As String, b As Integer)
+        Dim nazivPica As Label = New Label
+        With nazivPica
+            .Text = i
+            .TextAlign = ContentAlignment.MiddleCenter
+            .Visible = True
+            .BackColor = Color.Transparent
+            .Font = New Font("Microsoft Sans Serif", 14)
+            .Dock = DockStyle.Fill
+            TABLA.Controls.Add(nazivPica, 0, 0)
+        End With
+        Dim kolicina As Label = New Label
+        With kolicina
+            .Text = b
+            .TextAlign = ContentAlignment.MiddleCenter
+            .Visible = True
+            .BackColor = Color.Transparent
+            .Font = New Font("Microsoft Sans Serif", 14)
+            .Dock = DockStyle.Fill
+            TABLA.Controls.Add(kolicina, 1, 0)
+        End With
+    End Sub
+
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Label3.Text = CDbl(Label3.Text) + 1
+        'Button1.Tag = CDbl(Button1.Tag) + 1
+        Sumiranje(Button1.Text, Label3.Text)
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -58,7 +83,7 @@ Public Class konobar
         Label2.Text = prijava.imePrijavljenog
     End Sub
 
-    Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click, Label20.Click, Label1.Click, Label39.Click, Label38.Click, Label37.Click, Label34.Click, Label33.Click, Label32.Click, Label29.Click, Label28.Click, Label27.Click, Label24.Click, Label23.Click, Label22.Click
+    Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click, Label20.Click, Label1.Click, Label38.Click, Label37.Click, Label34.Click, Label32.Click, Label29.Click, Label28.Click, Label27.Click, Label24.Click, Label23.Click, Label22.Click
 
     End Sub
 
