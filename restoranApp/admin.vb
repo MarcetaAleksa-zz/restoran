@@ -69,7 +69,7 @@ VALUES ('" & TextBox5.Text & "','" & Enkripcija.HashNoviK & "', '" & holdit & "'
             End If
 
         Catch ex As Exception
-                MessageBox.Show(ex.ToString)
+            MessageBox.Show(ex.ToString)
         End Try
     End Sub
 End Class

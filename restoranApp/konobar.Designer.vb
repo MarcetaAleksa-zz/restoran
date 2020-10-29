@@ -66,8 +66,8 @@ Partial Class konobar
         Me.VisnjaL = New System.Windows.Forms.Label()
         Me.IzvorskavodaL = New System.Windows.Forms.Label()
         Me.EsspressoL = New System.Windows.Forms.Label()
-        Me.MacchiaroL = New System.Windows.Forms.Label()
-        Me.EsspresosmlijekomL = New System.Windows.Forms.Label()
+        Me.MacchiatoL = New System.Windows.Forms.Label()
+        Me.EspressosmlijekomL = New System.Windows.Forms.Label()
         Me.VodasokusomL = New System.Windows.Forms.Label()
         Me.BorovnicaL = New System.Windows.Forms.Label()
         Me.CappuccinoL = New System.Windows.Forms.Label()
@@ -76,7 +76,7 @@ Partial Class konobar
         Me.NektarL = New System.Windows.Forms.Label()
         Me.LedeniCajL = New System.Windows.Forms.Label()
         Me.JelenL = New System.Windows.Forms.Label()
-        Me.HeikenL = New System.Windows.Forms.Label()
+        Me.HeinekenL = New System.Windows.Forms.Label()
         Me.Button28 = New System.Windows.Forms.Button()
         Me.Button29 = New System.Windows.Forms.Button()
         Me.Button30 = New System.Windows.Forms.Button()
@@ -108,11 +108,11 @@ Partial Class konobar
         Me.BelvedereL = New System.Windows.Forms.Label()
         Me.GreygooseL = New System.Windows.Forms.Label()
         Me.VigorVodkaL = New System.Windows.Forms.Label()
-        Me.jagermaisterL = New System.Windows.Forms.Label()
+        Me.JagermeisterL = New System.Windows.Forms.Label()
         Me.AbsinthL = New System.Windows.Forms.Label()
         Me.ViljamovkaL = New System.Windows.Forms.Label()
         Me.RubinovVinjakL = New System.Windows.Forms.Label()
-        Me.BadelKonjaL = New System.Windows.Forms.Label()
+        Me.BadelKonjakL = New System.Windows.Forms.Label()
         Me.GinL = New System.Windows.Forms.Label()
         Me.Button43 = New System.Windows.Forms.Button()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
@@ -559,27 +559,27 @@ Partial Class konobar
         Me.EsspressoL.TabIndex = 3
         Me.EsspressoL.Text = "0"
         '
-        'MacchiaroL
+        'MacchiatoL
         '
-        Me.MacchiaroL.AutoSize = True
-        Me.MacchiaroL.BackColor = System.Drawing.Color.Transparent
-        Me.MacchiaroL.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.MacchiaroL.Location = New System.Drawing.Point(271, 394)
-        Me.MacchiaroL.Name = "MacchiaroL"
-        Me.MacchiaroL.Size = New System.Drawing.Size(18, 20)
-        Me.MacchiaroL.TabIndex = 3
-        Me.MacchiaroL.Text = "0"
+        Me.MacchiatoL.AutoSize = True
+        Me.MacchiatoL.BackColor = System.Drawing.Color.Transparent
+        Me.MacchiatoL.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.MacchiatoL.Location = New System.Drawing.Point(271, 394)
+        Me.MacchiatoL.Name = "MacchiatoL"
+        Me.MacchiatoL.Size = New System.Drawing.Size(18, 20)
+        Me.MacchiatoL.TabIndex = 3
+        Me.MacchiatoL.Text = "0"
         '
-        'EsspresosmlijekomL
+        'EspressosmlijekomL
         '
-        Me.EsspresosmlijekomL.AutoSize = True
-        Me.EsspresosmlijekomL.BackColor = System.Drawing.Color.Transparent
-        Me.EsspresosmlijekomL.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.EsspresosmlijekomL.Location = New System.Drawing.Point(153, 395)
-        Me.EsspresosmlijekomL.Name = "EsspresosmlijekomL"
-        Me.EsspresosmlijekomL.Size = New System.Drawing.Size(18, 20)
-        Me.EsspresosmlijekomL.TabIndex = 3
-        Me.EsspresosmlijekomL.Text = "0"
+        Me.EspressosmlijekomL.AutoSize = True
+        Me.EspressosmlijekomL.BackColor = System.Drawing.Color.Transparent
+        Me.EspressosmlijekomL.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.EspressosmlijekomL.Location = New System.Drawing.Point(153, 395)
+        Me.EspressosmlijekomL.Name = "EspressosmlijekomL"
+        Me.EspressosmlijekomL.Size = New System.Drawing.Size(18, 20)
+        Me.EspressosmlijekomL.TabIndex = 3
+        Me.EspressosmlijekomL.Text = "0"
         '
         'VodasokusomL
         '
@@ -669,16 +669,16 @@ Partial Class konobar
         Me.JelenL.TabIndex = 3
         Me.JelenL.Text = "0"
         '
-        'HeikenL
+        'HeinekenL
         '
-        Me.HeikenL.AutoSize = True
-        Me.HeikenL.BackColor = System.Drawing.Color.Transparent
-        Me.HeikenL.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.HeikenL.Location = New System.Drawing.Point(50, 501)
-        Me.HeikenL.Name = "HeikenL"
-        Me.HeikenL.Size = New System.Drawing.Size(18, 20)
-        Me.HeikenL.TabIndex = 5
-        Me.HeikenL.Text = "0"
+        Me.HeinekenL.AutoSize = True
+        Me.HeinekenL.BackColor = System.Drawing.Color.Transparent
+        Me.HeinekenL.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HeinekenL.Location = New System.Drawing.Point(50, 501)
+        Me.HeinekenL.Name = "HeinekenL"
+        Me.HeinekenL.Size = New System.Drawing.Size(18, 20)
+        Me.HeinekenL.TabIndex = 5
+        Me.HeinekenL.Text = "0"
         '
         'Button28
         '
@@ -1029,16 +1029,16 @@ Partial Class konobar
         Me.VigorVodkaL.TabIndex = 5
         Me.VigorVodkaL.Text = "0"
         '
-        'jagermaisterL
+        'JagermeisterL
         '
-        Me.jagermaisterL.AutoSize = True
-        Me.jagermaisterL.BackColor = System.Drawing.Color.Transparent
-        Me.jagermaisterL.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.jagermaisterL.Location = New System.Drawing.Point(507, 579)
-        Me.jagermaisterL.Name = "jagermaisterL"
-        Me.jagermaisterL.Size = New System.Drawing.Size(18, 20)
-        Me.jagermaisterL.TabIndex = 5
-        Me.jagermaisterL.Text = "0"
+        Me.JagermeisterL.AutoSize = True
+        Me.JagermeisterL.BackColor = System.Drawing.Color.Transparent
+        Me.JagermeisterL.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.JagermeisterL.Location = New System.Drawing.Point(507, 579)
+        Me.JagermeisterL.Name = "JagermeisterL"
+        Me.JagermeisterL.Size = New System.Drawing.Size(18, 20)
+        Me.JagermeisterL.TabIndex = 5
+        Me.JagermeisterL.Text = "0"
         '
         'AbsinthL
         '
@@ -1073,16 +1073,16 @@ Partial Class konobar
         Me.RubinovVinjakL.TabIndex = 5
         Me.RubinovVinjakL.Text = "0"
         '
-        'BadelKonjaL
+        'BadelKonjakL
         '
-        Me.BadelKonjaL.AutoSize = True
-        Me.BadelKonjaL.BackColor = System.Drawing.Color.Transparent
-        Me.BadelKonjaL.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BadelKonjaL.Location = New System.Drawing.Point(153, 654)
-        Me.BadelKonjaL.Name = "BadelKonjaL"
-        Me.BadelKonjaL.Size = New System.Drawing.Size(18, 20)
-        Me.BadelKonjaL.TabIndex = 5
-        Me.BadelKonjaL.Text = "0"
+        Me.BadelKonjakL.AutoSize = True
+        Me.BadelKonjakL.BackColor = System.Drawing.Color.Transparent
+        Me.BadelKonjakL.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BadelKonjakL.Location = New System.Drawing.Point(153, 654)
+        Me.BadelKonjakL.Name = "BadelKonjakL"
+        Me.BadelKonjakL.Size = New System.Drawing.Size(18, 20)
+        Me.BadelKonjakL.TabIndex = 5
+        Me.BadelKonjakL.Text = "0"
         '
         'GinL
         '
@@ -1143,22 +1143,22 @@ Partial Class konobar
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.ViljamovkaL)
         Me.Controls.Add(Me.AbsinthL)
-        Me.Controls.Add(Me.jagermaisterL)
+        Me.Controls.Add(Me.JagermeisterL)
         Me.Controls.Add(Me.VigorVodkaL)
         Me.Controls.Add(Me.GinL)
-        Me.Controls.Add(Me.BadelKonjaL)
+        Me.Controls.Add(Me.BadelKonjakL)
         Me.Controls.Add(Me.RubinovVinjakL)
         Me.Controls.Add(Me.GreygooseL)
         Me.Controls.Add(Me.BelvedereL)
         Me.Controls.Add(Me.JackDanielsL)
-        Me.Controls.Add(Me.HeikenL)
+        Me.Controls.Add(Me.HeinekenL)
         Me.Controls.Add(Me.MultivitaminL)
         Me.Controls.Add(Me.VodasokusomL)
         Me.Controls.Add(Me.VisnjaL)
         Me.Controls.Add(Me.CocaColaL)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.SchweppesL)
-        Me.Controls.Add(Me.EsspresosmlijekomL)
+        Me.Controls.Add(Me.EspressosmlijekomL)
         Me.Controls.Add(Me.JabukaL)
         Me.Controls.Add(Me.RedBullL)
         Me.Controls.Add(Me.BecksL)
@@ -1171,7 +1171,7 @@ Partial Class konobar
         Me.Controls.Add(Me.ToplacokoladaL)
         Me.Controls.Add(Me.NesscafeL)
         Me.Controls.Add(Me.CappuccinoL)
-        Me.Controls.Add(Me.MacchiaroL)
+        Me.Controls.Add(Me.MacchiatoL)
         Me.Controls.Add(Me.EsspressoL)
         Me.Controls.Add(Me.NektarL)
         Me.Controls.Add(Me.SpriteL)
@@ -1262,8 +1262,8 @@ Partial Class konobar
     Friend WithEvents VisnjaL As Label
     Friend WithEvents IzvorskavodaL As Label
     Friend WithEvents EsspressoL As Label
-    Friend WithEvents MacchiaroL As Label
-    Friend WithEvents EsspresosmlijekomL As Label
+    Friend WithEvents MacchiatoL As Label
+    Friend WithEvents EspressosmlijekomL As Label
     Friend WithEvents VodasokusomL As Label
     Friend WithEvents BorovnicaL As Label
     Friend WithEvents CappuccinoL As Label
@@ -1272,7 +1272,7 @@ Partial Class konobar
     Friend WithEvents NektarL As Label
     Friend WithEvents LedeniCajL As Label
     Friend WithEvents JelenL As Label
-    Friend WithEvents HeikenL As Label
+    Friend WithEvents HeinekenL As Label
     Friend WithEvents Button28 As Button
     Friend WithEvents Button29 As Button
     Friend WithEvents Button30 As Button
@@ -1304,11 +1304,11 @@ Partial Class konobar
     Friend WithEvents BelvedereL As Label
     Friend WithEvents GreygooseL As Label
     Friend WithEvents VigorVodkaL As Label
-    Friend WithEvents jagermaisterL As Label
+    Friend WithEvents JagermeisterL As Label
     Friend WithEvents AbsinthL As Label
     Friend WithEvents ViljamovkaL As Label
     Friend WithEvents RubinovVinjakL As Label
-    Friend WithEvents BadelKonjaL As Label
+    Friend WithEvents BadelKonjakL As Label
     Friend WithEvents GinL As Label
     Friend WithEvents Button43 As Button
     Friend WithEvents Timer1 As Timer

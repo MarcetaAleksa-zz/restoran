@@ -54,7 +54,7 @@ Public Class konobar
 
         Try
             Baza.connection.Open()
-            Dim Command As New SqlCommand("INSERT INTO NarudzbaK (redniBroj, konobar, CocaCola, Pepsi, Fanta) VALUES (" + TextBox1.Text + ", '" + prijava.KoJeOvajPokemon.Text + "' , " + CocaColaL.Text + ", " + PepsiL.Text + ", " + FantaL.Text + ") ", Baza.connection)
+            Dim Command As New SqlCommand("INSERT INTO NarudzbaK (redniBroj, konobar, CocaCola, Pepsi, Fanta, RedBUll, Schweppes, Sprite, Mineralna, Juice, Jabuka, Visnja, Borovnica, Multivitamin, Cijedjenisok, Ledenicaj, Vodasokusom, Izvorskavoda, Esspresso, Espressosmlijekom, Macchiato, Cappuccino, Nesscafe, Toplacokolada, Caj, Heineken, Nektar, Jelen, Staropramen, Banjalucko, Tuborg, Becks, JackDaniels, Belvedere, GreyGooz, VigorVodka, Jagermeister, Absinth, Viljamovka, Gin, BadelKonjak, RubinovVinjak ) VALUES  (" + TextBox1.Text + ", '" + prijava.KoJeOvajPokemon.Text + "' , " + CocaColaL.Text + ", " + PepsiL.Text + ", " + FantaL.Text + "," + RedBullL.Text + ", " + SchweppesL.Text + ", " + SpriteL.Text + ",  " + MineralnaL.Text + ", " + JuiceL.Text + ", " + JabukaL.Text + "," + VisnjaL.Text + ", " + BorovnicaL.Text + ", " + MultivitaminL.Text + ", " + CijedjenisokL.Text + ", " + LedeniCajL.Text + ", " + VodasokusomL.Text + "," + IzvorskavodaL.Text + ", " + EsspressoL.Text + ", " + EspressosmlijekomL.Text + ",  " + MacchiatoL.Text + ", " + CappuccinoL.Text + ", " + NesscafeL.Text + "," + ToplacokoladaL.Text + ", " + CajL.Text + ", " + HeinekenL.Text + " , " + NektarL.Text + "," + JelenL.Text + ", " + StaropramenL.Text + ", " + BanjaluckoL.Text + ", " + TuborgL.Text + ", " + BecksL.Text + " , " + JackDanielsL.Text + "," + BelvedereL.Text + ", " + GreygooseL.Text + ", " + VigorVodkaL.Text + ", " + JagermeisterL.Text + ", " + AbsinthL.Text + ", " + ViljamovkaL.Text + " , " + GinL.Text + "," + BadelKonjakL.Text + ", " + RubinovVinjakL.Text + ") ", Baza.connection)
 
             Command1.CommandText = "INSERT INTO NarudzbaS (brojNarudzbe, konobar, vrijemeNarudzbe) VALUES (" + TextBox1.Text + ", '" + prijava.KoJeOvajPokemon.Text + "', '" + Label7.Text + "') "
 
@@ -152,11 +152,11 @@ Public Class konobar
     End Sub
 
     Private Sub Button20_Click(sender As Object, e As EventArgs) Handles Button20.Click
-        EsspresosmlijekomL.Text = CDbl(EsspresosmlijekomL.Text) + 1
+        EspressosmlijekomL.Text = CDbl(EspressosmlijekomL.Text) + 1
     End Sub
 
     Private Sub Button21_Click(sender As Object, e As EventArgs) Handles Button21.Click
-        MacchiaroL.Text = CDbl(MacchiaroL.Text) + 1
+        MacchiatoL.Text = CDbl(MacchiatoL.Text) + 1
     End Sub
 
     Private Sub Button17_Click(sender As Object, e As EventArgs) Handles Button17.Click
@@ -176,7 +176,7 @@ Public Class konobar
     End Sub
 
     Private Sub Button25_Click(sender As Object, e As EventArgs) Handles Button25.Click
-        HeikenL.Text = CDbl(HeikenL.Text) + 1
+        HeinekenL.Text = CDbl(HeinekenL.Text) + 1
     End Sub
 
     Private Sub Button23_Click(sender As Object, e As EventArgs) Handles Button23.Click
@@ -220,7 +220,7 @@ Public Class konobar
     End Sub
 
     Private Sub Button38_Click(sender As Object, e As EventArgs) Handles Button38.Click
-        jagermaisterL.Text = CDbl(jagermaisterL.Text) + 1
+        JagermeisterL.Text = CDbl(JagermeisterL.Text) + 1
     End Sub
 
     Private Sub Button39_Click(sender As Object, e As EventArgs) Handles Button39.Click
@@ -236,7 +236,7 @@ Public Class konobar
     End Sub
 
     Private Sub Button41_Click(sender As Object, e As EventArgs) Handles Button41.Click
-        BadelKonjaL.Text = CDbl(BadelKonjaL.Text) + 1
+        BadelKonjakL.Text = CDbl(BadelKonjakL.Text) + 1
     End Sub
 
     Private Sub Button42_Click(sender As Object, e As EventArgs) Handles Button42.Click
