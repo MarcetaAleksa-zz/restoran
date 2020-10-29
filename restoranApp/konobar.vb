@@ -1,41 +1,41 @@
 ﻿Imports System.Data.SqlClient
 Public Class konobar
     Public Sub Sumiranje(i As String, b As Integer)
-        Dim nazivPica As Label = New Label
-        With nazivPica
-            .Text = i
-            .TextAlign = ContentAlignment.MiddleCenter
-            .Visible = True
-            .BackColor = Color.Transparent
-            .Font = New Font("Microsoft Sans Serif", 14)
-            .Dock = DockStyle.Fill
-            TABLA.Controls.Add(nazivPica, 0, 0)
-        End With
-        Dim kolicina As Label = New Label
-        With kolicina
-            .Text = b
-            .TextAlign = ContentAlignment.MiddleCenter
-            .Visible = True
-            .BackColor = Color.Transparent
-            .Font = New Font("Microsoft Sans Serif", 14)
-            .Dock = DockStyle.Fill
-            TABLA.Controls.Add(kolicina, 1, 0)
-        End With
+        'Dim nazivPica As Label = New Label
+        'With nazivPica
+        '    .Text = i
+        '    .TextAlign = ContentAlignment.MiddleCenter
+        '    .Visible = True
+        '    .BackColor = Color.Transparent
+        '    .Font = New Font("Microsoft Sans Serif", 14)
+        '    .Dock = DockStyle.Fill
+        '    TABLA.Controls.Add(nazivPica, 0, 0)
+        'End With
+        'Dim kolicina As Label = New Label
+        'With kolicina
+        '    .Text = b
+        '    .TextAlign = ContentAlignment.MiddleCenter
+        '    .Visible = True
+        '    .BackColor = Color.Transparent
+        '    .Font = New Font("Microsoft Sans Serif", 14)
+        '    .Dock = DockStyle.Fill
+        '    TABLA.Controls.Add(kolicina, 1, 0)
+        'End With
     End Sub
 
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Label3.Text = CDbl(Label3.Text) + 1
+        CocaColaL.Text = CDbl(CocaColaL.Text) + 1
         'Button1.Tag = CDbl(Button1.Tag) + 1
-        Sumiranje(Button1.Text, Label3.Text)
+        ' Sumiranje(Button1.Text, Label3.Text)
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Label4.Text = CDbl(Label4.Text) + 1
+        PepsiL.Text = CDbl(PepsiL.Text) + 1
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        Label5.Text = CDbl(Label5.Text) + 1
+        FantaL.Text = CDbl(FantaL.Text) + 1
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
@@ -48,58 +48,198 @@ Public Class konobar
         Dim Command1 As New SqlCommand("SELECT * FROM NarudzbaS", Baza.connection)
 
         Label2.Text = prijava.imePrijavljenog
-        Label7.Text = TimeOfDay.ToString("h:mm tt")
+        Label7.Text = TimeOfDay.ToString("hh:mm tt")
 
 
 
         Try
             Baza.connection.Open()
-            Dim Command As New SqlCommand("INSERT INTO NarudzbaK (redniBroj, konobar, CocaCola, Pepsi, Nektar) VALUES (" + TextBox1.Text + ", '" + prijava.KoJeOvajPokemon.Text + "' , " + Label3.Text + ", " + Label4.Text + ", " + Label5.Text + ") ", Baza.connection)
+            Dim Command As New SqlCommand("INSERT INTO NarudzbaK (redniBroj, konobar, CocaCola, Pepsi, Fanta) VALUES (" + TextBox1.Text + ", '" + prijava.KoJeOvajPokemon.Text + "' , " + CocaColaL.Text + ", " + PepsiL.Text + ", " + FantaL.Text + ") ", Baza.connection)
 
-
-            'Command.Parameters.Add("@rBroj", SqlDbType.VarChar).Value = TextBox1.Text
-            'Command.Parameters.Add("@imKonobara", SqlDbType.VarChar).Value = prijava.imePrijavljenog
-            'Command.Parameters.Add("@kola", SqlDbType.VarChar).Value = Label3.Text
-            'Command.Parameters.Add("@peps", SqlDbType.VarChar).Value = Label4.Text
-            'Command.Parameters.Add("@nekt", SqlDbType.VarChar).Value = Label5.Text
-            ' Command.Parameters.Add("@vrijeme", SqlDbType.VarChar).Value = Label6.Text
             Command1.CommandText = "INSERT INTO NarudzbaS (brojNarudzbe, konobar, vrijemeNarudzbe) VALUES (" + TextBox1.Text + ", '" + prijava.KoJeOvajPokemon.Text + "', '" + Label7.Text + "') "
 
             Command1.ExecuteNonQuery()
             Command.ExecuteNonQuery()
 
             Baza.connection.Close()
+
+            MsgBox("Narudzba poslata sankeru!")
+
+            Me.Controls.Clear() 'removes all the controls on the form
+            InitializeComponent() 'load all the controls again
+            konobar_Load(e, e)
+
         Catch ex As Exception
             Baza.connection.Close()
             MessageBox.Show(ex.ToString)
         End Try
-
-        ' label 1 - 2 - 3.text pretvoriti u int i ubaciti u tabelu narudzbe na pozocije redoslijedom navedene "kola" "pespi" "pivo" + ID NARUDZBE prvije svega
-        ' ID NARUDZBE IME KONOBARA i VRIJEME dodati u tabelu koju ces tek napraviti, pregled narudzbi
-        ' ID NADRUZBE iz pregleda narudzbi i ID NARUDZBE iz tabela narudzbe moraju biti iste i povezane, da se jedna odnosi na drugu
     End Sub
 
     Private Sub konobar_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Label2.Text = prijava.imePrijavljenog
     End Sub
 
-    Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click, Label20.Click, Label1.Click, Label38.Click, Label37.Click, Label34.Click, Label32.Click, Label29.Click, Label28.Click, Label27.Click, Label24.Click, Label23.Click, Label22.Click
-
+    Private Sub Button43_Click(sender As Object, e As EventArgs) Handles Button43.Click
+        Me.Controls.Clear() 'removes all the controls on the form
+        InitializeComponent() 'load all the controls again
+        konobar_Load(e, e)
     End Sub
 
-    Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click, Label36.Click, Label31.Click, Label26.Click, Label21.Click
-
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        For Each Label In Me.Controls
+            If Label.text = "0" Then
+                Label.visible = False
+            Else
+                Label.visible = True
+            End If
+        Next
     End Sub
 
-    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click, Label40.Click, Label35.Click, Label30.Click, Label25.Click
-
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        RedBullL.Text = CDbl(RedBullL.Text) + 1
     End Sub
 
     Private Sub Button28_Click(sender As Object, e As EventArgs) Handles Button28.Click
+        SchweppesL.Text = CDbl(SchweppesL.Text) + 1
+    End Sub
 
+    Private Sub Button29_Click(sender As Object, e As EventArgs) Handles Button29.Click
+        SpriteL.Text = CDbl(SpriteL.Text) + 1
+    End Sub
+
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+        MineralnaL.Text = CDbl(MineralnaL.Text) + 1
+    End Sub
+
+    Private Sub Button11_Click(sender As Object, e As EventArgs) Handles Button11.Click
+        JuiceL.Text = CDbl(JuiceL.Text) + 1
+    End Sub
+
+    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+        JabukaL.Text = CDbl(JabukaL.Text) + 1
+    End Sub
+
+    Private Sub Button12_Click(sender As Object, e As EventArgs) Handles Button12.Click
+        VisnjaL.Text = CDbl(VisnjaL.Text) + 1
+    End Sub
+
+    Private Sub Button13_Click(sender As Object, e As EventArgs) Handles Button13.Click
+        BorovnicaL.Text = CDbl(BorovnicaL.Text) + 1
+    End Sub
+
+    Private Sub Button15_Click(sender As Object, e As EventArgs) Handles Button15.Click
+        MultivitaminL.Text = CDbl(MultivitaminL.Text) + 1
+    End Sub
+
+    Private Sub Button14_Click(sender As Object, e As EventArgs) Handles Button14.Click
+        CijedjenisokL.Text = CDbl(CijedjenisokL.Text) + 1
+    End Sub
+
+    Private Sub Button40_Click(sender As Object, e As EventArgs) Handles Button40.Click
+        LedeniCajL.Text = CDbl(LedeniCajL.Text) + 1
+    End Sub
+
+    Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
+        VodasokusomL.Text = CDbl(VodasokusomL.Text) + 1
+    End Sub
+
+    Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
+        IzvorskavodaL.Text = CDbl(IzvorskavodaL.Text) + 1
+    End Sub
+
+    Private Sub Button16_Click(sender As Object, e As EventArgs) Handles Button16.Click
+        EsspressoL.Text = CDbl(EsspressoL.Text) + 1
+    End Sub
+
+    Private Sub Button20_Click(sender As Object, e As EventArgs) Handles Button20.Click
+        EsspresosmlijekomL.Text = CDbl(EsspresosmlijekomL.Text) + 1
+    End Sub
+
+    Private Sub Button21_Click(sender As Object, e As EventArgs) Handles Button21.Click
+        MacchiaroL.Text = CDbl(MacchiaroL.Text) + 1
+    End Sub
+
+    Private Sub Button17_Click(sender As Object, e As EventArgs) Handles Button17.Click
+        CappuccinoL.Text = CDbl(CappuccinoL.Text) + 1
+    End Sub
+
+    Private Sub Button22_Click(sender As Object, e As EventArgs) Handles Button22.Click
+        NesscafeL.Text = CDbl(NesscafeL.Text) + 1
+    End Sub
+
+    Private Sub Button19_Click(sender As Object, e As EventArgs) Handles Button19.Click
+        ToplacokoladaL.Text = CDbl(ToplacokoladaL.Text) + 1
+    End Sub
+
+    Private Sub Button18_Click(sender As Object, e As EventArgs) Handles Button18.Click
+        CajL.Text = CDbl(CajL.Text) + 1
+    End Sub
+
+    Private Sub Button25_Click(sender As Object, e As EventArgs) Handles Button25.Click
+        HeikenL.Text = CDbl(HeikenL.Text) + 1
+    End Sub
+
+    Private Sub Button23_Click(sender As Object, e As EventArgs) Handles Button23.Click
+        NektarL.Text = CDbl(NektarL.Text) + 1
     End Sub
 
     Private Sub Button31_Click(sender As Object, e As EventArgs) Handles Button31.Click
+        JelenL.Text = CDbl(JelenL.Text) + 1
+    End Sub
 
+    Private Sub Button32_Click(sender As Object, e As EventArgs) Handles Button32.Click
+        StaropramenL.Text = CDbl(StaropramenL.Text) + 1
+    End Sub
+
+    Private Sub Button33_Click(sender As Object, e As EventArgs) Handles Button33.Click
+        BanjaluckoL.Text = CDbl(BanjaluckoL.Text) + 1
+    End Sub
+
+    Private Sub Button34_Click(sender As Object, e As EventArgs) Handles Button34.Click
+        TuborgL.Text = CDbl(TuborgL.Text) + 1
+    End Sub
+
+    Private Sub Button35_Click(sender As Object, e As EventArgs) Handles Button35.Click
+        BecksL.Text = CDbl(BecksL.Text) + 1
+    End Sub
+
+    Private Sub Button26_Click(sender As Object, e As EventArgs) Handles Button26.Click
+        JackDanielsL.Text = CDbl(JackDanielsL.Text) + 1
+    End Sub
+
+    Private Sub Button24_Click(sender As Object, e As EventArgs) Handles Button24.Click
+        BelvedereL.Text = CDbl(BelvedereL.Text) + 1
+    End Sub
+
+    Private Sub Button36_Click(sender As Object, e As EventArgs) Handles Button36.Click
+        GreygooseL.Text = CDbl(GreygooseL.Text) + 1
+    End Sub
+
+    Private Sub Button37_Click(sender As Object, e As EventArgs) Handles Button37.Click
+        VigorVodkaL.Text = CDbl(VigorVodkaL.Text) + 1
+    End Sub
+
+    Private Sub Button38_Click(sender As Object, e As EventArgs) Handles Button38.Click
+        jagermaisterL.Text = CDbl(jagermaisterL.Text) + 1
+    End Sub
+
+    Private Sub Button39_Click(sender As Object, e As EventArgs) Handles Button39.Click
+        AbsinthL.Text = CDbl(AbsinthL.Text) + 1
+    End Sub
+
+    Private Sub Button27_Click(sender As Object, e As EventArgs) Handles Button27.Click
+        ViljamovkaL.Text = CDbl(ViljamovkaL.Text) + 1
+    End Sub
+
+    Private Sub Button30_Click(sender As Object, e As EventArgs) Handles Button30.Click
+        GinL.Text = CDbl(GinL.Text) + 1
+    End Sub
+
+    Private Sub Button41_Click(sender As Object, e As EventArgs) Handles Button41.Click
+        BadelKonjaL.Text = CDbl(BadelKonjaL.Text) + 1
+    End Sub
+
+    Private Sub Button42_Click(sender As Object, e As EventArgs) Handles Button42.Click
+        RubinovVinjakL.Text = CDbl(RubinovVinjakL.Text) + 1
     End Sub
 End Class

@@ -39,25 +39,36 @@ Public Class admin
                         holdit = 2
                     Case "Konobar"
                         holdit = 3
-                    Case "Sankder"
+                    Case "Sanker"
                         holdit = 4
                     Case Else
                         Debug.WriteLine("Izaberite poziciju zaposlenog.")
                 End Select
             Catch ex As Exception
             End Try
+            If TextBox5.Text = "" Or TextBox2.Text = "" Or PozicijaComboBox.Text = "" Then
+                MsgBox("Polja nisu ispunjena!")
+            Else
+                Try
+                    Enkripcija.EncryptPass()
+                    Baza.connection.Open()
+                    Dim command As New SqlCommand("INSERT INTO dbo.Zaposleni (korisnickoIme, lozinka, pozicija, ime, prezime, sluzbeniEmail, mobitel, sluzbeniMobitel) 
+VALUES ('" & TextBox5.Text & "','" & Enkripcija.HashNoviK & "', '" & holdit & "' , '" & imeTextBox.Text & "' , '" & TextBox1.Text & "' , '" & TextBox3.Text & "', '" & TextBox6.Text & "', '" & TextBox4.Text & "')", Baza.connection)
+                    command.ExecuteNonQuery()
+                    MsgBox("Uspjesno ste dodali korisnika!")
 
-            Try
-                Enkripcija.EncryptPass()
-                Baza.connection.Open()
-                Dim command As New SqlCommand("INSERT INTO dbo.Zaposleni (korisnickoIme, lozinka, pozicija, ime, prezime, sluzbeniEmail, mobitel, sluzbeniMobitel) 
-VALUES ('" & TextBox5.Text & "','" & Enkripcija.HashNoviK & "', " & 1 & ", '" & imeTextBox.Text & "' , '" & TextBox1.Text & "' , '" & TextBox3.Text & "', '" & TextBox6.Text & "', '" & TextBox4.Text & "')", Baza.connection)
-                command.ExecuteNonQuery()
-            Catch ex As Exception
-                MessageBox.Show(ex.ToString)
+                    Me.Controls.Clear() 'removes all the controls on the form
+                    InitializeComponent() 'load all the controls again
+                    admin_Load(e, e)
+
+
+                Catch ex As Exception
+                    MessageBox.Show(ex.ToString)
                     Baza.connection.Close()
                 End Try
-            Catch ex As Exception
+            End If
+
+        Catch ex As Exception
                 MessageBox.Show(ex.ToString)
         End Try
     End Sub

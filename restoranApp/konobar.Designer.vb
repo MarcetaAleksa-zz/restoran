@@ -22,15 +22,16 @@ Partial Class konobar
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
+        Me.CocaColaL = New System.Windows.Forms.Label()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
+        Me.PepsiL = New System.Windows.Forms.Label()
+        Me.FantaL = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
@@ -56,26 +57,26 @@ Partial Class konobar
         Me.Button25 = New System.Windows.Forms.Button()
         Me.Button26 = New System.Windows.Forms.Button()
         Me.Button27 = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label20 = New System.Windows.Forms.Label()
-        Me.Label21 = New System.Windows.Forms.Label()
-        Me.Label22 = New System.Windows.Forms.Label()
-        Me.Label23 = New System.Windows.Forms.Label()
-        Me.Label24 = New System.Windows.Forms.Label()
-        Me.Label25 = New System.Windows.Forms.Label()
-        Me.Label26 = New System.Windows.Forms.Label()
-        Me.Label27 = New System.Windows.Forms.Label()
-        Me.Label28 = New System.Windows.Forms.Label()
-        Me.Label29 = New System.Windows.Forms.Label()
-        Me.Label30 = New System.Windows.Forms.Label()
-        Me.Label31 = New System.Windows.Forms.Label()
-        Me.Label32 = New System.Windows.Forms.Label()
-        Me.Label34 = New System.Windows.Forms.Label()
-        Me.Label35 = New System.Windows.Forms.Label()
-        Me.Label36 = New System.Windows.Forms.Label()
-        Me.Label37 = New System.Windows.Forms.Label()
-        Me.Label38 = New System.Windows.Forms.Label()
-        Me.Label40 = New System.Windows.Forms.Label()
+        Me.MineralnaL = New System.Windows.Forms.Label()
+        Me.RedBullL = New System.Windows.Forms.Label()
+        Me.CijedjenisokL = New System.Windows.Forms.Label()
+        Me.JuiceL = New System.Windows.Forms.Label()
+        Me.SpriteL = New System.Windows.Forms.Label()
+        Me.JabukaL = New System.Windows.Forms.Label()
+        Me.VisnjaL = New System.Windows.Forms.Label()
+        Me.IzvorskavodaL = New System.Windows.Forms.Label()
+        Me.EsspressoL = New System.Windows.Forms.Label()
+        Me.MacchiaroL = New System.Windows.Forms.Label()
+        Me.EsspresosmlijekomL = New System.Windows.Forms.Label()
+        Me.VodasokusomL = New System.Windows.Forms.Label()
+        Me.BorovnicaL = New System.Windows.Forms.Label()
+        Me.CappuccinoL = New System.Windows.Forms.Label()
+        Me.SchweppesL = New System.Windows.Forms.Label()
+        Me.MultivitaminL = New System.Windows.Forms.Label()
+        Me.NektarL = New System.Windows.Forms.Label()
+        Me.LedeniCajL = New System.Windows.Forms.Label()
+        Me.JelenL = New System.Windows.Forms.Label()
+        Me.HeikenL = New System.Windows.Forms.Label()
         Me.Button28 = New System.Windows.Forms.Button()
         Me.Button29 = New System.Windows.Forms.Button()
         Me.Button30 = New System.Windows.Forms.Button()
@@ -96,13 +97,32 @@ Partial Class konobar
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.TABLA = New System.Windows.Forms.TableLayoutPanel()
+        Me.NesscafeL = New System.Windows.Forms.Label()
+        Me.ToplacokoladaL = New System.Windows.Forms.Label()
+        Me.CajL = New System.Windows.Forms.Label()
+        Me.StaropramenL = New System.Windows.Forms.Label()
+        Me.BanjaluckoL = New System.Windows.Forms.Label()
+        Me.TuborgL = New System.Windows.Forms.Label()
+        Me.BecksL = New System.Windows.Forms.Label()
+        Me.JackDanielsL = New System.Windows.Forms.Label()
+        Me.BelvedereL = New System.Windows.Forms.Label()
+        Me.GreygooseL = New System.Windows.Forms.Label()
+        Me.VigorVodkaL = New System.Windows.Forms.Label()
+        Me.jagermaisterL = New System.Windows.Forms.Label()
+        Me.AbsinthL = New System.Windows.Forms.Label()
+        Me.ViljamovkaL = New System.Windows.Forms.Label()
+        Me.RubinovVinjakL = New System.Windows.Forms.Label()
+        Me.BadelKonjaL = New System.Windows.Forms.Label()
+        Me.GinL = New System.Windows.Forms.Label()
+        Me.Button43 = New System.Windows.Forms.Button()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.SuspendLayout()
         '
         'Button1
         '
         Me.Button1.AccessibleName = ""
         Me.Button1.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Button1.Location = New System.Drawing.Point(12, 174)
+        Me.Button1.Location = New System.Drawing.Point(7, 92)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(99, 49)
         Me.Button1.TabIndex = 0
@@ -113,7 +133,7 @@ Partial Class konobar
         'Button2
         '
         Me.Button2.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Button2.Location = New System.Drawing.Point(122, 174)
+        Me.Button2.Location = New System.Drawing.Point(117, 92)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(99, 49)
         Me.Button2.TabIndex = 1
@@ -123,7 +143,7 @@ Partial Class konobar
         'Button3
         '
         Me.Button3.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Button3.Location = New System.Drawing.Point(237, 174)
+        Me.Button3.Location = New System.Drawing.Point(232, 92)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(99, 49)
         Me.Button3.TabIndex = 2
@@ -133,26 +153,27 @@ Partial Class konobar
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(140, 32)
+        Me.Label2.Font = New System.Drawing.Font("Lucida Fax", 14.25!, System.Drawing.FontStyle.Bold)
+        Me.Label2.Location = New System.Drawing.Point(148, 32)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(13, 13)
+        Me.Label2.Size = New System.Drawing.Size(23, 22)
         Me.Label2.TabIndex = 4
         Me.Label2.Text = "0"
         '
-        'Label3
+        'CocaColaL
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(88, 196)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(18, 20)
-        Me.Label3.TabIndex = 5
-        Me.Label3.Text = "0"
+        Me.CocaColaL.AutoSize = True
+        Me.CocaColaL.BackColor = System.Drawing.Color.Transparent
+        Me.CocaColaL.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CocaColaL.Location = New System.Drawing.Point(50, 142)
+        Me.CocaColaL.Name = "CocaColaL"
+        Me.CocaColaL.Size = New System.Drawing.Size(18, 20)
+        Me.CocaColaL.TabIndex = 5
+        Me.CocaColaL.Text = "0"
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(12, 12)
+        Me.Button4.Location = New System.Drawing.Point(5, 4)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(86, 38)
         Me.Button4.TabIndex = 6
@@ -161,49 +182,52 @@ Partial Class konobar
         '
         'Button5
         '
+        Me.Button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold)
         Me.Button5.ForeColor = System.Drawing.Color.Green
-        Me.Button5.Location = New System.Drawing.Point(880, 531)
+        Me.Button5.Location = New System.Drawing.Point(370, 623)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(273, 83)
+        Me.Button5.Size = New System.Drawing.Size(274, 93)
         Me.Button5.TabIndex = 7
         Me.Button5.Text = "NARUCI"
         Me.Button5.UseVisualStyleBackColor = True
         '
-        'Label4
+        'PepsiL
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.Label4.Location = New System.Drawing.Point(199, 196)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(18, 20)
-        Me.Label4.TabIndex = 3
-        Me.Label4.Text = "0"
+        Me.PepsiL.AutoSize = True
+        Me.PepsiL.BackColor = System.Drawing.Color.Transparent
+        Me.PepsiL.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.PepsiL.Location = New System.Drawing.Point(155, 142)
+        Me.PepsiL.Name = "PepsiL"
+        Me.PepsiL.Size = New System.Drawing.Size(18, 20)
+        Me.PepsiL.TabIndex = 3
+        Me.PepsiL.Text = "0"
         '
-        'Label5
+        'FantaL
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.Label5.Location = New System.Drawing.Point(314, 195)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(18, 20)
-        Me.Label5.TabIndex = 3
-        Me.Label5.Text = "0"
+        Me.FantaL.AutoSize = True
+        Me.FantaL.BackColor = System.Drawing.Color.Transparent
+        Me.FantaL.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.FantaL.Location = New System.Drawing.Point(273, 142)
+        Me.FantaL.Name = "FantaL"
+        Me.FantaL.Size = New System.Drawing.Size(18, 20)
+        Me.FantaL.TabIndex = 3
+        Me.FantaL.Text = "0"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(114, 12)
+        Me.Label6.Font = New System.Drawing.Font("Lucida Fax", 14.25!, System.Drawing.FontStyle.Bold)
+        Me.Label6.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.Label6.Location = New System.Drawing.Point(104, 10)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(72, 13)
+        Me.Label6.Size = New System.Drawing.Size(146, 22)
         Me.Label6.TabIndex = 8
         Me.Label6.Text = "Ime konobara"
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(210, 12)
+        Me.Label7.Location = New System.Drawing.Point(288, 9)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(41, 13)
         Me.Label7.TabIndex = 9
@@ -211,7 +235,7 @@ Partial Class konobar
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(213, 28)
+        Me.TextBox1.Location = New System.Drawing.Point(295, 32)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(36, 20)
         Me.TextBox1.TabIndex = 10
@@ -219,7 +243,7 @@ Partial Class konobar
         'Button6
         '
         Me.Button6.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Button6.Location = New System.Drawing.Point(356, 174)
+        Me.Button6.Location = New System.Drawing.Point(351, 92)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(99, 49)
         Me.Button6.TabIndex = 11
@@ -229,7 +253,7 @@ Partial Class konobar
         'Button7
         '
         Me.Button7.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Button7.Location = New System.Drawing.Point(703, 174)
+        Me.Button7.Location = New System.Drawing.Point(698, 92)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(99, 49)
         Me.Button7.TabIndex = 12
@@ -239,7 +263,7 @@ Partial Class konobar
         'Button8
         '
         Me.Button8.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Button8.Location = New System.Drawing.Point(122, 228)
+        Me.Button8.Location = New System.Drawing.Point(115, 165)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(99, 49)
         Me.Button8.TabIndex = 13
@@ -249,7 +273,7 @@ Partial Class konobar
         'Button9
         '
         Me.Button9.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Button9.Location = New System.Drawing.Point(12, 278)
+        Me.Button9.Location = New System.Drawing.Point(5, 238)
         Me.Button9.Name = "Button9"
         Me.Button9.Size = New System.Drawing.Size(99, 49)
         Me.Button9.TabIndex = 14
@@ -259,7 +283,7 @@ Partial Class konobar
         'Button10
         '
         Me.Button10.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Button10.Location = New System.Drawing.Point(122, 278)
+        Me.Button10.Location = New System.Drawing.Point(115, 238)
         Me.Button10.Name = "Button10"
         Me.Button10.Size = New System.Drawing.Size(99, 49)
         Me.Button10.TabIndex = 15
@@ -269,7 +293,7 @@ Partial Class konobar
         'Button11
         '
         Me.Button11.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Button11.Location = New System.Drawing.Point(12, 228)
+        Me.Button11.Location = New System.Drawing.Point(5, 165)
         Me.Button11.Name = "Button11"
         Me.Button11.Size = New System.Drawing.Size(99, 49)
         Me.Button11.TabIndex = 16
@@ -279,7 +303,7 @@ Partial Class konobar
         'Button12
         '
         Me.Button12.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Button12.Location = New System.Drawing.Point(237, 228)
+        Me.Button12.Location = New System.Drawing.Point(230, 165)
         Me.Button12.Name = "Button12"
         Me.Button12.Size = New System.Drawing.Size(99, 49)
         Me.Button12.TabIndex = 17
@@ -289,7 +313,7 @@ Partial Class konobar
         'Button13
         '
         Me.Button13.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Button13.Location = New System.Drawing.Point(356, 228)
+        Me.Button13.Location = New System.Drawing.Point(349, 165)
         Me.Button13.Name = "Button13"
         Me.Button13.Size = New System.Drawing.Size(99, 49)
         Me.Button13.TabIndex = 18
@@ -299,7 +323,7 @@ Partial Class konobar
         'Button14
         '
         Me.Button14.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Button14.Location = New System.Drawing.Point(589, 230)
+        Me.Button14.Location = New System.Drawing.Point(584, 165)
         Me.Button14.Name = "Button14"
         Me.Button14.Size = New System.Drawing.Size(99, 49)
         Me.Button14.TabIndex = 19
@@ -309,7 +333,7 @@ Partial Class konobar
         'Button15
         '
         Me.Button15.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Button15.Location = New System.Drawing.Point(473, 228)
+        Me.Button15.Location = New System.Drawing.Point(466, 165)
         Me.Button15.Name = "Button15"
         Me.Button15.Size = New System.Drawing.Size(99, 49)
         Me.Button15.TabIndex = 20
@@ -319,7 +343,7 @@ Partial Class konobar
         'Button16
         '
         Me.Button16.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Button16.Location = New System.Drawing.Point(7, 359)
+        Me.Button16.Location = New System.Drawing.Point(9, 343)
         Me.Button16.Name = "Button16"
         Me.Button16.Size = New System.Drawing.Size(99, 49)
         Me.Button16.TabIndex = 21
@@ -329,7 +353,7 @@ Partial Class konobar
         'Button17
         '
         Me.Button17.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Button17.Location = New System.Drawing.Point(356, 358)
+        Me.Button17.Location = New System.Drawing.Point(351, 342)
         Me.Button17.Name = "Button17"
         Me.Button17.Size = New System.Drawing.Size(99, 49)
         Me.Button17.TabIndex = 22
@@ -339,7 +363,7 @@ Partial Class konobar
         'Button18
         '
         Me.Button18.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Button18.Location = New System.Drawing.Point(698, 358)
+        Me.Button18.Location = New System.Drawing.Point(698, 342)
         Me.Button18.Name = "Button18"
         Me.Button18.Size = New System.Drawing.Size(99, 49)
         Me.Button18.TabIndex = 23
@@ -349,7 +373,7 @@ Partial Class konobar
         'Button19
         '
         Me.Button19.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Button19.Location = New System.Drawing.Point(589, 359)
+        Me.Button19.Location = New System.Drawing.Point(584, 342)
         Me.Button19.Name = "Button19"
         Me.Button19.Size = New System.Drawing.Size(99, 49)
         Me.Button19.TabIndex = 24
@@ -359,7 +383,7 @@ Partial Class konobar
         'Button20
         '
         Me.Button20.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Button20.Location = New System.Drawing.Point(113, 358)
+        Me.Button20.Location = New System.Drawing.Point(115, 342)
         Me.Button20.Name = "Button20"
         Me.Button20.Size = New System.Drawing.Size(99, 49)
         Me.Button20.TabIndex = 25
@@ -369,7 +393,7 @@ Partial Class konobar
         'Button21
         '
         Me.Button21.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Button21.Location = New System.Drawing.Point(237, 358)
+        Me.Button21.Location = New System.Drawing.Point(230, 342)
         Me.Button21.Name = "Button21"
         Me.Button21.Size = New System.Drawing.Size(99, 49)
         Me.Button21.TabIndex = 26
@@ -379,7 +403,7 @@ Partial Class konobar
         'Button22
         '
         Me.Button22.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Button22.Location = New System.Drawing.Point(473, 359)
+        Me.Button22.Location = New System.Drawing.Point(468, 343)
         Me.Button22.Name = "Button22"
         Me.Button22.Size = New System.Drawing.Size(99, 49)
         Me.Button22.TabIndex = 27
@@ -389,7 +413,7 @@ Partial Class konobar
         'Button23
         '
         Me.Button23.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Button23.Location = New System.Drawing.Point(117, 448)
+        Me.Button23.Location = New System.Drawing.Point(119, 449)
         Me.Button23.Name = "Button23"
         Me.Button23.Size = New System.Drawing.Size(99, 49)
         Me.Button23.TabIndex = 28
@@ -399,7 +423,7 @@ Partial Class konobar
         'Button24
         '
         Me.Button24.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Button24.Location = New System.Drawing.Point(117, 506)
+        Me.Button24.Location = New System.Drawing.Point(119, 527)
         Me.Button24.Name = "Button24"
         Me.Button24.Size = New System.Drawing.Size(99, 49)
         Me.Button24.TabIndex = 29
@@ -409,7 +433,7 @@ Partial Class konobar
         'Button25
         '
         Me.Button25.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Button25.Location = New System.Drawing.Point(7, 448)
+        Me.Button25.Location = New System.Drawing.Point(9, 449)
         Me.Button25.Name = "Button25"
         Me.Button25.Size = New System.Drawing.Size(99, 49)
         Me.Button25.TabIndex = 30
@@ -419,7 +443,7 @@ Partial Class konobar
         'Button26
         '
         Me.Button26.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Button26.Location = New System.Drawing.Point(7, 506)
+        Me.Button26.Location = New System.Drawing.Point(9, 527)
         Me.Button26.Name = "Button26"
         Me.Button26.Size = New System.Drawing.Size(99, 49)
         Me.Button26.TabIndex = 31
@@ -429,237 +453,237 @@ Partial Class konobar
         'Button27
         '
         Me.Button27.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Button27.Location = New System.Drawing.Point(698, 506)
+        Me.Button27.Location = New System.Drawing.Point(700, 527)
         Me.Button27.Name = "Button27"
         Me.Button27.Size = New System.Drawing.Size(99, 49)
         Me.Button27.TabIndex = 32
         Me.Button27.Text = "Viljamovka"
         Me.Button27.UseVisualStyleBackColor = False
         '
-        'Label1
+        'MineralnaL
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.Label1.Location = New System.Drawing.Point(550, 196)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(18, 20)
-        Me.Label1.TabIndex = 3
-        Me.Label1.Text = "0"
+        Me.MineralnaL.AutoSize = True
+        Me.MineralnaL.BackColor = System.Drawing.Color.Transparent
+        Me.MineralnaL.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.MineralnaL.Location = New System.Drawing.Point(739, 142)
+        Me.MineralnaL.Name = "MineralnaL"
+        Me.MineralnaL.Size = New System.Drawing.Size(18, 20)
+        Me.MineralnaL.TabIndex = 3
+        Me.MineralnaL.Text = "0"
         '
-        'Label20
+        'RedBullL
         '
-        Me.Label20.AutoSize = True
-        Me.Label20.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Label20.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.Label20.Location = New System.Drawing.Point(437, 196)
-        Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(18, 20)
-        Me.Label20.TabIndex = 3
-        Me.Label20.Text = "0"
+        Me.RedBullL.AutoSize = True
+        Me.RedBullL.BackColor = System.Drawing.Color.Transparent
+        Me.RedBullL.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.RedBullL.Location = New System.Drawing.Point(393, 142)
+        Me.RedBullL.Name = "RedBullL"
+        Me.RedBullL.Size = New System.Drawing.Size(18, 20)
+        Me.RedBullL.TabIndex = 3
+        Me.RedBullL.Text = "0"
         '
-        'Label21
+        'CijedjenisokL
         '
-        Me.Label21.AutoSize = True
-        Me.Label21.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Label21.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.Label21.Location = New System.Drawing.Point(666, 246)
-        Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(18, 20)
-        Me.Label21.TabIndex = 3
-        Me.Label21.Text = "0"
+        Me.CijedjenisokL.AutoSize = True
+        Me.CijedjenisokL.BackColor = System.Drawing.Color.Transparent
+        Me.CijedjenisokL.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.CijedjenisokL.Location = New System.Drawing.Point(626, 215)
+        Me.CijedjenisokL.Name = "CijedjenisokL"
+        Me.CijedjenisokL.Size = New System.Drawing.Size(18, 20)
+        Me.CijedjenisokL.TabIndex = 3
+        Me.CijedjenisokL.Text = "0"
         '
-        'Label22
+        'JuiceL
         '
-        Me.Label22.AutoSize = True
-        Me.Label22.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Label22.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.Label22.Location = New System.Drawing.Point(88, 250)
-        Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(18, 20)
-        Me.Label22.TabIndex = 3
-        Me.Label22.Text = "0"
+        Me.JuiceL.AutoSize = True
+        Me.JuiceL.BackColor = System.Drawing.Color.Transparent
+        Me.JuiceL.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.JuiceL.Location = New System.Drawing.Point(50, 215)
+        Me.JuiceL.Name = "JuiceL"
+        Me.JuiceL.Size = New System.Drawing.Size(18, 20)
+        Me.JuiceL.TabIndex = 3
+        Me.JuiceL.Text = "0"
         '
-        'Label23
+        'SpriteL
         '
-        Me.Label23.AutoSize = True
-        Me.Label23.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Label23.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.Label23.Location = New System.Drawing.Point(665, 195)
-        Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(18, 20)
-        Me.Label23.TabIndex = 3
-        Me.Label23.Text = "0"
+        Me.SpriteL.AutoSize = True
+        Me.SpriteL.BackColor = System.Drawing.Color.Transparent
+        Me.SpriteL.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.SpriteL.Location = New System.Drawing.Point(626, 143)
+        Me.SpriteL.Name = "SpriteL"
+        Me.SpriteL.Size = New System.Drawing.Size(18, 20)
+        Me.SpriteL.TabIndex = 3
+        Me.SpriteL.Text = "0"
         '
-        'Label24
+        'JabukaL
         '
-        Me.Label24.AutoSize = True
-        Me.Label24.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Label24.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.Label24.Location = New System.Drawing.Point(203, 248)
-        Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(18, 20)
-        Me.Label24.TabIndex = 3
-        Me.Label24.Text = "0"
+        Me.JabukaL.AutoSize = True
+        Me.JabukaL.BackColor = System.Drawing.Color.Transparent
+        Me.JabukaL.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.JabukaL.Location = New System.Drawing.Point(155, 215)
+        Me.JabukaL.Name = "JabukaL"
+        Me.JabukaL.Size = New System.Drawing.Size(18, 20)
+        Me.JabukaL.TabIndex = 3
+        Me.JabukaL.Text = "0"
         '
-        'Label25
+        'VisnjaL
         '
-        Me.Label25.AutoSize = True
-        Me.Label25.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Label25.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label25.Location = New System.Drawing.Point(314, 250)
-        Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(18, 20)
-        Me.Label25.TabIndex = 5
-        Me.Label25.Text = "0"
+        Me.VisnjaL.AutoSize = True
+        Me.VisnjaL.BackColor = System.Drawing.Color.Transparent
+        Me.VisnjaL.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.VisnjaL.Location = New System.Drawing.Point(271, 215)
+        Me.VisnjaL.Name = "VisnjaL"
+        Me.VisnjaL.Size = New System.Drawing.Size(18, 20)
+        Me.VisnjaL.TabIndex = 5
+        Me.VisnjaL.Text = "0"
         '
-        'Label26
+        'IzvorskavodaL
         '
-        Me.Label26.AutoSize = True
-        Me.Label26.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Label26.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.Label26.Location = New System.Drawing.Point(194, 364)
-        Me.Label26.Name = "Label26"
-        Me.Label26.Size = New System.Drawing.Size(18, 20)
-        Me.Label26.TabIndex = 3
-        Me.Label26.Text = "0"
+        Me.IzvorskavodaL.AutoSize = True
+        Me.IzvorskavodaL.BackColor = System.Drawing.Color.Transparent
+        Me.IzvorskavodaL.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.IzvorskavodaL.Location = New System.Drawing.Point(153, 290)
+        Me.IzvorskavodaL.Name = "IzvorskavodaL"
+        Me.IzvorskavodaL.Size = New System.Drawing.Size(18, 20)
+        Me.IzvorskavodaL.TabIndex = 3
+        Me.IzvorskavodaL.Text = "0"
         '
-        'Label27
+        'EsspressoL
         '
-        Me.Label27.AutoSize = True
-        Me.Label27.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Label27.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.Label27.Location = New System.Drawing.Point(309, 364)
-        Me.Label27.Name = "Label27"
-        Me.Label27.Size = New System.Drawing.Size(18, 20)
-        Me.Label27.TabIndex = 3
-        Me.Label27.Text = "0"
+        Me.EsspressoL.AutoSize = True
+        Me.EsspressoL.BackColor = System.Drawing.Color.Transparent
+        Me.EsspressoL.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.EsspressoL.Location = New System.Drawing.Point(50, 395)
+        Me.EsspressoL.Name = "EsspressoL"
+        Me.EsspressoL.Size = New System.Drawing.Size(18, 20)
+        Me.EsspressoL.TabIndex = 3
+        Me.EsspressoL.Text = "0"
         '
-        'Label28
+        'MacchiaroL
         '
-        Me.Label28.AutoSize = True
-        Me.Label28.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Label28.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.Label28.Location = New System.Drawing.Point(545, 364)
-        Me.Label28.Name = "Label28"
-        Me.Label28.Size = New System.Drawing.Size(18, 20)
-        Me.Label28.TabIndex = 3
-        Me.Label28.Text = "0"
+        Me.MacchiaroL.AutoSize = True
+        Me.MacchiaroL.BackColor = System.Drawing.Color.Transparent
+        Me.MacchiaroL.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.MacchiaroL.Location = New System.Drawing.Point(271, 394)
+        Me.MacchiaroL.Name = "MacchiaroL"
+        Me.MacchiaroL.Size = New System.Drawing.Size(18, 20)
+        Me.MacchiaroL.TabIndex = 3
+        Me.MacchiaroL.Text = "0"
         '
-        'Label29
+        'EsspresosmlijekomL
         '
-        Me.Label29.AutoSize = True
-        Me.Label29.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Label29.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.Label29.Location = New System.Drawing.Point(428, 365)
-        Me.Label29.Name = "Label29"
-        Me.Label29.Size = New System.Drawing.Size(18, 20)
-        Me.Label29.TabIndex = 3
-        Me.Label29.Text = "0"
+        Me.EsspresosmlijekomL.AutoSize = True
+        Me.EsspresosmlijekomL.BackColor = System.Drawing.Color.Transparent
+        Me.EsspresosmlijekomL.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.EsspresosmlijekomL.Location = New System.Drawing.Point(153, 395)
+        Me.EsspresosmlijekomL.Name = "EsspresosmlijekomL"
+        Me.EsspresosmlijekomL.Size = New System.Drawing.Size(18, 20)
+        Me.EsspresosmlijekomL.TabIndex = 3
+        Me.EsspresosmlijekomL.Text = "0"
         '
-        'Label30
+        'VodasokusomL
         '
-        Me.Label30.AutoSize = True
-        Me.Label30.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Label30.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label30.Location = New System.Drawing.Point(83, 365)
-        Me.Label30.Name = "Label30"
-        Me.Label30.Size = New System.Drawing.Size(18, 20)
-        Me.Label30.TabIndex = 5
-        Me.Label30.Text = "0"
+        Me.VodasokusomL.AutoSize = True
+        Me.VodasokusomL.BackColor = System.Drawing.Color.Transparent
+        Me.VodasokusomL.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.VodasokusomL.Location = New System.Drawing.Point(50, 290)
+        Me.VodasokusomL.Name = "VodasokusomL"
+        Me.VodasokusomL.Size = New System.Drawing.Size(18, 20)
+        Me.VodasokusomL.TabIndex = 5
+        Me.VodasokusomL.Text = "0"
         '
-        'Label31
+        'BorovnicaL
         '
-        Me.Label31.AutoSize = True
-        Me.Label31.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Label31.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.Label31.Location = New System.Drawing.Point(433, 250)
-        Me.Label31.Name = "Label31"
-        Me.Label31.Size = New System.Drawing.Size(18, 20)
-        Me.Label31.TabIndex = 3
-        Me.Label31.Text = "0"
+        Me.BorovnicaL.AutoSize = True
+        Me.BorovnicaL.BackColor = System.Drawing.Color.Transparent
+        Me.BorovnicaL.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.BorovnicaL.Location = New System.Drawing.Point(391, 215)
+        Me.BorovnicaL.Name = "BorovnicaL"
+        Me.BorovnicaL.Size = New System.Drawing.Size(18, 20)
+        Me.BorovnicaL.TabIndex = 3
+        Me.BorovnicaL.Text = "0"
         '
-        'Label32
+        'CappuccinoL
         '
-        Me.Label32.AutoSize = True
-        Me.Label32.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Label32.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.Label32.Location = New System.Drawing.Point(665, 365)
-        Me.Label32.Name = "Label32"
-        Me.Label32.Size = New System.Drawing.Size(18, 20)
-        Me.Label32.TabIndex = 3
-        Me.Label32.Text = "0"
+        Me.CappuccinoL.AutoSize = True
+        Me.CappuccinoL.BackColor = System.Drawing.Color.Transparent
+        Me.CappuccinoL.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.CappuccinoL.Location = New System.Drawing.Point(391, 394)
+        Me.CappuccinoL.Name = "CappuccinoL"
+        Me.CappuccinoL.Size = New System.Drawing.Size(18, 20)
+        Me.CappuccinoL.TabIndex = 3
+        Me.CappuccinoL.Text = "0"
         '
-        'Label34
+        'SchweppesL
         '
-        Me.Label34.AutoSize = True
-        Me.Label34.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Label34.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.Label34.Location = New System.Drawing.Point(550, 195)
-        Me.Label34.Name = "Label34"
-        Me.Label34.Size = New System.Drawing.Size(18, 20)
-        Me.Label34.TabIndex = 3
-        Me.Label34.Text = "0"
+        Me.SchweppesL.AutoSize = True
+        Me.SchweppesL.BackColor = System.Drawing.Color.Transparent
+        Me.SchweppesL.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.SchweppesL.Location = New System.Drawing.Point(507, 142)
+        Me.SchweppesL.Name = "SchweppesL"
+        Me.SchweppesL.Size = New System.Drawing.Size(18, 20)
+        Me.SchweppesL.TabIndex = 3
+        Me.SchweppesL.Text = "0"
         '
-        'Label35
+        'MultivitaminL
         '
-        Me.Label35.AutoSize = True
-        Me.Label35.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Label35.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label35.Location = New System.Drawing.Point(550, 250)
-        Me.Label35.Name = "Label35"
-        Me.Label35.Size = New System.Drawing.Size(18, 20)
-        Me.Label35.TabIndex = 5
-        Me.Label35.Text = "0"
+        Me.MultivitaminL.AutoSize = True
+        Me.MultivitaminL.BackColor = System.Drawing.Color.Transparent
+        Me.MultivitaminL.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MultivitaminL.Location = New System.Drawing.Point(507, 215)
+        Me.MultivitaminL.Name = "MultivitaminL"
+        Me.MultivitaminL.Size = New System.Drawing.Size(18, 20)
+        Me.MultivitaminL.TabIndex = 5
+        Me.MultivitaminL.Text = "0"
         '
-        'Label36
+        'NektarL
         '
-        Me.Label36.AutoSize = True
-        Me.Label36.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Label36.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.Label36.Location = New System.Drawing.Point(198, 454)
-        Me.Label36.Name = "Label36"
-        Me.Label36.Size = New System.Drawing.Size(18, 20)
-        Me.Label36.TabIndex = 3
-        Me.Label36.Text = "0"
+        Me.NektarL.AutoSize = True
+        Me.NektarL.BackColor = System.Drawing.Color.Transparent
+        Me.NektarL.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.NektarL.Location = New System.Drawing.Point(155, 501)
+        Me.NektarL.Name = "NektarL"
+        Me.NektarL.Size = New System.Drawing.Size(18, 20)
+        Me.NektarL.TabIndex = 3
+        Me.NektarL.Text = "0"
         '
-        'Label37
+        'LedeniCajL
         '
-        Me.Label37.AutoSize = True
-        Me.Label37.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Label37.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.Label37.Location = New System.Drawing.Point(784, 187)
-        Me.Label37.Name = "Label37"
-        Me.Label37.Size = New System.Drawing.Size(18, 20)
-        Me.Label37.TabIndex = 3
-        Me.Label37.Text = "0"
+        Me.LedeniCajL.AutoSize = True
+        Me.LedeniCajL.BackColor = System.Drawing.Color.Transparent
+        Me.LedeniCajL.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.LedeniCajL.Location = New System.Drawing.Point(739, 215)
+        Me.LedeniCajL.Name = "LedeniCajL"
+        Me.LedeniCajL.Size = New System.Drawing.Size(18, 20)
+        Me.LedeniCajL.TabIndex = 3
+        Me.LedeniCajL.Text = "0"
         '
-        'Label38
+        'JelenL
         '
-        Me.Label38.AutoSize = True
-        Me.Label38.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Label38.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.Label38.Location = New System.Drawing.Point(83, 512)
-        Me.Label38.Name = "Label38"
-        Me.Label38.Size = New System.Drawing.Size(18, 20)
-        Me.Label38.TabIndex = 3
-        Me.Label38.Text = "0"
+        Me.JelenL.AutoSize = True
+        Me.JelenL.BackColor = System.Drawing.Color.Transparent
+        Me.JelenL.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.JelenL.Location = New System.Drawing.Point(273, 504)
+        Me.JelenL.Name = "JelenL"
+        Me.JelenL.Size = New System.Drawing.Size(18, 20)
+        Me.JelenL.TabIndex = 3
+        Me.JelenL.Text = "0"
         '
-        'Label40
+        'HeikenL
         '
-        Me.Label40.AutoSize = True
-        Me.Label40.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Label40.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label40.Location = New System.Drawing.Point(83, 454)
-        Me.Label40.Name = "Label40"
-        Me.Label40.Size = New System.Drawing.Size(18, 20)
-        Me.Label40.TabIndex = 5
-        Me.Label40.Text = "0"
+        Me.HeikenL.AutoSize = True
+        Me.HeikenL.BackColor = System.Drawing.Color.Transparent
+        Me.HeikenL.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HeikenL.Location = New System.Drawing.Point(50, 501)
+        Me.HeikenL.Name = "HeikenL"
+        Me.HeikenL.Size = New System.Drawing.Size(18, 20)
+        Me.HeikenL.TabIndex = 5
+        Me.HeikenL.Text = "0"
         '
         'Button28
         '
         Me.Button28.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Button28.Location = New System.Drawing.Point(473, 174)
+        Me.Button28.Location = New System.Drawing.Point(468, 92)
         Me.Button28.Name = "Button28"
         Me.Button28.Size = New System.Drawing.Size(99, 49)
         Me.Button28.TabIndex = 33
@@ -669,7 +693,7 @@ Partial Class konobar
         'Button29
         '
         Me.Button29.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Button29.Location = New System.Drawing.Point(589, 174)
+        Me.Button29.Location = New System.Drawing.Point(584, 92)
         Me.Button29.Name = "Button29"
         Me.Button29.Size = New System.Drawing.Size(99, 49)
         Me.Button29.TabIndex = 34
@@ -679,7 +703,7 @@ Partial Class konobar
         'Button30
         '
         Me.Button30.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Button30.Location = New System.Drawing.Point(7, 565)
+        Me.Button30.Location = New System.Drawing.Point(9, 602)
         Me.Button30.Name = "Button30"
         Me.Button30.Size = New System.Drawing.Size(99, 49)
         Me.Button30.TabIndex = 35
@@ -689,7 +713,7 @@ Partial Class konobar
         'Button31
         '
         Me.Button31.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Button31.Location = New System.Drawing.Point(232, 448)
+        Me.Button31.Location = New System.Drawing.Point(234, 449)
         Me.Button31.Name = "Button31"
         Me.Button31.Size = New System.Drawing.Size(99, 49)
         Me.Button31.TabIndex = 36
@@ -699,7 +723,7 @@ Partial Class konobar
         'Button32
         '
         Me.Button32.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Button32.Location = New System.Drawing.Point(351, 448)
+        Me.Button32.Location = New System.Drawing.Point(353, 449)
         Me.Button32.Name = "Button32"
         Me.Button32.Size = New System.Drawing.Size(99, 49)
         Me.Button32.TabIndex = 37
@@ -709,7 +733,7 @@ Partial Class konobar
         'Button33
         '
         Me.Button33.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Button33.Location = New System.Drawing.Point(468, 448)
+        Me.Button33.Location = New System.Drawing.Point(470, 449)
         Me.Button33.Name = "Button33"
         Me.Button33.Size = New System.Drawing.Size(99, 49)
         Me.Button33.TabIndex = 38
@@ -719,7 +743,7 @@ Partial Class konobar
         'Button34
         '
         Me.Button34.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Button34.Location = New System.Drawing.Point(584, 448)
+        Me.Button34.Location = New System.Drawing.Point(586, 449)
         Me.Button34.Name = "Button34"
         Me.Button34.Size = New System.Drawing.Size(99, 49)
         Me.Button34.TabIndex = 39
@@ -729,7 +753,7 @@ Partial Class konobar
         'Button35
         '
         Me.Button35.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Button35.Location = New System.Drawing.Point(698, 448)
+        Me.Button35.Location = New System.Drawing.Point(700, 449)
         Me.Button35.Name = "Button35"
         Me.Button35.Size = New System.Drawing.Size(99, 49)
         Me.Button35.TabIndex = 40
@@ -739,7 +763,7 @@ Partial Class konobar
         'Button36
         '
         Me.Button36.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Button36.Location = New System.Drawing.Point(228, 506)
+        Me.Button36.Location = New System.Drawing.Point(230, 527)
         Me.Button36.Name = "Button36"
         Me.Button36.Size = New System.Drawing.Size(99, 49)
         Me.Button36.TabIndex = 41
@@ -749,7 +773,7 @@ Partial Class konobar
         'Button37
         '
         Me.Button37.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Button37.Location = New System.Drawing.Point(351, 506)
+        Me.Button37.Location = New System.Drawing.Point(353, 527)
         Me.Button37.Name = "Button37"
         Me.Button37.Size = New System.Drawing.Size(99, 49)
         Me.Button37.TabIndex = 42
@@ -759,7 +783,7 @@ Partial Class konobar
         'Button38
         '
         Me.Button38.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Button38.Location = New System.Drawing.Point(468, 506)
+        Me.Button38.Location = New System.Drawing.Point(470, 527)
         Me.Button38.Name = "Button38"
         Me.Button38.Size = New System.Drawing.Size(99, 49)
         Me.Button38.TabIndex = 43
@@ -769,7 +793,7 @@ Partial Class konobar
         'Button39
         '
         Me.Button39.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Button39.Location = New System.Drawing.Point(584, 506)
+        Me.Button39.Location = New System.Drawing.Point(586, 527)
         Me.Button39.Name = "Button39"
         Me.Button39.Size = New System.Drawing.Size(99, 49)
         Me.Button39.TabIndex = 44
@@ -779,7 +803,7 @@ Partial Class konobar
         'Button40
         '
         Me.Button40.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Button40.Location = New System.Drawing.Point(705, 230)
+        Me.Button40.Location = New System.Drawing.Point(698, 164)
         Me.Button40.Name = "Button40"
         Me.Button40.Size = New System.Drawing.Size(99, 49)
         Me.Button40.TabIndex = 45
@@ -789,7 +813,7 @@ Partial Class konobar
         'Button41
         '
         Me.Button41.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Button41.Location = New System.Drawing.Point(117, 565)
+        Me.Button41.Location = New System.Drawing.Point(119, 602)
         Me.Button41.Name = "Button41"
         Me.Button41.Size = New System.Drawing.Size(99, 49)
         Me.Button41.TabIndex = 46
@@ -799,7 +823,7 @@ Partial Class konobar
         'Button42
         '
         Me.Button42.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Button42.Location = New System.Drawing.Point(228, 565)
+        Me.Button42.Location = New System.Drawing.Point(230, 602)
         Me.Button42.Name = "Button42"
         Me.Button42.Size = New System.Drawing.Size(99, 49)
         Me.Button42.TabIndex = 47
@@ -812,7 +836,7 @@ Partial Class konobar
         Me.Label8.BackColor = System.Drawing.Color.Transparent
         Me.Label8.Font = New System.Drawing.Font("Lucida Fax", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label8.Location = New System.Drawing.Point(12, 146)
+        Me.Label8.Location = New System.Drawing.Point(7, 64)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(276, 22)
         Me.Label8.TabIndex = 48
@@ -824,7 +848,7 @@ Partial Class konobar
         Me.Label9.BackColor = System.Drawing.Color.Transparent
         Me.Label9.Font = New System.Drawing.Font("Lucida Fax", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label9.Location = New System.Drawing.Point(12, 329)
+        Me.Label9.Location = New System.Drawing.Point(14, 313)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(131, 22)
         Me.Label9.TabIndex = 49
@@ -836,7 +860,7 @@ Partial Class konobar
         Me.Label10.BackColor = System.Drawing.Color.Transparent
         Me.Label10.Font = New System.Drawing.Font("Lucida Fax", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label10.Location = New System.Drawing.Point(12, 414)
+        Me.Label10.Location = New System.Drawing.Point(14, 415)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(159, 22)
         Me.Label10.TabIndex = 50
@@ -845,9 +869,9 @@ Partial Class konobar
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.PaleGreen
-        Me.Panel1.Location = New System.Drawing.Point(835, 19)
+        Me.Panel1.Location = New System.Drawing.Point(930, 2)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(4, 594)
+        Me.Panel1.Size = New System.Drawing.Size(10, 594)
         Me.Panel1.TabIndex = 51
         '
         'TABLA
@@ -855,7 +879,7 @@ Partial Class konobar
         Me.TABLA.ColumnCount = 2
         Me.TABLA.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70.0!))
         Me.TABLA.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.0!))
-        Me.TABLA.Location = New System.Drawing.Point(892, 82)
+        Me.TABLA.Location = New System.Drawing.Point(958, 64)
         Me.TABLA.Name = "TABLA"
         Me.TABLA.RowCount = 23
         Me.TABLA.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
@@ -884,13 +908,217 @@ Partial Class konobar
         Me.TABLA.Size = New System.Drawing.Size(241, 443)
         Me.TABLA.TabIndex = 52
         '
+        'NesscafeL
+        '
+        Me.NesscafeL.AutoSize = True
+        Me.NesscafeL.BackColor = System.Drawing.Color.Transparent
+        Me.NesscafeL.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.NesscafeL.Location = New System.Drawing.Point(507, 395)
+        Me.NesscafeL.Name = "NesscafeL"
+        Me.NesscafeL.Size = New System.Drawing.Size(18, 20)
+        Me.NesscafeL.TabIndex = 3
+        Me.NesscafeL.Text = "0"
+        '
+        'ToplacokoladaL
+        '
+        Me.ToplacokoladaL.AutoSize = True
+        Me.ToplacokoladaL.BackColor = System.Drawing.Color.Transparent
+        Me.ToplacokoladaL.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.ToplacokoladaL.Location = New System.Drawing.Point(626, 394)
+        Me.ToplacokoladaL.Name = "ToplacokoladaL"
+        Me.ToplacokoladaL.Size = New System.Drawing.Size(18, 20)
+        Me.ToplacokoladaL.TabIndex = 3
+        Me.ToplacokoladaL.Text = "0"
+        '
+        'CajL
+        '
+        Me.CajL.AutoSize = True
+        Me.CajL.BackColor = System.Drawing.Color.Transparent
+        Me.CajL.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.CajL.Location = New System.Drawing.Point(739, 395)
+        Me.CajL.Name = "CajL"
+        Me.CajL.Size = New System.Drawing.Size(18, 20)
+        Me.CajL.TabIndex = 3
+        Me.CajL.Text = "0"
+        '
+        'StaropramenL
+        '
+        Me.StaropramenL.AutoSize = True
+        Me.StaropramenL.BackColor = System.Drawing.Color.Transparent
+        Me.StaropramenL.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.StaropramenL.Location = New System.Drawing.Point(391, 501)
+        Me.StaropramenL.Name = "StaropramenL"
+        Me.StaropramenL.Size = New System.Drawing.Size(18, 20)
+        Me.StaropramenL.TabIndex = 3
+        Me.StaropramenL.Text = "0"
+        '
+        'BanjaluckoL
+        '
+        Me.BanjaluckoL.AutoSize = True
+        Me.BanjaluckoL.BackColor = System.Drawing.Color.Transparent
+        Me.BanjaluckoL.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.BanjaluckoL.Location = New System.Drawing.Point(507, 504)
+        Me.BanjaluckoL.Name = "BanjaluckoL"
+        Me.BanjaluckoL.Size = New System.Drawing.Size(18, 20)
+        Me.BanjaluckoL.TabIndex = 3
+        Me.BanjaluckoL.Text = "0"
+        '
+        'TuborgL
+        '
+        Me.TuborgL.AutoSize = True
+        Me.TuborgL.BackColor = System.Drawing.Color.Transparent
+        Me.TuborgL.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.TuborgL.Location = New System.Drawing.Point(626, 504)
+        Me.TuborgL.Name = "TuborgL"
+        Me.TuborgL.Size = New System.Drawing.Size(18, 20)
+        Me.TuborgL.TabIndex = 3
+        Me.TuborgL.Text = "0"
+        '
+        'BecksL
+        '
+        Me.BecksL.AutoSize = True
+        Me.BecksL.BackColor = System.Drawing.Color.Transparent
+        Me.BecksL.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.BecksL.Location = New System.Drawing.Point(739, 501)
+        Me.BecksL.Name = "BecksL"
+        Me.BecksL.Size = New System.Drawing.Size(18, 20)
+        Me.BecksL.TabIndex = 3
+        Me.BecksL.Text = "0"
+        '
+        'JackDanielsL
+        '
+        Me.JackDanielsL.AutoSize = True
+        Me.JackDanielsL.BackColor = System.Drawing.Color.Transparent
+        Me.JackDanielsL.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.JackDanielsL.Location = New System.Drawing.Point(50, 579)
+        Me.JackDanielsL.Name = "JackDanielsL"
+        Me.JackDanielsL.Size = New System.Drawing.Size(18, 20)
+        Me.JackDanielsL.TabIndex = 5
+        Me.JackDanielsL.Text = "0"
+        '
+        'BelvedereL
+        '
+        Me.BelvedereL.AutoSize = True
+        Me.BelvedereL.BackColor = System.Drawing.Color.Transparent
+        Me.BelvedereL.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BelvedereL.Location = New System.Drawing.Point(155, 579)
+        Me.BelvedereL.Name = "BelvedereL"
+        Me.BelvedereL.Size = New System.Drawing.Size(18, 20)
+        Me.BelvedereL.TabIndex = 5
+        Me.BelvedereL.Text = "0"
+        '
+        'GreygooseL
+        '
+        Me.GreygooseL.AutoSize = True
+        Me.GreygooseL.BackColor = System.Drawing.Color.Transparent
+        Me.GreygooseL.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GreygooseL.Location = New System.Drawing.Point(271, 579)
+        Me.GreygooseL.Name = "GreygooseL"
+        Me.GreygooseL.Size = New System.Drawing.Size(18, 20)
+        Me.GreygooseL.TabIndex = 5
+        Me.GreygooseL.Text = "0"
+        '
+        'VigorVodkaL
+        '
+        Me.VigorVodkaL.AutoSize = True
+        Me.VigorVodkaL.BackColor = System.Drawing.Color.Transparent
+        Me.VigorVodkaL.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.VigorVodkaL.Location = New System.Drawing.Point(391, 579)
+        Me.VigorVodkaL.Name = "VigorVodkaL"
+        Me.VigorVodkaL.Size = New System.Drawing.Size(18, 20)
+        Me.VigorVodkaL.TabIndex = 5
+        Me.VigorVodkaL.Text = "0"
+        '
+        'jagermaisterL
+        '
+        Me.jagermaisterL.AutoSize = True
+        Me.jagermaisterL.BackColor = System.Drawing.Color.Transparent
+        Me.jagermaisterL.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.jagermaisterL.Location = New System.Drawing.Point(507, 579)
+        Me.jagermaisterL.Name = "jagermaisterL"
+        Me.jagermaisterL.Size = New System.Drawing.Size(18, 20)
+        Me.jagermaisterL.TabIndex = 5
+        Me.jagermaisterL.Text = "0"
+        '
+        'AbsinthL
+        '
+        Me.AbsinthL.AutoSize = True
+        Me.AbsinthL.BackColor = System.Drawing.Color.Transparent
+        Me.AbsinthL.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.AbsinthL.Location = New System.Drawing.Point(626, 579)
+        Me.AbsinthL.Name = "AbsinthL"
+        Me.AbsinthL.Size = New System.Drawing.Size(18, 20)
+        Me.AbsinthL.TabIndex = 5
+        Me.AbsinthL.Text = "0"
+        '
+        'ViljamovkaL
+        '
+        Me.ViljamovkaL.AutoSize = True
+        Me.ViljamovkaL.BackColor = System.Drawing.Color.Transparent
+        Me.ViljamovkaL.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ViljamovkaL.Location = New System.Drawing.Point(739, 579)
+        Me.ViljamovkaL.Name = "ViljamovkaL"
+        Me.ViljamovkaL.Size = New System.Drawing.Size(18, 20)
+        Me.ViljamovkaL.TabIndex = 5
+        Me.ViljamovkaL.Text = "0"
+        '
+        'RubinovVinjakL
+        '
+        Me.RubinovVinjakL.AutoSize = True
+        Me.RubinovVinjakL.BackColor = System.Drawing.Color.Transparent
+        Me.RubinovVinjakL.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RubinovVinjakL.Location = New System.Drawing.Point(271, 654)
+        Me.RubinovVinjakL.Name = "RubinovVinjakL"
+        Me.RubinovVinjakL.Size = New System.Drawing.Size(18, 20)
+        Me.RubinovVinjakL.TabIndex = 5
+        Me.RubinovVinjakL.Text = "0"
+        '
+        'BadelKonjaL
+        '
+        Me.BadelKonjaL.AutoSize = True
+        Me.BadelKonjaL.BackColor = System.Drawing.Color.Transparent
+        Me.BadelKonjaL.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BadelKonjaL.Location = New System.Drawing.Point(153, 654)
+        Me.BadelKonjaL.Name = "BadelKonjaL"
+        Me.BadelKonjaL.Size = New System.Drawing.Size(18, 20)
+        Me.BadelKonjaL.TabIndex = 5
+        Me.BadelKonjaL.Text = "0"
+        '
+        'GinL
+        '
+        Me.GinL.AutoSize = True
+        Me.GinL.BackColor = System.Drawing.Color.Transparent
+        Me.GinL.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GinL.Location = New System.Drawing.Point(50, 654)
+        Me.GinL.Name = "GinL"
+        Me.GinL.Size = New System.Drawing.Size(18, 20)
+        Me.GinL.TabIndex = 5
+        Me.GinL.Text = "0"
+        '
+        'Button43
+        '
+        Me.Button43.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Button43.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button43.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button43.Location = New System.Drawing.Point(650, 623)
+        Me.Button43.Name = "Button43"
+        Me.Button43.Size = New System.Drawing.Size(147, 93)
+        Me.Button43.TabIndex = 53
+        Me.Button43.Text = "PONISTI"
+        Me.Button43.UseVisualStyleBackColor = False
+        '
+        'Timer1
+        '
+        Me.Timer1.Enabled = True
+        '
         'konobar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.SeaGreen
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(1197, 626)
+        Me.ClientSize = New System.Drawing.Size(816, 728)
+        Me.Controls.Add(Me.Button43)
         Me.Controls.Add(Me.TABLA)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Label10)
@@ -913,30 +1141,47 @@ Partial Class konobar
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Label40)
-        Me.Controls.Add(Me.Label35)
-        Me.Controls.Add(Me.Label30)
-        Me.Controls.Add(Me.Label25)
-        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.ViljamovkaL)
+        Me.Controls.Add(Me.AbsinthL)
+        Me.Controls.Add(Me.jagermaisterL)
+        Me.Controls.Add(Me.VigorVodkaL)
+        Me.Controls.Add(Me.GinL)
+        Me.Controls.Add(Me.BadelKonjaL)
+        Me.Controls.Add(Me.RubinovVinjakL)
+        Me.Controls.Add(Me.GreygooseL)
+        Me.Controls.Add(Me.BelvedereL)
+        Me.Controls.Add(Me.JackDanielsL)
+        Me.Controls.Add(Me.HeikenL)
+        Me.Controls.Add(Me.MultivitaminL)
+        Me.Controls.Add(Me.VodasokusomL)
+        Me.Controls.Add(Me.VisnjaL)
+        Me.Controls.Add(Me.CocaColaL)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label34)
-        Me.Controls.Add(Me.Label29)
-        Me.Controls.Add(Me.Label24)
-        Me.Controls.Add(Me.Label20)
-        Me.Controls.Add(Me.Label38)
-        Me.Controls.Add(Me.Label37)
-        Me.Controls.Add(Me.Label32)
-        Me.Controls.Add(Me.Label28)
-        Me.Controls.Add(Me.Label27)
-        Me.Controls.Add(Me.Label36)
-        Me.Controls.Add(Me.Label23)
-        Me.Controls.Add(Me.Label31)
-        Me.Controls.Add(Me.Label22)
-        Me.Controls.Add(Me.Label26)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Label21)
-        Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.SchweppesL)
+        Me.Controls.Add(Me.EsspresosmlijekomL)
+        Me.Controls.Add(Me.JabukaL)
+        Me.Controls.Add(Me.RedBullL)
+        Me.Controls.Add(Me.BecksL)
+        Me.Controls.Add(Me.TuborgL)
+        Me.Controls.Add(Me.BanjaluckoL)
+        Me.Controls.Add(Me.StaropramenL)
+        Me.Controls.Add(Me.JelenL)
+        Me.Controls.Add(Me.LedeniCajL)
+        Me.Controls.Add(Me.CajL)
+        Me.Controls.Add(Me.ToplacokoladaL)
+        Me.Controls.Add(Me.NesscafeL)
+        Me.Controls.Add(Me.CappuccinoL)
+        Me.Controls.Add(Me.MacchiaroL)
+        Me.Controls.Add(Me.EsspressoL)
+        Me.Controls.Add(Me.NektarL)
+        Me.Controls.Add(Me.SpriteL)
+        Me.Controls.Add(Me.BorovnicaL)
+        Me.Controls.Add(Me.JuiceL)
+        Me.Controls.Add(Me.IzvorskavodaL)
+        Me.Controls.Add(Me.MineralnaL)
+        Me.Controls.Add(Me.CijedjenisokL)
+        Me.Controls.Add(Me.FantaL)
+        Me.Controls.Add(Me.PepsiL)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
@@ -978,11 +1223,11 @@ Partial Class konobar
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
+    Friend WithEvents CocaColaL As Label
     Friend WithEvents Button4 As Button
     Friend WithEvents Button5 As Button
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Label5 As Label
+    Friend WithEvents PepsiL As Label
+    Friend WithEvents FantaL As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents TextBox1 As TextBox
@@ -1008,26 +1253,26 @@ Partial Class konobar
     Friend WithEvents Button25 As Button
     Friend WithEvents Button26 As Button
     Friend WithEvents Button27 As Button
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label20 As Label
-    Friend WithEvents Label21 As Label
-    Friend WithEvents Label22 As Label
-    Friend WithEvents Label23 As Label
-    Friend WithEvents Label24 As Label
-    Friend WithEvents Label25 As Label
-    Friend WithEvents Label26 As Label
-    Friend WithEvents Label27 As Label
-    Friend WithEvents Label28 As Label
-    Friend WithEvents Label29 As Label
-    Friend WithEvents Label30 As Label
-    Friend WithEvents Label31 As Label
-    Friend WithEvents Label32 As Label
-    Friend WithEvents Label34 As Label
-    Friend WithEvents Label35 As Label
-    Friend WithEvents Label36 As Label
-    Friend WithEvents Label37 As Label
-    Friend WithEvents Label38 As Label
-    Friend WithEvents Label40 As Label
+    Friend WithEvents MineralnaL As Label
+    Friend WithEvents RedBullL As Label
+    Friend WithEvents CijedjenisokL As Label
+    Friend WithEvents JuiceL As Label
+    Friend WithEvents SpriteL As Label
+    Friend WithEvents JabukaL As Label
+    Friend WithEvents VisnjaL As Label
+    Friend WithEvents IzvorskavodaL As Label
+    Friend WithEvents EsspressoL As Label
+    Friend WithEvents MacchiaroL As Label
+    Friend WithEvents EsspresosmlijekomL As Label
+    Friend WithEvents VodasokusomL As Label
+    Friend WithEvents BorovnicaL As Label
+    Friend WithEvents CappuccinoL As Label
+    Friend WithEvents SchweppesL As Label
+    Friend WithEvents MultivitaminL As Label
+    Friend WithEvents NektarL As Label
+    Friend WithEvents LedeniCajL As Label
+    Friend WithEvents JelenL As Label
+    Friend WithEvents HeikenL As Label
     Friend WithEvents Button28 As Button
     Friend WithEvents Button29 As Button
     Friend WithEvents Button30 As Button
@@ -1048,4 +1293,23 @@ Partial Class konobar
     Friend WithEvents Label10 As Label
     Friend WithEvents Panel1 As Panel
     Friend WithEvents TABLA As TableLayoutPanel
+    Friend WithEvents NesscafeL As Label
+    Friend WithEvents ToplacokoladaL As Label
+    Friend WithEvents CajL As Label
+    Friend WithEvents StaropramenL As Label
+    Friend WithEvents BanjaluckoL As Label
+    Friend WithEvents TuborgL As Label
+    Friend WithEvents BecksL As Label
+    Friend WithEvents JackDanielsL As Label
+    Friend WithEvents BelvedereL As Label
+    Friend WithEvents GreygooseL As Label
+    Friend WithEvents VigorVodkaL As Label
+    Friend WithEvents jagermaisterL As Label
+    Friend WithEvents AbsinthL As Label
+    Friend WithEvents ViljamovkaL As Label
+    Friend WithEvents RubinovVinjakL As Label
+    Friend WithEvents BadelKonjaL As Label
+    Friend WithEvents GinL As Label
+    Friend WithEvents Button43 As Button
+    Friend WithEvents Timer1 As Timer
 End Class

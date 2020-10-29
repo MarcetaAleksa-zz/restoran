@@ -25,13 +25,18 @@ Public Class pregledNarudzbe
         brojacOpreme = oprema_table11.Rows.Count
         Dim nesto As Integer = 0
         Dim noviRed As Integer = 0
-        Label3.Text = oprema_table1.Rows(i)(0)
-        Label4.Text = oprema_table1.Rows(i)(1)
+        Try
+            Label3.Text = oprema_table1.Rows(i)(0)
+            Label4.Text = oprema_table1.Rows(i)(1)
+        Catch ex As Exception
+
+        End Try
+
         For k = 2 To brojacOpreme + 1
             Try
                 nesto = k - 2
 
-                If oprema_table1(i)(k) <> 0 And oprema_table1(i)(k) <> Nothing Then
+                If oprema_table1(i)(k) <> 0 Then
                     Dim L As Label = New Label
                     With L
                         .Text = oprema_table11(nesto)(0)             'naziv artikla izvucen u label
@@ -40,7 +45,7 @@ Public Class pregledNarudzbe
                         .Font = New Font("Microsoft Sans Serif", 14)
                         .BackColor = Color.Transparent
                         .Dock = DockStyle.Fill
-                        tab1.Controls.Add(L, 0, k - 2)
+                        tab1.Controls.Add(L, 0, noviRed)
                     End With
 
                     Dim L1 As Label = New Label
@@ -52,7 +57,7 @@ Public Class pregledNarudzbe
                         .Font = New Font("Microsoft Sans Serif", 14)
                         .BackColor = Color.Transparent
                         .Dock = DockStyle.Fill
-                        tab1.Controls.Add(L1, 1, k - 2)
+                        tab1.Controls.Add(L1, 1, noviRed)
                     End With
 
                     Dim L2 As Label = New Label
@@ -63,7 +68,7 @@ Public Class pregledNarudzbe
                         .BackColor = Color.Transparent
                         .Font = New Font("Microsoft Sans Serif", 14)
                         .Dock = DockStyle.Fill
-                        tab1.Controls.Add(L2, 2, k - 2)
+                        tab1.Controls.Add(L2, 2, noviRed)
                     End With
                     Try
                         Dim L3 As Label = New Label
@@ -75,7 +80,7 @@ Public Class pregledNarudzbe
                             .BackColor = Color.Transparent
                             .Font = New Font("Microsoft Sans Serif", 14)
                             .Dock = DockStyle.Fill
-                            tab1.Controls.Add(L3, 3, k - 2)
+                            tab1.Controls.Add(L3, 3, noviRed)
                         End With
                         Label12.Text = Math.Round(CDec(Val(Label12.Text)) + CDec(Val(L3.Text)), 2) & "KM"
                     Catch ex As Exception
@@ -87,10 +92,10 @@ Public Class pregledNarudzbe
                             .BackColor = Color.Transparent
                             .Font = New Font("Microsoft Sans Serif", 14)
                             .Dock = DockStyle.Fill
-                            tab1.Controls.Add(L3, 3, k - 2)
+                            tab1.Controls.Add(L3, 3, noviRed)
                         End With
                     End Try
-
+                    noviRed += 1
                     tab1.HorizontalScroll.Enabled = False
                 End If
             Catch ex As Exception
@@ -113,10 +118,7 @@ Public Class pregledNarudzbe
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        'skidas sa stanje ucitanu tabelu
-    End Sub
-
-    Private Sub tab1_Paint(sender As Object, e As PaintEventArgs) Handles tab1.Paint
 
     End Sub
+
 End Class
