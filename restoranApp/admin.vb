@@ -55,6 +55,7 @@ Public Class admin
                     Dim command As New SqlCommand("INSERT INTO dbo.Zaposleni (korisnickoIme, lozinka, pozicija, ime, prezime, sluzbeniEmail, mobitel, sluzbeniMobitel) 
 VALUES ('" & TextBox5.Text & "','" & Enkripcija.HashNoviK & "', '" & holdit & "' , '" & imeTextBox.Text & "' , '" & TextBox1.Text & "' , '" & TextBox3.Text & "', '" & TextBox6.Text & "', '" & TextBox4.Text & "')", Baza.connection)
                     command.ExecuteNonQuery()
+                    Enkripcija.HashNoviK = String.Empty
                     MsgBox("Uspjesno ste dodali korisnika!")
 
                     Me.Controls.Clear() 'removes all the controls on the form
