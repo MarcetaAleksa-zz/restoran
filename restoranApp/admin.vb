@@ -1,4 +1,6 @@
-﻿Public Class admin
+﻿Imports System.Data.SqlClient
+
+Public Class admin
     Private Sub Nazad_Click(sender As Object, e As EventArgs) Handles Nazad.Click
         prijava.Show()
         Me.Close()
@@ -19,5 +21,44 @@
 
     Private Sub TextBox7_TextChanged(sender As Object, e As EventArgs)
 
+
+
+    End Sub
+
+    Private Sub Dodaj_Click(sender As Object, e As EventArgs) Handles Dodaj.Click
+
+        Dim table As New DataTable
+        Dim adapter As New SqlDataAdapter()
+        Dim holdit As Integer
+        Try
+            Try
+                Select Case PozicijaComboBox.Text
+                    Case "Administrator"
+                        holdit = 1
+                    Case "Vlasnik"
+                        holdit = 2
+                    Case "Konobar"
+                        holdit = 3
+                    Case "Sankder"
+                        holdit = 4
+                    Case Else
+                        Debug.WriteLine("Izaberite poziciju zaposlenog.")
+                End Select
+            Catch ex As Exception
+            End Try
+
+            Try
+                Enkripcija.EncryptPass()
+                Baza.connection.Open()
+                Dim command As New SqlCommand("INSERT INTO dbo.Zaposleni (korisnickoIme, lozinka, pozicija, ime, prezime, sluzbeniEmail, mobitel, sluzbeniMobitel) 
+VALUES ('" & TextBox5.Text & "','" & Enkripcija.HashNoviK & "', " & 1 & ", '" & imeTextBox.Text & "' , '" & TextBox1.Text & "' , '" & TextBox3.Text & "', '" & TextBox6.Text & "', '" & TextBox4.Text & "')", Baza.connection)
+                command.ExecuteNonQuery()
+            Catch ex As Exception
+                MessageBox.Show(ex.ToString)
+                    Baza.connection.Close()
+                End Try
+            Catch ex As Exception
+                MessageBox.Show(ex.ToString)
+        End Try
     End Sub
 End Class

@@ -54,3 +54,7 @@ C:\Users\Riki\Desktop\New folder\restoran\restoranApp\obj\Debug\restoranApp.vbpr
 C:\Users\Riki\Desktop\New folder\restoran\restoranApp\obj\Debug\restoranApp.exe
 C:\Users\Riki\Desktop\New folder\restoran\restoranApp\obj\Debug\restoranApp.xml
 C:\Users\Riki\Desktop\New folder\restoran\restoranApp\obj\Debug\restoranApp.pdb
+C:\Users\marce\Documents\GitHub\restoran\restoranApp\obj\Debug\restoranApp.admin.resources
+C:\Users\marce\Documents\GitHub\restoran\restoranApp\obj\Debug\restoranApp.sanker.resources
+C:\Users\marce\Documents\GitHub\restoran\restoranApp\obj\Debug\restoranApp.pregledNarudzbe.resources
+C:\Users\marce\Documents\GitHub\restoran\restoranApp\obj\Debug\restoranApp.konobar.resources

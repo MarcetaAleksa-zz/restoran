@@ -1,9 +1,9 @@
 ﻿Imports System.Data.SqlClient
 Imports System.IO
 Public Class Enkripcija
-    Public Shared HashStore As String
-    Public Shared HashStoreUser As String
-    Public Shared HashStorePrijava As String
+    Public Shared HashPrijava As String
+    Public Shared HashNoviK As String
+
     Private Shared Function StringtoSha512(ByRef Content As String) As String
         Dim sha As New System.Security.Cryptography.SHA512CryptoServiceProvider
         Dim ByteString() As Byte = System.Text.Encoding.ASCII.GetBytes(Content)
@@ -16,24 +16,18 @@ Public Class Enkripcija
         Return FinalString.ToUpper()
     End Function
     Public Shared Sub EncryptPass()
-        If HashStore = String.Empty Then
+        If HashPrijava = String.Empty Then
             Try
-                HashStore = Chr(128) & StringtoSha512(prijava.textBox2.Text + prijava.textBox1.Text)
+                HashPrijava = Chr(128) & StringtoSha512(prijava.textBox2.Text + prijava.textBox1.Text)
             Catch ex As Exception
             End Try
         End If
-        'If HashStoreUser = String.Empty Then
-        '    Try
-        '        HashStoreUser = Chr(128) & StringtoSha512(UnosRadnika.Correct_Password + UnosRadnika.UR_Username_TextBox.Text)
-        '    Catch ex As Exception
-        '    End Try
-        'End If
-        'If HashStorePrijava = String.Empty Then
-        '    Try
-        '        HashStorePrijava = Chr(128) & StringtoSha512(aplikacijaPosao.UR_ConfirmPassword_Textbox.Text + aplikacijaPosao.UR_Username_TextBox.Text)
-        '    Catch ex As Exception
+        If HashNoviK = String.Empty Then
+            Try
+                HashNoviK = Chr(128) & StringtoSha512(admin.TextBox2.Text + admin.TextBox5.Text)
+            Catch ex As Exception
+            End Try
+        End If
 
-        '    End Try
-        'End If
     End Sub
 End Class

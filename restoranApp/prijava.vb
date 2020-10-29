@@ -43,7 +43,7 @@ Public Class prijava
     Private Sub button1_Click(sender As Object, e As EventArgs) Handles button1.Click
         Enkripcija.EncryptPass()
         Dim command As New SqlCommand("select korisnickoIme, Lozinka, Pozicija  from zaposleni where 
-korisnickoIme = @korisnicki_id and  lozinka = '" + Enkripcija.HashStore + "' COLLATE Latin1_General_CS_AS", Baza.connection)
+korisnickoIme = @korisnicki_id and  lozinka = '" + Enkripcija.HashPrijava + "' COLLATE Latin1_General_CS_AS", Baza.connection)
         'TextBox3.Text = Enkripcija.HashStore
         command.Parameters.Add("@korisnicki_id", SqlDbType.VarChar).Value = textBox1.Text
         command.Parameters.Add("@lozinka", SqlDbType.VarChar).Value = textBox2.Text
@@ -80,29 +80,29 @@ korisnickoIme = @korisnicki_id and  lozinka = '" + Enkripcija.HashStore + "' COL
                     admin.Show()
                     textBox1.Text = "Korisničko ime"
                     textBox2.Text = "Lozinka"
-                    Enkripcija.HashStore = Nothing
+                    Enkripcija.HashPrijava = Nothing
                     Me.Hide()
                 ElseIf tipNaloga = 2 Then
                     sanker.Show()
                     textBox1.Text = "Korisničko ime"
                     textBox2.Text = "Lozinka"
-                    Enkripcija.HashStore = Nothing
+                    Enkripcija.HashPrijava = Nothing
                     Me.Hide()
                 ElseIf tipNaloga = 3 Then
                     konobar.Show()
                     textBox1.Text = "Korisničko ime"
                     textBox2.Text = "Lozinka"
-                    Enkripcija.HashStore = Nothing
+                    Enkripcija.HashPrijava = Nothing
                     Me.Hide()
                 ElseIf tipNaloga = 4 Then
                     sanker.Show()
                     textBox1.Text = "Korisničko ime"
                     textBox2.Text = "Lozinka"
-                    Enkripcija.HashStore = Nothing
+                    Enkripcija.HashPrijava = Nothing
                     Me.Hide()
                 End If
             Else
-                Enkripcija.HashStore = Nothing
+                Enkripcija.HashPrijava = Nothing
                 MessageBox.Show("Neuspješna prijava!")
                 textBox1.Text = vbEmpty
             End If

@@ -25,6 +25,8 @@ Partial Class admin
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(admin))
         Me.PozicijaComboBox = New System.Windows.Forms.ComboBox()
+        Me.NaloziBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.KaficDataSet = New restoranApp.KaficDataSet()
         Me.NaloziBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.imeTextBox = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -54,12 +56,12 @@ Partial Class admin
         Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.Panel7 = New System.Windows.Forms.Panel()
         Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.KaficDataSet = New restoranApp.KaficDataSet()
-        Me.NaloziBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         Me.NaloziTableAdapter = New restoranApp.KaficDataSetTableAdapters.NaloziTableAdapter()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.pictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel8 = New System.Windows.Forms.Panel()
+        CType(Me.NaloziBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.KaficDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NaloziBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ZaposleniBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -71,8 +73,6 @@ Partial Class admin
         Me.Panel4.SuspendLayout()
         Me.Panel5.SuspendLayout()
         Me.Panel7.SuspendLayout()
-        CType(Me.KaficDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NaloziBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel8.SuspendLayout()
         Me.SuspendLayout()
@@ -90,6 +90,16 @@ Partial Class admin
         Me.PozicijaComboBox.Name = "PozicijaComboBox"
         Me.PozicijaComboBox.Size = New System.Drawing.Size(245, 32)
         Me.PozicijaComboBox.TabIndex = 3
+        '
+        'NaloziBindingSource1
+        '
+        Me.NaloziBindingSource1.DataMember = "Nalozi"
+        Me.NaloziBindingSource1.DataSource = Me.KaficDataSet
+        '
+        'KaficDataSet
+        '
+        Me.KaficDataSet.DataSetName = "KaficDataSet"
+        Me.KaficDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'NaloziBindingSource
         '
@@ -358,16 +368,6 @@ Partial Class admin
         Me.TextBox6.Size = New System.Drawing.Size(189, 22)
         Me.TextBox6.TabIndex = 9
         '
-        'KaficDataSet
-        '
-        Me.KaficDataSet.DataSetName = "KaficDataSet"
-        Me.KaficDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'NaloziBindingSource1
-        '
-        Me.NaloziBindingSource1.DataMember = "Nalozi"
-        Me.NaloziBindingSource1.DataSource = Me.KaficDataSet
-        '
         'NaloziTableAdapter
         '
         Me.NaloziTableAdapter.ClearBeforeFill = True
@@ -434,6 +434,8 @@ Partial Class admin
         Me.Name = "admin"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form2"
+        CType(Me.NaloziBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.KaficDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NaloziBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ZaposleniBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
@@ -452,8 +454,6 @@ Partial Class admin
         Me.Panel5.PerformLayout()
         Me.Panel7.ResumeLayout(False)
         Me.Panel7.PerformLayout()
-        CType(Me.KaficDataSet, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NaloziBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel8.ResumeLayout(False)
         Me.ResumeLayout(False)
