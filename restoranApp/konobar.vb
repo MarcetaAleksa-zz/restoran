@@ -274,4 +274,244 @@ Public Class konobar
     Private Sub Button42_Click(sender As Object, e As EventArgs) Handles Button42.Click
         RubinovVinjakL.Text = CDbl(RubinovVinjakL.Text) + 1
     End Sub
+
+    Private Sub Button1_MouseDown(sender As Object, e As MouseEventArgs) Handles Button1.MouseDown
+        If e.Button = MouseButtons.Right Then
+            CocaColaL.Text = CDbl(CocaColaL.Text) - 1
+        End If
+    End Sub
+
+    Private Sub Button2_MouseDown(sender As Object, e As MouseEventArgs) Handles Button2.MouseDown
+        If e.Button = MouseButtons.Right Then
+            PepsiL.Text = CDbl(PepsiL.Text) - 1
+        End If
+    End Sub
+
+    Private Sub Button3_MouseDown(sender As Object, e As MouseEventArgs) Handles Button3.MouseDown
+        If e.Button = MouseButtons.Right Then
+            FantaL.Text = CDbl(FantaL.Text) - 1
+        End If
+    End Sub
+
+    Private Sub Button6_MouseDown(sender As Object, e As MouseEventArgs) Handles Button6.MouseDown
+        If e.Button = MouseButtons.Right Then
+            RedBullL.Text = CDbl(RedBullL.Text) - 1
+        End If
+    End Sub
+
+    Private Sub Button28_MouseDown(sender As Object, e As MouseEventArgs) Handles Button28.MouseDown
+        If e.Button = MouseButtons.Right Then
+            SchweppesL.Text = CDbl(SchweppesL.Text) - 1
+        End If
+    End Sub
+
+    Private Sub Button29_MouseDown(sender As Object, e As MouseEventArgs) Handles Button29.MouseDown
+        If e.Button = MouseButtons.Right Then
+            SpriteL.Text = CDbl(SpriteL.Text) - 1
+        End If
+    End Sub
+
+    Private Sub Button7_MouseDown(sender As Object, e As MouseEventArgs) Handles Button7.MouseDown
+        If e.Button = MouseButtons.Right Then
+            MineralnaL.Text = CDbl(MineralnaL.Text) - 1
+        End If
+    End Sub
+
+    Private Sub Button11_MouseDown(sender As Object, e As MouseEventArgs) Handles Button11.MouseDown
+        If e.Button = MouseButtons.Right Then
+            JuiceL.Text = CDbl(JuiceL.Text) - 1
+        End If
+    End Sub
+
+    Private Sub Button8_MouseDown(sender As Object, e As MouseEventArgs) Handles Button8.MouseDown
+        If e.Button = MouseButtons.Right Then
+            JabukaL.Text = CDbl(JabukaL.Text) - 1
+        End If
+    End Sub
+
+    Private Sub Button12_MouseDown(sender As Object, e As MouseEventArgs) Handles Button12.MouseDown
+        If e.Button = MouseButtons.Right Then
+            VisnjaL.Text = CDbl(VisnjaL.Text) - 1
+        End If
+    End Sub
+
+    Private Sub Button13_MouseDown(sender As Object, e As MouseEventArgs) Handles Button13.MouseDown
+        If e.Button = MouseButtons.Right Then
+            BorovnicaL.Text = CDbl(BorovnicaL.Text) - 1
+        End If
+    End Sub
+
+    Private Sub Button15_MouseDown(sender As Object, e As MouseEventArgs) Handles Button15.MouseDown
+        If e.Button = MouseButtons.Right Then
+            MultivitaminL.Text = CDbl(MultivitaminL.Text) - 1
+        End If
+    End Sub
+
+    Private Sub Button14_MouseDown(sender As Object, e As MouseEventArgs) Handles Button14.MouseDown
+        If e.Button = MouseButtons.Right Then
+            CijedjenisokL.Text = CDbl(CijedjenisokL.Text) - 1
+        End If
+    End Sub
+
+    Private Sub Button40_MouseDown(sender As Object, e As MouseEventArgs) Handles Button40.MouseDown
+        If e.Button = MouseButtons.Right Then
+            LedeniCajL.Text = CDbl(LedeniCajL.Text) - 1
+        End If
+    End Sub
+
+    Private Sub Button9_MouseDown(sender As Object, e As MouseEventArgs) Handles Button9.MouseDown
+        If e.Button = MouseButtons.Right Then
+            VodasokusomL.Text = CDbl(VodasokusomL.Text) - 1
+        End If
+    End Sub
+
+    Private Sub Button10_MouseDown(sender As Object, e As MouseEventArgs) Handles Button10.MouseDown
+        If e.Button = MouseButtons.Right Then
+            IzvorskavodaL.Text = CDbl(IzvorskavodaL.Text) - 1
+        End If
+    End Sub
+
+    Private Sub Button16_MouseDown(sender As Object, e As MouseEventArgs) Handles Button16.MouseDown
+        If e.Button = MouseButtons.Right Then
+            EsspressoL.Text = CDbl(EsspressoL.Text) - 1
+        End If
+    End Sub
+
+    Private Sub Button20_MouseDown(sender As Object, e As MouseEventArgs) Handles Button20.MouseDown
+        If e.Button = MouseButtons.Right Then
+            EspressosmlijekomL.Text = CDbl(EspressosmlijekomL.Text) - 1
+        End If
+    End Sub
+
+    Private Sub Button21_MouseDown(sender As Object, e As MouseEventArgs) Handles Button21.MouseDown
+        If e.Button = MouseButtons.Right Then
+            MacchiatoL.Text = CDbl(MacchiatoL.Text) - 1
+        End If
+    End Sub
+
+    Private Sub Button17_MouseDown(sender As Object, e As MouseEventArgs) Handles Button17.MouseDown
+        If e.Button = MouseButtons.Right Then
+            CappuccinoL.Text = CDbl(CappuccinoL.Text) - 1
+        End If
+    End Sub
+
+    Private Sub Button22_MouseDown(sender As Object, e As MouseEventArgs) Handles Button22.MouseDown
+        If e.Button = MouseButtons.Right Then
+            NesscafeL.Text = CDbl(NesscafeL.Text) - 1
+        End If
+    End Sub
+
+    Private Sub Button19_MouseDown(sender As Object, e As MouseEventArgs) Handles Button19.MouseDown
+        If e.Button = MouseButtons.Right Then
+            ToplacokoladaL.Text = CDbl(ToplacokoladaL.Text) - 1
+        End If
+    End Sub
+
+    Private Sub Button18_MouseDown(sender As Object, e As MouseEventArgs) Handles Button18.MouseDown
+        If e.Button = MouseButtons.Right Then
+            CajL.Text = CDbl(CajL.Text) - 1
+        End If
+    End Sub
+
+    Private Sub Button25_MouseDown(sender As Object, e As MouseEventArgs) Handles Button25.MouseDown
+        If e.Button = MouseButtons.Right Then
+            HeinekenL.Text = CDbl(HeinekenL.Text) - 1
+        End If
+    End Sub
+
+    Private Sub Button23_MouseDown(sender As Object, e As MouseEventArgs) Handles Button23.MouseDown
+        If e.Button = MouseButtons.Right Then
+            NektarL.Text = CDbl(NektarL.Text) - 1
+        End If
+    End Sub
+
+    Private Sub Button31_MouseDown(sender As Object, e As MouseEventArgs) Handles Button31.MouseDown
+        If e.Button = MouseButtons.Right Then
+            JelenL.Text = CDbl(JelenL.Text) - 1
+        End If
+    End Sub
+
+    Private Sub Button32_MouseDown(sender As Object, e As MouseEventArgs) Handles Button32.MouseDown
+        If e.Button = MouseButtons.Right Then
+            StaropramenL.Text = CDbl(StaropramenL.Text) - 1
+        End If
+    End Sub
+
+    Private Sub Button33_MouseDown(sender As Object, e As MouseEventArgs) Handles Button33.MouseDown
+        If e.Button = MouseButtons.Right Then
+            BanjaluckoL.Text = CDbl(BanjaluckoL.Text) - 1
+        End If
+    End Sub
+
+    Private Sub Button34_MouseDown(sender As Object, e As MouseEventArgs) Handles Button34.MouseDown
+        If e.Button = MouseButtons.Right Then
+            TuborgL.Text = CDbl(TuborgL.Text) - 1
+        End If
+    End Sub
+
+    Private Sub Button35_MouseDown(sender As Object, e As MouseEventArgs) Handles Button35.MouseDown
+        If e.Button = MouseButtons.Right Then
+            BecksL.Text = CDbl(BecksL.Text) - 1
+        End If
+    End Sub
+
+    Private Sub Button26_MouseDown(sender As Object, e As MouseEventArgs) Handles Button26.MouseDown
+        If e.Button = MouseButtons.Right Then
+            JackDanielsL.Text = CDbl(JackDanielsL.Text) - 1
+        End If
+    End Sub
+
+    Private Sub Button24_MouseDown(sender As Object, e As MouseEventArgs) Handles Button24.MouseDown
+        If e.Button = MouseButtons.Right Then
+            BelvedereL.Text = CDbl(BelvedereL.Text) - 1
+        End If
+    End Sub
+
+    Private Sub Button36_MouseDown(sender As Object, e As MouseEventArgs) Handles Button36.MouseDown
+        If e.Button = MouseButtons.Right Then
+            GreygooseL.Text = CDbl(GreygooseL.Text) - 1
+        End If
+    End Sub
+
+    Private Sub Button37_MouseDown(sender As Object, e As MouseEventArgs) Handles Button37.MouseDown
+        If e.Button = MouseButtons.Right Then
+            VigorVodkaL.Text = CDbl(VigorVodkaL.Text) - 1
+        End If
+    End Sub
+
+    Private Sub Button38_MouseDown(sender As Object, e As MouseEventArgs) Handles Button38.MouseDown
+        If e.Button = MouseButtons.Right Then
+            JagermeisterL.Text = CDbl(JagermeisterL.Text) - 1
+        End If
+    End Sub
+
+    Private Sub Button39_MouseDown(sender As Object, e As MouseEventArgs) Handles Button39.MouseDown
+        If e.Button = MouseButtons.Right Then
+            AbsinthL.Text = CDbl(AbsinthL.Text) - 1
+        End If
+    End Sub
+
+    Private Sub Button27_MouseDown(sender As Object, e As MouseEventArgs) Handles Button27.MouseDown
+        If e.Button = MouseButtons.Right Then
+            ViljamovkaL.Text = CDbl(ViljamovkaL.Text) - 1
+        End If
+    End Sub
+
+    Private Sub Button30_MouseDown(sender As Object, e As MouseEventArgs) Handles Button30.MouseDown
+        If e.Button = MouseButtons.Right Then
+            GinL.Text = CDbl(GinL.Text) - 1
+        End If
+    End Sub
+
+    Private Sub Button41_MouseDown(sender As Object, e As MouseEventArgs) Handles Button41.MouseDown
+        If e.Button = MouseButtons.Right Then
+            BadelKonjakL.Text = CDbl(BadelKonjakL.Text) - 1
+        End If
+    End Sub
+
+    Private Sub Button42_MouseDown(sender As Object, e As MouseEventArgs) Handles Button42.MouseDown
+        If e.Button = MouseButtons.Right Then
+            RubinovVinjakL.Text = CDbl(RubinovVinjakL.Text) - 1
+        End If
+    End Sub
 End Class
