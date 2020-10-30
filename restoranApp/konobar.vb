@@ -55,8 +55,13 @@ Public Class konobar
         adapterS.Fill(tableS)
 
         Dim vrijednostID As Integer
-        vrijednostID = tableS.Rows(0)(0)
-        vrijednostID += 1
+        Try
+            vrijednostID = tableS.Rows(0)(0)
+            vrijednostID += 1
+        Catch ex As Exception
+            vrijednostID = 1
+        End Try
+
 
 
 
@@ -111,18 +116,22 @@ Public Class konobar
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
 
         counter = 0
+        Try
+            For Each Label In Me.Controls
+                If Label.text = "0" Then
+                    Label.visible = False
+                    counter += 1
+                ElseIf Label.text = "-1" Or Label.text = "-2" Or Label.text = "-3" Then
+                    Label.text = 0
+                    Label.visible = False
+                Else
+                    Label.visible = True
+                End If
+            Next
+        Catch ex As Exception
+        End Try
 
-        For Each Label In Me.Controls
-            If Label.text = "0" Then
-                Label.visible = False
-                counter += 1
-            Else
-                Label.visible = True
-            End If
 
-
-
-        Next
 
         Label1.Text = TimeOfDay.ToString("hh:mm tt")
     End Sub

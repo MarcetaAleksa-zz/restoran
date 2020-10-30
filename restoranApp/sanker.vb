@@ -106,12 +106,12 @@ Public Class sanker
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
-        Me.Controls.Clear() 'removes all the controls on the form
-        InitializeComponent() 'load all the controls again
-        sanker_Load(e, e)
+        'Me.Controls.Clear() 'removes all the controls on the form
+        'InitializeComponent() 'load all the controls again
+        'sanker_Load(e, e)
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Public Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Me.Controls.Clear() 'removes all the controls on the form
         InitializeComponent() 'load all the controls again
         sanker_Load(e, e)

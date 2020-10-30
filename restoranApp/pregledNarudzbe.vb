@@ -125,13 +125,16 @@ Public Class pregledNarudzbe
             Dim Command1 As New SqlCommand("DELETE FROM  NarudzbaS  where brojNarudzbe = " + Label3.Text + "", Baza.connection)
             Command1.ExecuteNonQuery()
 
+            MsgBox("Uspjeno ste izdali narudzbu!")
+
+
             Me.Controls.Clear() 'removes all the controls on the form
             InitializeComponent() 'load all the controls again
             pregledNarudzbe_Load(e, e)
             Me.Hide()
             sanker.Enabled = True
             sanker.Focus()
-
+            sanker.Button2_Click(e, e)
         Catch ex As Exception
             MessageBox.Show(ex.ToString)
         Finally
