@@ -61,6 +61,7 @@ Public Class admin
 VALUES ('" & TextBox5.Text & "','" & Enkripcija.HashNoviK & "', '" & holdit & "' , '" & imeTextBox.Text & "' , '" & TextBox1.Text & "' , '" & TextBox3.Text & "', '" & TextBox6.Text & "', '" & TextBox4.Text & "')", Baza.connection)
                     command.ExecuteNonQuery()
                     Enkripcija.HashNoviK = Nothing
+                    Enkripcija.HashPrijava = Nothing
                     MsgBox("Uspjesno ste dodali korisnika!")
 
                     Me.Controls.Clear() 'removes all the controls on the form

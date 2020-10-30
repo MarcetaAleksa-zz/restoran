@@ -74,7 +74,7 @@ korisnickoIme = @korisnicki_id and  lozinka = '" + Enkripcija.HashPrijava + "' C
             Catch ex As Exception
 
             End Try
-            MessageBox.Show(Enkripcija.HashPrijava)
+
             If tabela.Rows.Count <> 0 Then
                 imePrijavljenog = tabela.Rows(0)(0)
                 KoJeOvajPokemon.Text = textBox1.Text

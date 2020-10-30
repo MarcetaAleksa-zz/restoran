@@ -118,6 +118,27 @@ Public Class pregledNarudzbe
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Try
+            Baza.connection.Open()
+            Dim Command As New SqlCommand("DELETE FROM  NarudzbaK  where redniBroj = " + Label3.Text + "", Baza.connection)
+            Command.ExecuteNonQuery()
+            Dim Command1 As New SqlCommand("DELETE FROM  NarudzbaS  where brojNarudzbe = " + Label3.Text + "", Baza.connection)
+            Command1.ExecuteNonQuery()
+
+            Me.Controls.Clear() 'removes all the controls on the form
+            InitializeComponent() 'load all the controls again
+            pregledNarudzbe_Load(e, e)
+            Me.Hide()
+            sanker.Enabled = True
+            sanker.Focus()
+
+        Catch ex As Exception
+            MessageBox.Show(ex.ToString)
+        Finally
+            Baza.connection.Close()
+        End Try
+
+
 
     End Sub
 
