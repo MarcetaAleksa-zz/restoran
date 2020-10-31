@@ -117,12 +117,14 @@ Partial Class konobar
         Me.Button43 = New System.Windows.Forms.Button()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Panel2 = New System.Windows.Forms.Panel()
         Me.SuspendLayout()
         '
         'Button1
         '
         Me.Button1.AccessibleName = ""
-        Me.Button1.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.Button1.BackColor = System.Drawing.Color.DarkCyan
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Location = New System.Drawing.Point(7, 92)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(99, 49)
@@ -133,7 +135,8 @@ Partial Class konobar
         '
         'Button2
         '
-        Me.Button2.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.Button2.BackColor = System.Drawing.Color.DarkCyan
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Location = New System.Drawing.Point(117, 92)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(99, 49)
@@ -143,7 +146,8 @@ Partial Class konobar
         '
         'Button3
         '
-        Me.Button3.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.Button3.BackColor = System.Drawing.Color.DarkCyan
+        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.Location = New System.Drawing.Point(232, 92)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(99, 49)
@@ -154,10 +158,11 @@ Partial Class konobar
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Lucida Fax", 14.25!, System.Drawing.FontStyle.Bold)
+        Me.Label2.BackColor = System.Drawing.SystemColors.Highlight
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(148, 32)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(23, 22)
+        Me.Label2.Size = New System.Drawing.Size(22, 24)
         Me.Label2.TabIndex = 4
         Me.Label2.Text = "n"
         '
@@ -217,24 +222,26 @@ Partial Class konobar
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Lucida Fax", 14.25!, System.Drawing.FontStyle.Bold)
+        Me.Label6.BackColor = System.Drawing.SystemColors.Highlight
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.SystemColors.ButtonFace
         Me.Label6.Location = New System.Drawing.Point(104, 10)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(146, 22)
+        Me.Label6.Size = New System.Drawing.Size(167, 24)
         Me.Label6.TabIndex = 8
-        Me.Label6.Text = "Ime konobara"
+        Me.Label6.Text = "IME KONOBARA"
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Lucida Fax", 14.25!, System.Drawing.FontStyle.Bold)
+        Me.Label7.BackColor = System.Drawing.SystemColors.Highlight
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.SystemColors.ButtonFace
         Me.Label7.Location = New System.Drawing.Point(696, 10)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(88, 22)
+        Me.Label7.Size = New System.Drawing.Size(98, 24)
         Me.Label7.TabIndex = 9
-        Me.Label7.Text = "Vrijeme"
+        Me.Label7.Text = "VRIJEME"
         '
         'TextBox1
         '
@@ -245,7 +252,8 @@ Partial Class konobar
         '
         'Button6
         '
-        Me.Button6.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.Button6.BackColor = System.Drawing.Color.DarkCyan
+        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button6.Location = New System.Drawing.Point(351, 92)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(99, 49)
@@ -255,7 +263,8 @@ Partial Class konobar
         '
         'Button7
         '
-        Me.Button7.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.Button7.BackColor = System.Drawing.Color.DarkCyan
+        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button7.Location = New System.Drawing.Point(698, 92)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(99, 49)
@@ -265,7 +274,8 @@ Partial Class konobar
         '
         'Button8
         '
-        Me.Button8.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.Button8.BackColor = System.Drawing.Color.DarkCyan
+        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button8.Location = New System.Drawing.Point(115, 165)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(99, 49)
@@ -275,7 +285,8 @@ Partial Class konobar
         '
         'Button9
         '
-        Me.Button9.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.Button9.BackColor = System.Drawing.Color.DarkCyan
+        Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button9.Location = New System.Drawing.Point(5, 238)
         Me.Button9.Name = "Button9"
         Me.Button9.Size = New System.Drawing.Size(99, 49)
@@ -285,7 +296,8 @@ Partial Class konobar
         '
         'Button10
         '
-        Me.Button10.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.Button10.BackColor = System.Drawing.Color.DarkCyan
+        Me.Button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button10.Location = New System.Drawing.Point(115, 238)
         Me.Button10.Name = "Button10"
         Me.Button10.Size = New System.Drawing.Size(99, 49)
@@ -295,7 +307,8 @@ Partial Class konobar
         '
         'Button11
         '
-        Me.Button11.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.Button11.BackColor = System.Drawing.Color.DarkCyan
+        Me.Button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button11.Location = New System.Drawing.Point(5, 165)
         Me.Button11.Name = "Button11"
         Me.Button11.Size = New System.Drawing.Size(99, 49)
@@ -305,7 +318,8 @@ Partial Class konobar
         '
         'Button12
         '
-        Me.Button12.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.Button12.BackColor = System.Drawing.Color.DarkCyan
+        Me.Button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button12.Location = New System.Drawing.Point(230, 165)
         Me.Button12.Name = "Button12"
         Me.Button12.Size = New System.Drawing.Size(99, 49)
@@ -315,7 +329,8 @@ Partial Class konobar
         '
         'Button13
         '
-        Me.Button13.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.Button13.BackColor = System.Drawing.Color.DarkCyan
+        Me.Button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button13.Location = New System.Drawing.Point(349, 165)
         Me.Button13.Name = "Button13"
         Me.Button13.Size = New System.Drawing.Size(99, 49)
@@ -325,7 +340,8 @@ Partial Class konobar
         '
         'Button14
         '
-        Me.Button14.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.Button14.BackColor = System.Drawing.Color.DarkCyan
+        Me.Button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button14.Location = New System.Drawing.Point(584, 165)
         Me.Button14.Name = "Button14"
         Me.Button14.Size = New System.Drawing.Size(99, 49)
@@ -335,7 +351,8 @@ Partial Class konobar
         '
         'Button15
         '
-        Me.Button15.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.Button15.BackColor = System.Drawing.Color.DarkCyan
+        Me.Button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button15.Location = New System.Drawing.Point(466, 165)
         Me.Button15.Name = "Button15"
         Me.Button15.Size = New System.Drawing.Size(99, 49)
@@ -345,7 +362,8 @@ Partial Class konobar
         '
         'Button16
         '
-        Me.Button16.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.Button16.BackColor = System.Drawing.Color.DarkCyan
+        Me.Button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button16.Location = New System.Drawing.Point(9, 343)
         Me.Button16.Name = "Button16"
         Me.Button16.Size = New System.Drawing.Size(99, 49)
@@ -355,7 +373,8 @@ Partial Class konobar
         '
         'Button17
         '
-        Me.Button17.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.Button17.BackColor = System.Drawing.Color.DarkCyan
+        Me.Button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button17.Location = New System.Drawing.Point(351, 342)
         Me.Button17.Name = "Button17"
         Me.Button17.Size = New System.Drawing.Size(99, 49)
@@ -365,7 +384,8 @@ Partial Class konobar
         '
         'Button18
         '
-        Me.Button18.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.Button18.BackColor = System.Drawing.Color.DarkCyan
+        Me.Button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button18.Location = New System.Drawing.Point(698, 342)
         Me.Button18.Name = "Button18"
         Me.Button18.Size = New System.Drawing.Size(99, 49)
@@ -375,7 +395,8 @@ Partial Class konobar
         '
         'Button19
         '
-        Me.Button19.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.Button19.BackColor = System.Drawing.Color.DarkCyan
+        Me.Button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button19.Location = New System.Drawing.Point(584, 342)
         Me.Button19.Name = "Button19"
         Me.Button19.Size = New System.Drawing.Size(99, 49)
@@ -385,7 +406,8 @@ Partial Class konobar
         '
         'Button20
         '
-        Me.Button20.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.Button20.BackColor = System.Drawing.Color.DarkCyan
+        Me.Button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button20.Location = New System.Drawing.Point(115, 342)
         Me.Button20.Name = "Button20"
         Me.Button20.Size = New System.Drawing.Size(99, 49)
@@ -395,7 +417,8 @@ Partial Class konobar
         '
         'Button21
         '
-        Me.Button21.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.Button21.BackColor = System.Drawing.Color.DarkCyan
+        Me.Button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button21.Location = New System.Drawing.Point(230, 342)
         Me.Button21.Name = "Button21"
         Me.Button21.Size = New System.Drawing.Size(99, 49)
@@ -405,7 +428,8 @@ Partial Class konobar
         '
         'Button22
         '
-        Me.Button22.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.Button22.BackColor = System.Drawing.Color.DarkCyan
+        Me.Button22.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button22.Location = New System.Drawing.Point(468, 343)
         Me.Button22.Name = "Button22"
         Me.Button22.Size = New System.Drawing.Size(99, 49)
@@ -415,7 +439,8 @@ Partial Class konobar
         '
         'Button23
         '
-        Me.Button23.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.Button23.BackColor = System.Drawing.Color.DarkCyan
+        Me.Button23.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button23.Location = New System.Drawing.Point(119, 449)
         Me.Button23.Name = "Button23"
         Me.Button23.Size = New System.Drawing.Size(99, 49)
@@ -425,7 +450,8 @@ Partial Class konobar
         '
         'Button24
         '
-        Me.Button24.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.Button24.BackColor = System.Drawing.Color.DarkCyan
+        Me.Button24.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button24.Location = New System.Drawing.Point(119, 527)
         Me.Button24.Name = "Button24"
         Me.Button24.Size = New System.Drawing.Size(99, 49)
@@ -435,7 +461,8 @@ Partial Class konobar
         '
         'Button25
         '
-        Me.Button25.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.Button25.BackColor = System.Drawing.Color.DarkCyan
+        Me.Button25.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button25.Location = New System.Drawing.Point(9, 449)
         Me.Button25.Name = "Button25"
         Me.Button25.Size = New System.Drawing.Size(99, 49)
@@ -445,7 +472,8 @@ Partial Class konobar
         '
         'Button26
         '
-        Me.Button26.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.Button26.BackColor = System.Drawing.Color.DarkCyan
+        Me.Button26.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button26.Location = New System.Drawing.Point(9, 527)
         Me.Button26.Name = "Button26"
         Me.Button26.Size = New System.Drawing.Size(99, 49)
@@ -455,7 +483,8 @@ Partial Class konobar
         '
         'Button27
         '
-        Me.Button27.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.Button27.BackColor = System.Drawing.Color.DarkCyan
+        Me.Button27.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button27.Location = New System.Drawing.Point(700, 527)
         Me.Button27.Name = "Button27"
         Me.Button27.Size = New System.Drawing.Size(99, 49)
@@ -685,7 +714,8 @@ Partial Class konobar
         '
         'Button28
         '
-        Me.Button28.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.Button28.BackColor = System.Drawing.Color.DarkCyan
+        Me.Button28.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button28.Location = New System.Drawing.Point(468, 92)
         Me.Button28.Name = "Button28"
         Me.Button28.Size = New System.Drawing.Size(99, 49)
@@ -695,7 +725,8 @@ Partial Class konobar
         '
         'Button29
         '
-        Me.Button29.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.Button29.BackColor = System.Drawing.Color.DarkCyan
+        Me.Button29.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button29.Location = New System.Drawing.Point(584, 92)
         Me.Button29.Name = "Button29"
         Me.Button29.Size = New System.Drawing.Size(99, 49)
@@ -705,7 +736,8 @@ Partial Class konobar
         '
         'Button30
         '
-        Me.Button30.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.Button30.BackColor = System.Drawing.Color.DarkCyan
+        Me.Button30.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button30.Location = New System.Drawing.Point(9, 602)
         Me.Button30.Name = "Button30"
         Me.Button30.Size = New System.Drawing.Size(99, 49)
@@ -715,7 +747,8 @@ Partial Class konobar
         '
         'Button31
         '
-        Me.Button31.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.Button31.BackColor = System.Drawing.Color.DarkCyan
+        Me.Button31.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button31.Location = New System.Drawing.Point(234, 449)
         Me.Button31.Name = "Button31"
         Me.Button31.Size = New System.Drawing.Size(99, 49)
@@ -725,7 +758,8 @@ Partial Class konobar
         '
         'Button32
         '
-        Me.Button32.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.Button32.BackColor = System.Drawing.Color.DarkCyan
+        Me.Button32.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button32.Location = New System.Drawing.Point(353, 449)
         Me.Button32.Name = "Button32"
         Me.Button32.Size = New System.Drawing.Size(99, 49)
@@ -735,7 +769,8 @@ Partial Class konobar
         '
         'Button33
         '
-        Me.Button33.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.Button33.BackColor = System.Drawing.Color.DarkCyan
+        Me.Button33.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button33.Location = New System.Drawing.Point(470, 449)
         Me.Button33.Name = "Button33"
         Me.Button33.Size = New System.Drawing.Size(99, 49)
@@ -745,7 +780,8 @@ Partial Class konobar
         '
         'Button34
         '
-        Me.Button34.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.Button34.BackColor = System.Drawing.Color.DarkCyan
+        Me.Button34.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button34.Location = New System.Drawing.Point(586, 449)
         Me.Button34.Name = "Button34"
         Me.Button34.Size = New System.Drawing.Size(99, 49)
@@ -755,7 +791,8 @@ Partial Class konobar
         '
         'Button35
         '
-        Me.Button35.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.Button35.BackColor = System.Drawing.Color.DarkCyan
+        Me.Button35.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button35.Location = New System.Drawing.Point(700, 449)
         Me.Button35.Name = "Button35"
         Me.Button35.Size = New System.Drawing.Size(99, 49)
@@ -765,7 +802,8 @@ Partial Class konobar
         '
         'Button36
         '
-        Me.Button36.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.Button36.BackColor = System.Drawing.Color.DarkCyan
+        Me.Button36.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button36.Location = New System.Drawing.Point(230, 527)
         Me.Button36.Name = "Button36"
         Me.Button36.Size = New System.Drawing.Size(99, 49)
@@ -775,7 +813,8 @@ Partial Class konobar
         '
         'Button37
         '
-        Me.Button37.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.Button37.BackColor = System.Drawing.Color.DarkCyan
+        Me.Button37.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button37.Location = New System.Drawing.Point(353, 527)
         Me.Button37.Name = "Button37"
         Me.Button37.Size = New System.Drawing.Size(99, 49)
@@ -785,7 +824,8 @@ Partial Class konobar
         '
         'Button38
         '
-        Me.Button38.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.Button38.BackColor = System.Drawing.Color.DarkCyan
+        Me.Button38.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button38.Location = New System.Drawing.Point(470, 527)
         Me.Button38.Name = "Button38"
         Me.Button38.Size = New System.Drawing.Size(99, 49)
@@ -795,7 +835,8 @@ Partial Class konobar
         '
         'Button39
         '
-        Me.Button39.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.Button39.BackColor = System.Drawing.Color.DarkCyan
+        Me.Button39.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button39.Location = New System.Drawing.Point(586, 527)
         Me.Button39.Name = "Button39"
         Me.Button39.Size = New System.Drawing.Size(99, 49)
@@ -805,7 +846,8 @@ Partial Class konobar
         '
         'Button40
         '
-        Me.Button40.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.Button40.BackColor = System.Drawing.Color.DarkCyan
+        Me.Button40.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button40.Location = New System.Drawing.Point(698, 164)
         Me.Button40.Name = "Button40"
         Me.Button40.Size = New System.Drawing.Size(99, 49)
@@ -815,7 +857,8 @@ Partial Class konobar
         '
         'Button41
         '
-        Me.Button41.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.Button41.BackColor = System.Drawing.Color.DarkCyan
+        Me.Button41.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button41.Location = New System.Drawing.Point(119, 602)
         Me.Button41.Name = "Button41"
         Me.Button41.Size = New System.Drawing.Size(99, 49)
@@ -825,7 +868,8 @@ Partial Class konobar
         '
         'Button42
         '
-        Me.Button42.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.Button42.BackColor = System.Drawing.Color.DarkCyan
+        Me.Button42.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button42.Location = New System.Drawing.Point(230, 602)
         Me.Button42.Name = "Button42"
         Me.Button42.Size = New System.Drawing.Size(99, 49)
@@ -837,37 +881,37 @@ Partial Class konobar
         '
         Me.Label8.AutoSize = True
         Me.Label8.BackColor = System.Drawing.Color.Transparent
-        Me.Label8.Font = New System.Drawing.Font("Lucida Fax", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.ForeColor = System.Drawing.Color.Black
         Me.Label8.Location = New System.Drawing.Point(7, 64)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(276, 22)
+        Me.Label8.Size = New System.Drawing.Size(316, 24)
         Me.Label8.TabIndex = 48
-        Me.Label8.Text = "Gazirana i negazirana pica"
+        Me.Label8.Text = "GAZIRANA I NEGAZIRANA PICA"
         '
         'Label9
         '
         Me.Label9.AutoSize = True
         Me.Label9.BackColor = System.Drawing.Color.Transparent
-        Me.Label9.Font = New System.Drawing.Font("Lucida Fax", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.ForeColor = System.Drawing.Color.Black
         Me.Label9.Location = New System.Drawing.Point(14, 313)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(131, 22)
+        Me.Label9.Size = New System.Drawing.Size(140, 24)
         Me.Label9.TabIndex = 49
-        Me.Label9.Text = "Topli napici"
+        Me.Label9.Text = "TOPLI NAPICI"
         '
         'Label10
         '
         Me.Label10.AutoSize = True
         Me.Label10.BackColor = System.Drawing.Color.Transparent
-        Me.Label10.Font = New System.Drawing.Font("Lucida Fax", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.ForeColor = System.Drawing.Color.Black
         Me.Label10.Location = New System.Drawing.Point(14, 415)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(159, 22)
+        Me.Label10.Size = New System.Drawing.Size(187, 24)
         Me.Label10.TabIndex = 50
-        Me.Label10.Text = "Alkoholna pica"
+        Me.Label10.Text = "ALKOHOLNA PICA"
         '
         'Panel1
         '
@@ -1117,19 +1161,28 @@ Partial Class konobar
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Lucida Fax", 14.25!, System.Drawing.FontStyle.Bold)
+        Me.Label1.BackColor = System.Drawing.SystemColors.Highlight
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.Black
         Me.Label1.Location = New System.Drawing.Point(696, 32)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(23, 22)
+        Me.Label1.Size = New System.Drawing.Size(22, 24)
         Me.Label1.TabIndex = 54
         Me.Label1.Text = "n"
+        '
+        'Panel2
+        '
+        Me.Panel2.BackColor = System.Drawing.SystemColors.Highlight
+        Me.Panel2.Location = New System.Drawing.Point(-7, -69)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(851, 132)
+        Me.Panel2.TabIndex = 55
         '
         'konobar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.SeaGreen
+        Me.BackColor = System.Drawing.SystemColors.Control
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(844, 728)
         Me.Controls.Add(Me.Label1)
@@ -1225,6 +1278,7 @@ Partial Class konobar
         Me.Controls.Add(Me.Button14)
         Me.Controls.Add(Me.Button28)
         Me.Controls.Add(Me.Button40)
+        Me.Controls.Add(Me.Panel2)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "konobar"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -1328,4 +1382,5 @@ Partial Class konobar
     Friend WithEvents Button43 As Button
     Friend WithEvents Timer1 As Timer
     Friend WithEvents Label1 As Label
+    Friend WithEvents Panel2 As Panel
 End Class

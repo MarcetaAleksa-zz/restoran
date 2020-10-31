@@ -58,3 +58,20 @@ C:\Users\marce\Documents\GitHub\restoran\restoranApp\obj\Debug\restoranApp.admin
 C:\Users\marce\Documents\GitHub\restoran\restoranApp\obj\Debug\restoranApp.sanker.resources
 C:\Users\marce\Documents\GitHub\restoran\restoranApp\obj\Debug\restoranApp.pregledNarudzbe.resources
 C:\Users\marce\Documents\GitHub\restoran\restoranApp\obj\Debug\restoranApp.konobar.resources
+C:\Users\Riki\Desktop\PROJEKAT - JOHNNIE WALKER\restoran\restoranApp\bin\Debug\restoranApp.exe.config
+C:\Users\Riki\Desktop\PROJEKAT - JOHNNIE WALKER\restoran\restoranApp\bin\Debug\restoranApp.exe
+C:\Users\Riki\Desktop\PROJEKAT - JOHNNIE WALKER\restoran\restoranApp\bin\Debug\restoranApp.pdb
+C:\Users\Riki\Desktop\PROJEKAT - JOHNNIE WALKER\restoran\restoranApp\bin\Debug\restoranApp.xml
+C:\Users\Riki\Desktop\PROJEKAT - JOHNNIE WALKER\restoran\restoranApp\obj\Debug\restoranApp.vbprojAssemblyReference.cache
+C:\Users\Riki\Desktop\PROJEKAT - JOHNNIE WALKER\restoran\restoranApp\obj\Debug\restoranApp.admin.resources
+C:\Users\Riki\Desktop\PROJEKAT - JOHNNIE WALKER\restoran\restoranApp\obj\Debug\restoranApp.menadzer.resources
+C:\Users\Riki\Desktop\PROJEKAT - JOHNNIE WALKER\restoran\restoranApp\obj\Debug\restoranApp.sanker.resources
+C:\Users\Riki\Desktop\PROJEKAT - JOHNNIE WALKER\restoran\restoranApp\obj\Debug\restoranApp.pregledNarudzbe.resources
+C:\Users\Riki\Desktop\PROJEKAT - JOHNNIE WALKER\restoran\restoranApp\obj\Debug\restoranApp.konobar.resources
+C:\Users\Riki\Desktop\PROJEKAT - JOHNNIE WALKER\restoran\restoranApp\obj\Debug\restoranApp.Resources.resources
+C:\Users\Riki\Desktop\PROJEKAT - JOHNNIE WALKER\restoran\restoranApp\obj\Debug\restoranApp.prijava.resources
+C:\Users\Riki\Desktop\PROJEKAT - JOHNNIE WALKER\restoran\restoranApp\obj\Debug\restoranApp.vbproj.GenerateResource.cache
+C:\Users\Riki\Desktop\PROJEKAT - JOHNNIE WALKER\restoran\restoranApp\obj\Debug\restoranApp.vbproj.CoreCompileInputs.cache
+C:\Users\Riki\Desktop\PROJEKAT - JOHNNIE WALKER\restoran\restoranApp\obj\Debug\restoranApp.exe
+C:\Users\Riki\Desktop\PROJEKAT - JOHNNIE WALKER\restoran\restoranApp\obj\Debug\restoranApp.xml
+C:\Users\Riki\Desktop\PROJEKAT - JOHNNIE WALKER\restoran\restoranApp\obj\Debug\restoranApp.pdb

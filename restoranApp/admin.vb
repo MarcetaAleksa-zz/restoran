@@ -10,6 +10,8 @@ Public Class admin
     Private Sub admin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'TODO: This line of code loads data into the 'KaficDataSet.Nalozi' table. You can move, or remove it, as needed.
         Me.NaloziTableAdapter.Fill(Me.KaficDataSet.Nalozi)
+        'TODO: This line of code loads data into the 'KaficDataSet.Nalozi' table. You can move, or remove it, as needed.
+        'Me.NaloziTableAdapter.Fill(Me.KaficDataSet.Nalozi)
 
         Me.Focus()
         'TODO: This line of code loads data into the 'KaficDataSet1.Nalozi' table. You can move, or remove it, as needed.
@@ -80,5 +82,11 @@ VALUES ('" & TextBox5.Text & "','" & Enkripcija.HashNoviK & "', '" & holdit & "'
         Catch ex As Exception
             MessageBox.Show(ex.ToString)
         End Try
+    End Sub
+
+    Private Sub Ponisti_Click(sender As Object, e As EventArgs) Handles Ponisti.Click
+        Me.Controls.Clear() 'removes all the controls on the form
+        InitializeComponent() 'load all the controls again
+        admin_Load(e, e)
     End Sub
 End Class

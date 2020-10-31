@@ -36,6 +36,9 @@ Partial Class prijava
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.KoJeOvajPokemon = New System.Windows.Forms.Label()
         Me.pictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Caffebarlabel = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Button3 = New System.Windows.Forms.Button()
         CType(Me.pictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -126,7 +129,7 @@ Partial Class prijava
         'pictureBox2
         '
         Me.pictureBox2.Image = CType(resources.GetObject("pictureBox2.Image"), System.Drawing.Image)
-        Me.pictureBox2.Location = New System.Drawing.Point(257, -96)
+        Me.pictureBox2.Location = New System.Drawing.Point(256, -102)
         Me.pictureBox2.Name = "pictureBox2"
         Me.pictureBox2.Size = New System.Drawing.Size(677, 440)
         Me.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -163,12 +166,44 @@ Partial Class prijava
         Me.pictureBox1.TabIndex = 2
         Me.pictureBox1.TabStop = False
         '
+        'Caffebarlabel
+        '
+        Me.Caffebarlabel.AutoSize = True
+        Me.Caffebarlabel.Font = New System.Drawing.Font("Cooper Black", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Caffebarlabel.Location = New System.Drawing.Point(453, 169)
+        Me.Caffebarlabel.Name = "Caffebarlabel"
+        Me.Caffebarlabel.Size = New System.Drawing.Size(294, 31)
+        Me.Caffebarlabel.TabIndex = 45
+        Me.Caffebarlabel.Text = "Caffe bar and lounge"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Cooper Black", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(517, 209)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(166, 21)
+        Me.Label1.TabIndex = 46
+        Me.Label1.Text = "Johnnie Walker"
+        '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(900, 393)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(75, 23)
+        Me.Button3.TabIndex = 47
+        Me.Button3.Text = "Button3"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
         'prijava
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(800, 537)
+        Me.ClientSize = New System.Drawing.Size(796, 537)
+        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.Caffebarlabel)
         Me.Controls.Add(Me.pictureBox4)
         Me.Controls.Add(Me.pictureBox3)
         Me.Controls.Add(Me.button2)
@@ -209,4 +244,7 @@ Partial Class prijava
     Friend WithEvents Panel1 As Panel
     Private WithEvents pictureBox1 As PictureBox
     Public WithEvents KoJeOvajPokemon As Label
+    Friend WithEvents Caffebarlabel As Label
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Button3 As Button
 End Class

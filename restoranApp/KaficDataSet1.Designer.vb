@@ -20,12 +20,12 @@ Option Explicit On
  Global.System.ComponentModel.DesignerCategoryAttribute("code"),  _
  Global.System.ComponentModel.ToolboxItem(true),  _
  Global.System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema"),  _
- Global.System.Xml.Serialization.XmlRootAttribute("KaficDataSet"),  _
+ Global.System.Xml.Serialization.XmlRootAttribute("KaficDataSet1"),  _
  Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")>  _
-Partial Public Class KaficDataSet
+Partial Public Class KaficDataSet1
     Inherits Global.System.Data.DataSet
     
-    Private tableNalozi As NaloziDataTable
+    Private tableSkladiste As SkladisteDataTable
     
     Private _schemaSerializationMode As Global.System.Data.SchemaSerializationMode = Global.System.Data.SchemaSerializationMode.IncludeSchema
     
@@ -56,8 +56,8 @@ Partial Public Class KaficDataSet
         If (Me.DetermineSchemaSerializationMode(info, context) = Global.System.Data.SchemaSerializationMode.IncludeSchema) Then
             Dim ds As Global.System.Data.DataSet = New Global.System.Data.DataSet()
             ds.ReadXmlSchema(New Global.System.Xml.XmlTextReader(New Global.System.IO.StringReader(strSchema)))
-            If (Not (ds.Tables("Nalozi")) Is Nothing) Then
-                MyBase.Tables.Add(New NaloziDataTable(ds.Tables("Nalozi")))
+            If (Not (ds.Tables("Skladiste")) Is Nothing) Then
+                MyBase.Tables.Add(New SkladisteDataTable(ds.Tables("Skladiste")))
             End If
             Me.DataSetName = ds.DataSetName
             Me.Prefix = ds.Prefix
@@ -80,9 +80,9 @@ Partial Public Class KaficDataSet
      Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
      Global.System.ComponentModel.Browsable(false),  _
      Global.System.ComponentModel.DesignerSerializationVisibility(Global.System.ComponentModel.DesignerSerializationVisibility.Content)>  _
-    Public ReadOnly Property Nalozi() As NaloziDataTable
+    Public ReadOnly Property Skladiste() As SkladisteDataTable
         Get
-            Return Me.tableNalozi
+            Return Me.tableSkladiste
         End Get
     End Property
     
@@ -128,7 +128,7 @@ Partial Public Class KaficDataSet
     <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
      Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
     Public Overrides Function Clone() As Global.System.Data.DataSet
-        Dim cln As KaficDataSet = CType(MyBase.Clone,KaficDataSet)
+        Dim cln As KaficDataSet1 = CType(MyBase.Clone,KaficDataSet1)
         cln.InitVars
         cln.SchemaSerializationMode = Me.SchemaSerializationMode
         Return cln
@@ -153,8 +153,8 @@ Partial Public Class KaficDataSet
             Me.Reset
             Dim ds As Global.System.Data.DataSet = New Global.System.Data.DataSet()
             ds.ReadXml(reader)
-            If (Not (ds.Tables("Nalozi")) Is Nothing) Then
-                MyBase.Tables.Add(New NaloziDataTable(ds.Tables("Nalozi")))
+            If (Not (ds.Tables("Skladiste")) Is Nothing) Then
+                MyBase.Tables.Add(New SkladisteDataTable(ds.Tables("Skladiste")))
             End If
             Me.DataSetName = ds.DataSetName
             Me.Prefix = ds.Prefix
@@ -188,10 +188,10 @@ Partial Public Class KaficDataSet
     <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
      Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
     Friend Overloads Sub InitVars(ByVal initTable As Boolean)
-        Me.tableNalozi = CType(MyBase.Tables("Nalozi"),NaloziDataTable)
+        Me.tableSkladiste = CType(MyBase.Tables("Skladiste"),SkladisteDataTable)
         If (initTable = true) Then
-            If (Not (Me.tableNalozi) Is Nothing) Then
-                Me.tableNalozi.InitVars
+            If (Not (Me.tableSkladiste) Is Nothing) Then
+                Me.tableSkladiste.InitVars
             End If
         End If
     End Sub
@@ -199,18 +199,18 @@ Partial Public Class KaficDataSet
     <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
      Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
     Private Sub InitClass()
-        Me.DataSetName = "KaficDataSet"
+        Me.DataSetName = "KaficDataSet1"
         Me.Prefix = ""
-        Me.Namespace = "http://tempuri.org/KaficDataSet.xsd"
+        Me.Namespace = "http://tempuri.org/KaficDataSet1.xsd"
         Me.EnforceConstraints = true
         Me.SchemaSerializationMode = Global.System.Data.SchemaSerializationMode.IncludeSchema
-        Me.tableNalozi = New NaloziDataTable()
-        MyBase.Tables.Add(Me.tableNalozi)
+        Me.tableSkladiste = New SkladisteDataTable()
+        MyBase.Tables.Add(Me.tableSkladiste)
     End Sub
     
     <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
      Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
-    Private Function ShouldSerializeNalozi() As Boolean
+    Private Function ShouldSerializeSkladiste() As Boolean
         Return false
     End Function
     
@@ -225,7 +225,7 @@ Partial Public Class KaficDataSet
     <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
      Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
     Public Shared Function GetTypedDataSetSchema(ByVal xs As Global.System.Xml.Schema.XmlSchemaSet) As Global.System.Xml.Schema.XmlSchemaComplexType
-        Dim ds As KaficDataSet = New KaficDataSet()
+        Dim ds As KaficDataSet1 = New KaficDataSet1()
         Dim type As Global.System.Xml.Schema.XmlSchemaComplexType = New Global.System.Xml.Schema.XmlSchemaComplexType()
         Dim sequence As Global.System.Xml.Schema.XmlSchemaSequence = New Global.System.Xml.Schema.XmlSchemaSequence()
         Dim any As Global.System.Xml.Schema.XmlSchemaAny = New Global.System.Xml.Schema.XmlSchemaAny()
@@ -273,23 +273,27 @@ Partial Public Class KaficDataSet
     End Function
     
     <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
-    Public Delegate Sub NaloziRowChangeEventHandler(ByVal sender As Object, ByVal e As NaloziRowChangeEvent)
+    Public Delegate Sub SkladisteRowChangeEventHandler(ByVal sender As Object, ByVal e As SkladisteRowChangeEvent)
     
     '''<summary>
     '''Represents the strongly named DataTable class.
     '''</summary>
     <Global.System.Serializable(),  _
      Global.System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")>  _
-    Partial Public Class NaloziDataTable
-        Inherits Global.System.Data.TypedTableBase(Of NaloziRow)
+    Partial Public Class SkladisteDataTable
+        Inherits Global.System.Data.TypedTableBase(Of SkladisteRow)
         
         Private columnNaziv As Global.System.Data.DataColumn
+        
+        Private columnkolicina As Global.System.Data.DataColumn
+        
+        Private columncijena As Global.System.Data.DataColumn
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
         Public Sub New()
             MyBase.New
-            Me.TableName = "Nalozi"
+            Me.TableName = "Skladiste"
             Me.BeginInit
             Me.InitClass
             Me.EndInit
@@ -329,6 +333,22 @@ Partial Public Class KaficDataSet
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public ReadOnly Property kolicinaColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnkolicina
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public ReadOnly Property cijenaColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columncijena
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
          Global.System.ComponentModel.Browsable(false)>  _
         Public ReadOnly Property Count() As Integer
@@ -339,44 +359,44 @@ Partial Public Class KaficDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
-        Public Default ReadOnly Property Item(ByVal index As Integer) As NaloziRow
+        Public Default ReadOnly Property Item(ByVal index As Integer) As SkladisteRow
             Get
-                Return CType(Me.Rows(index),NaloziRow)
+                Return CType(Me.Rows(index),SkladisteRow)
             End Get
         End Property
         
         <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
-        Public Event NaloziRowChanging As NaloziRowChangeEventHandler
+        Public Event SkladisteRowChanging As SkladisteRowChangeEventHandler
         
         <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
-        Public Event NaloziRowChanged As NaloziRowChangeEventHandler
+        Public Event SkladisteRowChanged As SkladisteRowChangeEventHandler
         
         <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
-        Public Event NaloziRowDeleting As NaloziRowChangeEventHandler
+        Public Event SkladisteRowDeleting As SkladisteRowChangeEventHandler
         
         <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
-        Public Event NaloziRowDeleted As NaloziRowChangeEventHandler
+        Public Event SkladisteRowDeleted As SkladisteRowChangeEventHandler
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
-        Public Overloads Sub AddNaloziRow(ByVal row As NaloziRow)
+        Public Overloads Sub AddSkladisteRow(ByVal row As SkladisteRow)
             Me.Rows.Add(row)
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
-        Public Overloads Function AddNaloziRow(ByVal Naziv As String) As NaloziRow
-            Dim rowNaloziRow As NaloziRow = CType(Me.NewRow,NaloziRow)
-            Dim columnValuesArray() As Object = New Object() {Naziv}
-            rowNaloziRow.ItemArray = columnValuesArray
-            Me.Rows.Add(rowNaloziRow)
-            Return rowNaloziRow
+        Public Overloads Function AddSkladisteRow(ByVal Naziv As String, ByVal kolicina As Double, ByVal cijena As Decimal) As SkladisteRow
+            Dim rowSkladisteRow As SkladisteRow = CType(Me.NewRow,SkladisteRow)
+            Dim columnValuesArray() As Object = New Object() {Naziv, kolicina, cijena}
+            rowSkladisteRow.ItemArray = columnValuesArray
+            Me.Rows.Add(rowSkladisteRow)
+            Return rowSkladisteRow
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
         Public Overrides Function Clone() As Global.System.Data.DataTable
-            Dim cln As NaloziDataTable = CType(MyBase.Clone,NaloziDataTable)
+            Dim cln As SkladisteDataTable = CType(MyBase.Clone,SkladisteDataTable)
             cln.InitVars
             Return cln
         End Function
@@ -384,13 +404,15 @@ Partial Public Class KaficDataSet
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
         Protected Overrides Function CreateInstance() As Global.System.Data.DataTable
-            Return New NaloziDataTable()
+            Return New SkladisteDataTable()
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
         Friend Sub InitVars()
             Me.columnNaziv = MyBase.Columns("Naziv")
+            Me.columnkolicina = MyBase.Columns("kolicina")
+            Me.columncijena = MyBase.Columns("cijena")
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -398,33 +420,37 @@ Partial Public Class KaficDataSet
         Private Sub InitClass()
             Me.columnNaziv = New Global.System.Data.DataColumn("Naziv", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnNaziv)
+            Me.columnkolicina = New Global.System.Data.DataColumn("kolicina", GetType(Double), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnkolicina)
+            Me.columncijena = New Global.System.Data.DataColumn("cijena", GetType(Decimal), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columncijena)
             Me.columnNaziv.MaxLength = 50
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
-        Public Function NewNaloziRow() As NaloziRow
-            Return CType(Me.NewRow,NaloziRow)
+        Public Function NewSkladisteRow() As SkladisteRow
+            Return CType(Me.NewRow,SkladisteRow)
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
         Protected Overrides Function NewRowFromBuilder(ByVal builder As Global.System.Data.DataRowBuilder) As Global.System.Data.DataRow
-            Return New NaloziRow(builder)
+            Return New SkladisteRow(builder)
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
         Protected Overrides Function GetRowType() As Global.System.Type
-            Return GetType(NaloziRow)
+            Return GetType(SkladisteRow)
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
         Protected Overrides Sub OnRowChanged(ByVal e As Global.System.Data.DataRowChangeEventArgs)
             MyBase.OnRowChanged(e)
-            If (Not (Me.NaloziRowChangedEvent) Is Nothing) Then
-                RaiseEvent NaloziRowChanged(Me, New NaloziRowChangeEvent(CType(e.Row,NaloziRow), e.Action))
+            If (Not (Me.SkladisteRowChangedEvent) Is Nothing) Then
+                RaiseEvent SkladisteRowChanged(Me, New SkladisteRowChangeEvent(CType(e.Row,SkladisteRow), e.Action))
             End If
         End Sub
         
@@ -432,8 +458,8 @@ Partial Public Class KaficDataSet
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
         Protected Overrides Sub OnRowChanging(ByVal e As Global.System.Data.DataRowChangeEventArgs)
             MyBase.OnRowChanging(e)
-            If (Not (Me.NaloziRowChangingEvent) Is Nothing) Then
-                RaiseEvent NaloziRowChanging(Me, New NaloziRowChangeEvent(CType(e.Row,NaloziRow), e.Action))
+            If (Not (Me.SkladisteRowChangingEvent) Is Nothing) Then
+                RaiseEvent SkladisteRowChanging(Me, New SkladisteRowChangeEvent(CType(e.Row,SkladisteRow), e.Action))
             End If
         End Sub
         
@@ -441,8 +467,8 @@ Partial Public Class KaficDataSet
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
         Protected Overrides Sub OnRowDeleted(ByVal e As Global.System.Data.DataRowChangeEventArgs)
             MyBase.OnRowDeleted(e)
-            If (Not (Me.NaloziRowDeletedEvent) Is Nothing) Then
-                RaiseEvent NaloziRowDeleted(Me, New NaloziRowChangeEvent(CType(e.Row,NaloziRow), e.Action))
+            If (Not (Me.SkladisteRowDeletedEvent) Is Nothing) Then
+                RaiseEvent SkladisteRowDeleted(Me, New SkladisteRowChangeEvent(CType(e.Row,SkladisteRow), e.Action))
             End If
         End Sub
         
@@ -450,14 +476,14 @@ Partial Public Class KaficDataSet
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
         Protected Overrides Sub OnRowDeleting(ByVal e As Global.System.Data.DataRowChangeEventArgs)
             MyBase.OnRowDeleting(e)
-            If (Not (Me.NaloziRowDeletingEvent) Is Nothing) Then
-                RaiseEvent NaloziRowDeleting(Me, New NaloziRowChangeEvent(CType(e.Row,NaloziRow), e.Action))
+            If (Not (Me.SkladisteRowDeletingEvent) Is Nothing) Then
+                RaiseEvent SkladisteRowDeleting(Me, New SkladisteRowChangeEvent(CType(e.Row,SkladisteRow), e.Action))
             End If
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
-        Public Sub RemoveNaloziRow(ByVal row As NaloziRow)
+        Public Sub RemoveSkladisteRow(ByVal row As SkladisteRow)
             Me.Rows.Remove(row)
         End Sub
         
@@ -466,7 +492,7 @@ Partial Public Class KaficDataSet
         Public Shared Function GetTypedTableSchema(ByVal xs As Global.System.Xml.Schema.XmlSchemaSet) As Global.System.Xml.Schema.XmlSchemaComplexType
             Dim type As Global.System.Xml.Schema.XmlSchemaComplexType = New Global.System.Xml.Schema.XmlSchemaComplexType()
             Dim sequence As Global.System.Xml.Schema.XmlSchemaSequence = New Global.System.Xml.Schema.XmlSchemaSequence()
-            Dim ds As KaficDataSet = New KaficDataSet()
+            Dim ds As KaficDataSet1 = New KaficDataSet1()
             Dim any1 As Global.System.Xml.Schema.XmlSchemaAny = New Global.System.Xml.Schema.XmlSchemaAny()
             any1.Namespace = "http://www.w3.org/2001/XMLSchema"
             any1.MinOccurs = New Decimal(0)
@@ -484,7 +510,7 @@ Partial Public Class KaficDataSet
             type.Attributes.Add(attribute1)
             Dim attribute2 As Global.System.Xml.Schema.XmlSchemaAttribute = New Global.System.Xml.Schema.XmlSchemaAttribute()
             attribute2.Name = "tableTypeName"
-            attribute2.FixedValue = "NaloziDataTable"
+            attribute2.FixedValue = "SkladisteDataTable"
             type.Attributes.Add(attribute2)
             type.Particle = sequence
             Dim dsSchema As Global.System.Xml.Schema.XmlSchema = ds.GetSchemaSerializable
@@ -531,16 +557,16 @@ Partial Public Class KaficDataSet
     '''<summary>
     '''Represents strongly named DataRow class.
     '''</summary>
-    Partial Public Class NaloziRow
+    Partial Public Class SkladisteRow
         Inherits Global.System.Data.DataRow
         
-        Private tableNalozi As NaloziDataTable
+        Private tableSkladiste As SkladisteDataTable
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
         Friend Sub New(ByVal rb As Global.System.Data.DataRowBuilder)
             MyBase.New(rb)
-            Me.tableNalozi = CType(Me.Table,NaloziDataTable)
+            Me.tableSkladiste = CType(Me.Table,SkladisteDataTable)
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -548,26 +574,80 @@ Partial Public Class KaficDataSet
         Public Property Naziv() As String
             Get
                 Try 
-                    Return CType(Me(Me.tableNalozi.NazivColumn),String)
+                    Return CType(Me(Me.tableSkladiste.NazivColumn),String)
                 Catch e As Global.System.InvalidCastException
-                    Throw New Global.System.Data.StrongTypingException("The value for column 'Naziv' in table 'Nalozi' is DBNull.", e)
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'Naziv' in table 'Skladiste' is DBNull.", e)
                 End Try
             End Get
             Set
-                Me(Me.tableNalozi.NazivColumn) = value
+                Me(Me.tableSkladiste.NazivColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Property kolicina() As Double
+            Get
+                Try 
+                    Return CType(Me(Me.tableSkladiste.kolicinaColumn),Double)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'kolicina' in table 'Skladiste' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableSkladiste.kolicinaColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Property cijena() As Decimal
+            Get
+                Try 
+                    Return CType(Me(Me.tableSkladiste.cijenaColumn),Decimal)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'cijena' in table 'Skladiste' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableSkladiste.cijenaColumn) = value
             End Set
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
         Public Function IsNazivNull() As Boolean
-            Return Me.IsNull(Me.tableNalozi.NazivColumn)
+            Return Me.IsNull(Me.tableSkladiste.NazivColumn)
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
         Public Sub SetNazivNull()
-            Me(Me.tableNalozi.NazivColumn) = Global.System.Convert.DBNull
+            Me(Me.tableSkladiste.NazivColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Function IskolicinaNull() As Boolean
+            Return Me.IsNull(Me.tableSkladiste.kolicinaColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Sub SetkolicinaNull()
+            Me(Me.tableSkladiste.kolicinaColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Function IscijenaNull() As Boolean
+            Return Me.IsNull(Me.tableSkladiste.cijenaColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Sub SetcijenaNull()
+            Me(Me.tableSkladiste.cijenaColumn) = Global.System.Convert.DBNull
         End Sub
     End Class
     
@@ -575,16 +655,16 @@ Partial Public Class KaficDataSet
     '''Row event argument class
     '''</summary>
     <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
-    Public Class NaloziRowChangeEvent
+    Public Class SkladisteRowChangeEvent
         Inherits Global.System.EventArgs
         
-        Private eventRow As NaloziRow
+        Private eventRow As SkladisteRow
         
         Private eventAction As Global.System.Data.DataRowAction
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
-        Public Sub New(ByVal row As NaloziRow, ByVal action As Global.System.Data.DataRowAction)
+        Public Sub New(ByVal row As SkladisteRow, ByVal action As Global.System.Data.DataRowAction)
             MyBase.New
             Me.eventRow = row
             Me.eventAction = action
@@ -592,7 +672,7 @@ Partial Public Class KaficDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
-        Public ReadOnly Property Row() As NaloziRow
+        Public ReadOnly Property Row() As SkladisteRow
             Get
                 Return Me.eventRow
             End Get
@@ -608,7 +688,7 @@ Partial Public Class KaficDataSet
     End Class
 End Class
 
-Namespace KaficDataSetTableAdapters
+Namespace KaficDataSet1TableAdapters
     
     '''<summary>
     '''Represents the connection and commands used to retrieve and save data.
@@ -619,7 +699,7 @@ Namespace KaficDataSetTableAdapters
      Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner"& _ 
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"),  _
      Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
-    Partial Public Class NaloziTableAdapter
+    Partial Public Class SkladisteTableAdapter
         Inherits Global.System.ComponentModel.Component
         
         Private WithEvents _adapter As Global.System.Data.SqlClient.SqlDataAdapter
@@ -736,9 +816,19 @@ Namespace KaficDataSetTableAdapters
             Me._adapter = New Global.System.Data.SqlClient.SqlDataAdapter()
             Dim tableMapping As Global.System.Data.Common.DataTableMapping = New Global.System.Data.Common.DataTableMapping()
             tableMapping.SourceTable = "Table"
-            tableMapping.DataSetTable = "Nalozi"
+            tableMapping.DataSetTable = "Skladiste"
             tableMapping.ColumnMappings.Add("Naziv", "Naziv")
+            tableMapping.ColumnMappings.Add("kolicina", "kolicina")
+            tableMapping.ColumnMappings.Add("cijena", "cijena")
             Me._adapter.TableMappings.Add(tableMapping)
+            Me._adapter.InsertCommand = New Global.System.Data.SqlClient.SqlCommand()
+            Me._adapter.InsertCommand.Connection = Me.Connection
+            Me._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[Skladiste] ([Naziv], [kolicina], [cijena]) VALUES (@Naziv, @ko"& _ 
+                "licina, @cijena)"
+            Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Naziv", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Naziv", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@kolicina", Global.System.Data.SqlDbType.Float, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "kolicina", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@cijena", Global.System.Data.SqlDbType.SmallMoney, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "cijena", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -754,7 +844,7 @@ Namespace KaficDataSetTableAdapters
             Me._commandCollection = New Global.System.Data.SqlClient.SqlCommand(0) {}
             Me._commandCollection(0) = New Global.System.Data.SqlClient.SqlCommand()
             Me._commandCollection(0).Connection = Me.Connection
-            Me._commandCollection(0).CommandText = "SELECT Naziv FROM dbo.Nalozi"
+            Me._commandCollection(0).CommandText = "SELECT Naziv, kolicina, cijena FROM dbo.Skladiste"
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
         End Sub
         
@@ -762,7 +852,7 @@ Namespace KaficDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, true)>  _
-        Public Overloads Overridable Function Fill(ByVal dataTable As KaficDataSet.NaloziDataTable) As Integer
+        Public Overloads Overridable Function Fill(ByVal dataTable As KaficDataSet1.SkladisteDataTable) As Integer
             Me.Adapter.SelectCommand = Me.CommandCollection(0)
             If (Me.ClearBeforeFill = true) Then
                 dataTable.Clear
@@ -775,11 +865,74 @@ Namespace KaficDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], true)>  _
-        Public Overloads Overridable Function GetData() As KaficDataSet.NaloziDataTable
+        Public Overloads Overridable Function GetData() As KaficDataSet1.SkladisteDataTable
             Me.Adapter.SelectCommand = Me.CommandCollection(0)
-            Dim dataTable As KaficDataSet.NaloziDataTable = New KaficDataSet.NaloziDataTable()
+            Dim dataTable As KaficDataSet1.SkladisteDataTable = New KaficDataSet1.SkladisteDataTable()
             Me.Adapter.Fill(dataTable)
             Return dataTable
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+        Public Overloads Overridable Function Update(ByVal dataTable As KaficDataSet1.SkladisteDataTable) As Integer
+            Return Me.Adapter.Update(dataTable)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+        Public Overloads Overridable Function Update(ByVal dataSet As KaficDataSet1) As Integer
+            Return Me.Adapter.Update(dataSet, "Skladiste")
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+        Public Overloads Overridable Function Update(ByVal dataRow As Global.System.Data.DataRow) As Integer
+            Return Me.Adapter.Update(New Global.System.Data.DataRow() {dataRow})
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+        Public Overloads Overridable Function Update(ByVal dataRows() As Global.System.Data.DataRow) As Integer
+            Return Me.Adapter.Update(dataRows)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Insert, true)>  _
+        Public Overloads Overridable Function Insert(ByVal Naziv As String, ByVal kolicina As Global.System.Nullable(Of Double), ByVal cijena As Global.System.Nullable(Of Decimal)) As Integer
+            If (Naziv Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(0).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(0).Value = CType(Naziv,String)
+            End If
+            If (kolicina.HasValue = true) Then
+                Me.Adapter.InsertCommand.Parameters(1).Value = CType(kolicina.Value,Double)
+            Else
+                Me.Adapter.InsertCommand.Parameters(1).Value = Global.System.DBNull.Value
+            End If
+            If (cijena.HasValue = true) Then
+                Me.Adapter.InsertCommand.Parameters(2).Value = CType(cijena.Value,Decimal)
+            Else
+                Me.Adapter.InsertCommand.Parameters(2).Value = Global.System.DBNull.Value
+            End If
+            Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.InsertCommand.Connection.State
+            If ((Me.Adapter.InsertCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
+                        <> Global.System.Data.ConnectionState.Open) Then
+                Me.Adapter.InsertCommand.Connection.Open
+            End If
+            Try 
+                Dim returnValue As Integer = Me.Adapter.InsertCommand.ExecuteNonQuery
+                Return returnValue
+            Finally
+                If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
+                    Me.Adapter.InsertCommand.Connection.Close
+                End If
+            End Try
         End Function
     End Class
     
@@ -796,6 +949,8 @@ Namespace KaficDataSetTableAdapters
         
         Private _updateOrder As UpdateOrderOption
         
+        Private _skladisteTableAdapter As SkladisteTableAdapter
+        
         Private _backupDataSetBeforeUpdate As Boolean
         
         Private _connection As Global.System.Data.IDbConnection
@@ -808,6 +963,20 @@ Namespace KaficDataSetTableAdapters
             End Get
             Set
                 Me._updateOrder = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
+         Global.System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso"& _ 
+            "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3"& _ 
+            "a", "System.Drawing.Design.UITypeEditor")>  _
+        Public Property SkladisteTableAdapter() As SkladisteTableAdapter
+            Get
+                Return Me._skladisteTableAdapter
+            End Get
+            Set
+                Me._skladisteTableAdapter = value
             End Set
         End Property
         
@@ -830,6 +999,10 @@ Namespace KaficDataSetTableAdapters
                 If (Not (Me._connection) Is Nothing) Then
                     Return Me._connection
                 End If
+                If ((Not (Me._skladisteTableAdapter) Is Nothing)  _
+                            AndAlso (Not (Me._skladisteTableAdapter.Connection) Is Nothing)) Then
+                    Return Me._skladisteTableAdapter.Connection
+                End If
                 Return Nothing
             End Get
             Set
@@ -843,6 +1016,9 @@ Namespace KaficDataSetTableAdapters
         Public ReadOnly Property TableAdapterInstanceCount() As Integer
             Get
                 Dim count As Integer = 0
+                If (Not (Me._skladisteTableAdapter) Is Nothing) Then
+                    count = (count + 1)
+                End If
                 Return count
             End Get
         End Property
@@ -852,8 +1028,17 @@ Namespace KaficDataSetTableAdapters
         '''</summary>
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
-        Private Function UpdateUpdatedRows(ByVal dataSet As KaficDataSet, ByVal allChangedRows As Global.System.Collections.Generic.List(Of Global.System.Data.DataRow), ByVal allAddedRows As Global.System.Collections.Generic.List(Of Global.System.Data.DataRow)) As Integer
+        Private Function UpdateUpdatedRows(ByVal dataSet As KaficDataSet1, ByVal allChangedRows As Global.System.Collections.Generic.List(Of Global.System.Data.DataRow), ByVal allAddedRows As Global.System.Collections.Generic.List(Of Global.System.Data.DataRow)) As Integer
             Dim result As Integer = 0
+            If (Not (Me._skladisteTableAdapter) Is Nothing) Then
+                Dim updatedRows() As Global.System.Data.DataRow = dataSet.Skladiste.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.ModifiedCurrent)
+                updatedRows = Me.GetRealUpdatedRows(updatedRows, allAddedRows)
+                If ((Not (updatedRows) Is Nothing)  _
+                            AndAlso (0 < updatedRows.Length)) Then
+                    result = (result + Me._skladisteTableAdapter.Update(updatedRows))
+                    allChangedRows.AddRange(updatedRows)
+                End If
+            End If
             Return result
         End Function
         
@@ -862,8 +1047,16 @@ Namespace KaficDataSetTableAdapters
         '''</summary>
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
-        Private Function UpdateInsertedRows(ByVal dataSet As KaficDataSet, ByVal allAddedRows As Global.System.Collections.Generic.List(Of Global.System.Data.DataRow)) As Integer
+        Private Function UpdateInsertedRows(ByVal dataSet As KaficDataSet1, ByVal allAddedRows As Global.System.Collections.Generic.List(Of Global.System.Data.DataRow)) As Integer
             Dim result As Integer = 0
+            If (Not (Me._skladisteTableAdapter) Is Nothing) Then
+                Dim addedRows() As Global.System.Data.DataRow = dataSet.Skladiste.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Added)
+                If ((Not (addedRows) Is Nothing)  _
+                            AndAlso (0 < addedRows.Length)) Then
+                    result = (result + Me._skladisteTableAdapter.Update(addedRows))
+                    allAddedRows.AddRange(addedRows)
+                End If
+            End If
             Return result
         End Function
         
@@ -872,8 +1065,16 @@ Namespace KaficDataSetTableAdapters
         '''</summary>
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
-        Private Function UpdateDeletedRows(ByVal dataSet As KaficDataSet, ByVal allChangedRows As Global.System.Collections.Generic.List(Of Global.System.Data.DataRow)) As Integer
+        Private Function UpdateDeletedRows(ByVal dataSet As KaficDataSet1, ByVal allChangedRows As Global.System.Collections.Generic.List(Of Global.System.Data.DataRow)) As Integer
             Dim result As Integer = 0
+            If (Not (Me._skladisteTableAdapter) Is Nothing) Then
+                Dim deletedRows() As Global.System.Data.DataRow = dataSet.Skladiste.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Deleted)
+                If ((Not (deletedRows) Is Nothing)  _
+                            AndAlso (0 < deletedRows.Length)) Then
+                    result = (result + Me._skladisteTableAdapter.Update(deletedRows))
+                    allChangedRows.AddRange(deletedRows)
+                End If
+            End If
             Return result
         End Function
         
@@ -908,12 +1109,17 @@ Namespace KaficDataSetTableAdapters
         '''</summary>
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
-        Public Overridable Function UpdateAll(ByVal dataSet As KaficDataSet) As Integer
+        Public Overridable Function UpdateAll(ByVal dataSet As KaficDataSet1) As Integer
             If (dataSet Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("dataSet")
             End If
             If (dataSet.HasChanges = false) Then
                 Return 0
+            End If
+            If ((Not (Me._skladisteTableAdapter) Is Nothing)  _
+                        AndAlso (Me.MatchTableAdapterConnection(Me._skladisteTableAdapter.Connection) = false)) Then
+                Throw New Global.System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s"& _ 
+                        "tring.")
             End If
             Dim workConnection As Global.System.Data.IDbConnection = Me.Connection
             If (workConnection Is Nothing) Then
@@ -947,6 +1153,15 @@ Namespace KaficDataSetTableAdapters
             Try 
                 '---- Prepare for update -----------
                 '
+                If (Not (Me._skladisteTableAdapter) Is Nothing) Then
+                    revertConnections.Add(Me._skladisteTableAdapter, Me._skladisteTableAdapter.Connection)
+                    Me._skladisteTableAdapter.Connection = CType(workConnection,Global.System.Data.SqlClient.SqlConnection)
+                    Me._skladisteTableAdapter.Transaction = CType(workTransaction,Global.System.Data.SqlClient.SqlTransaction)
+                    If Me._skladisteTableAdapter.Adapter.AcceptChangesDuringUpdate Then
+                        Me._skladisteTableAdapter.Adapter.AcceptChangesDuringUpdate = false
+                        adaptersWithAcceptChangesDuringUpdate.Add(Me._skladisteTableAdapter.Adapter)
+                    End If
+                End If
                 '
                 '---- Perform updates -----------
                 '
@@ -1006,6 +1221,10 @@ Namespace KaficDataSetTableAdapters
             Finally
                 If workConnOpened Then
                     workConnection.Close
+                End If
+                If (Not (Me._skladisteTableAdapter) Is Nothing) Then
+                    Me._skladisteTableAdapter.Connection = CType(revertConnections(Me._skladisteTableAdapter),Global.System.Data.SqlClient.SqlConnection)
+                    Me._skladisteTableAdapter.Transaction = Nothing
                 End If
                 If (0 < adaptersWithAcceptChangesDuringUpdate.Count) Then
                     Dim adapters((adaptersWithAcceptChangesDuringUpdate.Count) - 1) As Global.System.Data.Common.DataAdapter

@@ -40,6 +40,7 @@ Public Class konobar
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        prijava.Button3_Click_1(e, e)
         Me.Hide()
         prijava.Show()
     End Sub

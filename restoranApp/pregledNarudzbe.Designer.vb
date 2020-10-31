@@ -35,10 +35,13 @@ Partial Class pregledNarudzbe
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Button1
         '
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Location = New System.Drawing.Point(12, 12)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 40)
@@ -91,9 +94,9 @@ Partial Class pregledNarudzbe
         Me.Label7.Font = New System.Drawing.Font("Microsoft Tai Le", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.Location = New System.Drawing.Point(161, 105)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(100, 23)
+        Me.Label7.Size = New System.Drawing.Size(117, 23)
         Me.Label7.TabIndex = 8
-        Me.Label7.Text = "Naziv pica"
+        Me.Label7.Text = "NAZIV PICA"
         '
         'Label8
         '
@@ -101,9 +104,9 @@ Partial Class pregledNarudzbe
         Me.Label8.Font = New System.Drawing.Font("Microsoft Tai Le", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.Location = New System.Drawing.Point(420, 105)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(80, 23)
+        Me.Label8.Size = New System.Drawing.Size(98, 23)
         Me.Label8.TabIndex = 9
-        Me.Label8.Text = "Kolicina"
+        Me.Label8.Text = "KOLICINA"
         '
         'Label9
         '
@@ -111,9 +114,9 @@ Partial Class pregledNarudzbe
         Me.Label9.Font = New System.Drawing.Font("Microsoft Tai Le", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.Location = New System.Drawing.Point(563, 105)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(64, 23)
+        Me.Label9.Size = New System.Drawing.Size(74, 23)
         Me.Label9.TabIndex = 9
-        Me.Label9.Text = "Cijena"
+        Me.Label9.Text = "CIJENA"
         '
         'Label10
         '
@@ -121,17 +124,17 @@ Partial Class pregledNarudzbe
         Me.Label10.Font = New System.Drawing.Font("Microsoft Tai Le", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.Location = New System.Drawing.Point(731, 105)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(83, 23)
+        Me.Label10.Size = New System.Drawing.Size(91, 23)
         Me.Label10.TabIndex = 9
-        Me.Label10.Text = "Ukupno"
+        Me.Label10.Text = "UKUPNO"
         '
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Tai Le", 14.25!, System.Drawing.FontStyle.Bold)
         Me.Label11.Location = New System.Drawing.Point(901, 77)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(131, 18)
+        Me.Label11.Size = New System.Drawing.Size(152, 23)
         Me.Label11.TabIndex = 10
         Me.Label11.Text = "IZNOS RACUNA"
         '
@@ -147,38 +150,48 @@ Partial Class pregledNarudzbe
         '
         'Button2
         '
+        Me.Button2.BackColor = System.Drawing.SystemColors.Highlight
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.ForeColor = System.Drawing.Color.MintCream
         Me.Button2.Location = New System.Drawing.Point(886, 142)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(168, 114)
         Me.Button2.TabIndex = 12
         Me.Button2.Text = "IZDAJ NARUDZBU"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Button2.UseVisualStyleBackColor = False
         '
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.SystemColors.Highlight
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(666, 3)
+        Me.Label1.ForeColor = System.Drawing.SystemColors.Control
+        Me.Label1.Location = New System.Drawing.Point(141, 67)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(95, 24)
+        Me.Label1.Size = New System.Drawing.Size(117, 24)
         Me.Label1.TabIndex = 13
-        Me.Label1.Text = "Konobar:"
+        Me.Label1.Text = "KONOBAR:"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.SystemColors.Highlight
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(406, 4)
+        Me.Label2.ForeColor = System.Drawing.SystemColors.Control
+        Me.Label2.Location = New System.Drawing.Point(718, 67)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(148, 24)
+        Me.Label2.Size = New System.Drawing.Size(186, 24)
         Me.Label2.TabIndex = 13
-        Me.Label2.Text = "Narudzba broj:"
+        Me.Label2.Text = "BROJ NARUDZBE:"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.SystemColors.Highlight
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(550, 4)
+        Me.Label3.ForeColor = System.Drawing.SystemColors.Control
+        Me.Label3.Location = New System.Drawing.Point(904, 67)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(16, 24)
         Me.Label3.TabIndex = 13
@@ -187,23 +200,33 @@ Partial Class pregledNarudzbe
         'Label4
         '
         Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.SystemColors.Highlight
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(758, 3)
+        Me.Label4.ForeColor = System.Drawing.SystemColors.Control
+        Me.Label4.Location = New System.Drawing.Point(262, 67)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(16, 24)
         Me.Label4.TabIndex = 13
         Me.Label4.Text = "."
         '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.SystemColors.Highlight
+        Me.Panel1.Controls.Add(Me.Label4)
+        Me.Panel1.Controls.Add(Me.Label2)
+        Me.Panel1.Controls.Add(Me.Label1)
+        Me.Panel1.Controls.Add(Me.Label3)
+        Me.Panel1.Location = New System.Drawing.Point(-18, -49)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(1118, 121)
+        Me.Panel1.TabIndex = 14
+        '
         'pregledNarudzbe
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.BackColor = System.Drawing.SystemColors.ControlLight
         Me.ClientSize = New System.Drawing.Size(1066, 763)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.Label11)
@@ -213,10 +236,13 @@ Partial Class pregledNarudzbe
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.tab1)
         Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "pregledNarudzbe"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form4"
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -234,4 +260,5 @@ Partial Class pregledNarudzbe
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
+    Friend WithEvents Panel1 As Panel
 End Class

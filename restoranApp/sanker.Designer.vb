@@ -31,6 +31,8 @@ Partial Class sanker
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Button1
@@ -72,42 +74,50 @@ Partial Class sanker
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(234, 49)
+        Me.Label1.BackColor = System.Drawing.SystemColors.Highlight
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold)
+        Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.Label1.Location = New System.Drawing.Point(198, 55)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(141, 24)
+        Me.Label1.Size = New System.Drawing.Size(180, 24)
         Me.Label1.TabIndex = 2
-        Me.Label1.Text = "Broj narudzbe"
+        Me.Label1.Text = "BROJ NARUDZBE"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.SystemColors.Highlight
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(648, 49)
+        Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.Label2.Location = New System.Drawing.Point(642, 55)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(137, 24)
+        Me.Label2.Size = New System.Drawing.Size(167, 24)
         Me.Label2.TabIndex = 2
-        Me.Label2.Text = "Ime konobara"
+        Me.Label2.Text = "IME KONOBARA"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.SystemColors.Highlight
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(1063, 49)
+        Me.Label3.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.Label3.Location = New System.Drawing.Point(1061, 49)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(172, 24)
+        Me.Label3.Size = New System.Drawing.Size(215, 24)
         Me.Label3.TabIndex = 2
-        Me.Label3.Text = "vrijeme narudzbe"
+        Me.Label3.Text = "VRIJEME NARUDZBE"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.SystemColors.Highlight
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(1360, 54)
+        Me.Label4.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.Label4.Location = New System.Drawing.Point(1340, 55)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(155, 24)
+        Me.Label4.Size = New System.Drawing.Size(205, 24)
         Me.Label4.TabIndex = 2
-        Me.Label4.Text = "otvori narudzbu"
+        Me.Label4.Text = "OTVORI NARUDZBU"
         '
         'Timer1
         '
@@ -116,30 +126,41 @@ Partial Class sanker
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(1902, 44)
+        Me.Button2.Location = New System.Drawing.Point(2036, 44)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 3
         Me.Button2.Text = "Button2"
         Me.Button2.UseVisualStyleBackColor = True
         '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.SystemColors.Highlight
+        Me.Panel1.Controls.Add(Me.Label4)
+        Me.Panel1.Controls.Add(Me.Label2)
+        Me.Panel1.Controls.Add(Me.Label1)
+        Me.Panel1.Location = New System.Drawing.Point(-2, -6)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(1974, 84)
+        Me.Panel1.TabIndex = 4
+        '
         'sanker
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1870, 1057)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Label4)
+        Me.ClientSize = New System.Drawing.Size(1880, 1057)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.table)
         Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.table)
+        Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "sanker"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form3"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -153,4 +174,5 @@ Partial Class sanker
     Friend WithEvents Label4 As Label
     Friend WithEvents Timer1 As Timer
     Friend WithEvents Button2 As Button
+    Friend WithEvents Panel1 As Panel
 End Class

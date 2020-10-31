@@ -8,7 +8,6 @@ Public Class prijava
     Private connPrijava As New SqlConnection("")
 
     Private Sub prijava_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
     End Sub
     Private Sub button2_Click(sender As Object, e As EventArgs) Handles button2.Click
         Me.Close()
@@ -85,7 +84,7 @@ korisnickoIme = @korisnicki_id and  lozinka = '" + Enkripcija.HashPrijava + "' C
                     Enkripcija.HashPrijava = Nothing
                     Me.Hide()
                 ElseIf tipNaloga = 2 Then
-                    sanker.Show()
+                    menadzer.Show()
                     textBox1.Text = "Korisničko ime"
                     textBox2.Text = "Lozinka"
                     Enkripcija.HashPrijava = Nothing
@@ -118,6 +117,12 @@ korisnickoIme = @korisnicki_id and  lozinka = '" + Enkripcija.HashPrijava + "' C
 
     Private Sub Button3_Click(sender As Object, e As EventArgs)
         pregledNarudzbe.Show()
+    End Sub
+
+    Public Sub Button3_Click_1(sender As Object, e As EventArgs) Handles Button3.Click
+        Me.Controls.Clear() 'removes all the controls on the form
+        InitializeComponent() 'load all the controls again
+        prijava_Load(e, e)
     End Sub
 End Class
 '

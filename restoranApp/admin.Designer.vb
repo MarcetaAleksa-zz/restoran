@@ -26,7 +26,6 @@ Partial Class admin
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(admin))
         Me.PozicijaComboBox = New System.Windows.Forms.ComboBox()
         Me.NaloziBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
-        Me.KaficDataSet = New restoranApp.KaficDataSet()
         Me.NaloziBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.imeTextBox = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -56,12 +55,14 @@ Partial Class admin
         Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.Panel7 = New System.Windows.Forms.Panel()
         Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.NaloziTableAdapter = New restoranApp.KaficDataSetTableAdapters.NaloziTableAdapter()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.pictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel8 = New System.Windows.Forms.Panel()
+        Me.DataSet1 = New System.Data.DataSet()
+        Me.KaficDataSet = New restoranApp.KaficDataSet()
+        Me.NaloziBindingSource2 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.NaloziTableAdapter = New restoranApp.KaficDataSetTableAdapters.NaloziTableAdapter()
         CType(Me.NaloziBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.KaficDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NaloziBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ZaposleniBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -75,12 +76,15 @@ Partial Class admin
         Me.Panel7.SuspendLayout()
         CType(Me.pictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel8.SuspendLayout()
+        CType(Me.DataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.KaficDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NaloziBindingSource2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'PozicijaComboBox
         '
         Me.PozicijaComboBox.BackColor = System.Drawing.SystemColors.InactiveCaption
-        Me.PozicijaComboBox.DataSource = Me.NaloziBindingSource1
+        Me.PozicijaComboBox.DataSource = Me.NaloziBindingSource2
         Me.PozicijaComboBox.DisplayMember = "Naziv"
         Me.PozicijaComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.PozicijaComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -89,17 +93,11 @@ Partial Class admin
         Me.PozicijaComboBox.Location = New System.Drawing.Point(565, 301)
         Me.PozicijaComboBox.Name = "PozicijaComboBox"
         Me.PozicijaComboBox.Size = New System.Drawing.Size(245, 32)
-        Me.PozicijaComboBox.TabIndex = 3
+        Me.PozicijaComboBox.TabIndex = 7
         '
         'NaloziBindingSource1
         '
         Me.NaloziBindingSource1.DataMember = "Nalozi"
-        Me.NaloziBindingSource1.DataSource = Me.KaficDataSet
-        '
-        'KaficDataSet
-        '
-        Me.KaficDataSet.DataSetName = "KaficDataSet"
-        Me.KaficDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'NaloziBindingSource
         '
@@ -113,7 +111,7 @@ Partial Class admin
         Me.imeTextBox.Location = New System.Drawing.Point(8, 3)
         Me.imeTextBox.Name = "imeTextBox"
         Me.imeTextBox.Size = New System.Drawing.Size(189, 22)
-        Me.imeTextBox.TabIndex = 9
+        Me.imeTextBox.TabIndex = 0
         '
         'Label1
         '
@@ -201,7 +199,7 @@ Partial Class admin
         Me.Dodaj.Location = New System.Drawing.Point(548, 342)
         Me.Dodaj.Name = "Dodaj"
         Me.Dodaj.Size = New System.Drawing.Size(138, 48)
-        Me.Dodaj.TabIndex = 11
+        Me.Dodaj.TabIndex = 8
         Me.Dodaj.Text = "Dodaj"
         Me.Dodaj.UseVisualStyleBackColor = True
         '
@@ -211,7 +209,7 @@ Partial Class admin
         Me.Ponisti.Location = New System.Drawing.Point(692, 342)
         Me.Ponisti.Name = "Ponisti"
         Me.Ponisti.Size = New System.Drawing.Size(134, 48)
-        Me.Ponisti.TabIndex = 12
+        Me.Ponisti.TabIndex = 9
         Me.Ponisti.Text = "Ponisti"
         Me.Ponisti.UseVisualStyleBackColor = True
         '
@@ -221,7 +219,7 @@ Partial Class admin
         Me.Nazad.Location = New System.Drawing.Point(548, 396)
         Me.Nazad.Name = "Nazad"
         Me.Nazad.Size = New System.Drawing.Size(278, 48)
-        Me.Nazad.TabIndex = 13
+        Me.Nazad.TabIndex = 10
         Me.Nazad.Text = "Nazad"
         Me.Nazad.UseVisualStyleBackColor = True
         '
@@ -252,7 +250,7 @@ Partial Class admin
         Me.Panel1.Location = New System.Drawing.Point(565, 38)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(245, 28)
-        Me.Panel1.TabIndex = 49
+        Me.Panel1.TabIndex = 0
         '
         'Panel2
         '
@@ -261,7 +259,7 @@ Partial Class admin
         Me.Panel2.Location = New System.Drawing.Point(565, 72)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(245, 28)
-        Me.Panel2.TabIndex = 50
+        Me.Panel2.TabIndex = 1
         '
         'TextBox1
         '
@@ -271,7 +269,7 @@ Partial Class admin
         Me.TextBox1.Location = New System.Drawing.Point(8, 3)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(189, 22)
-        Me.TextBox1.TabIndex = 9
+        Me.TextBox1.TabIndex = 0
         '
         'Panel3
         '
@@ -280,7 +278,7 @@ Partial Class admin
         Me.Panel3.Location = New System.Drawing.Point(565, 154)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(245, 28)
-        Me.Panel3.TabIndex = 51
+        Me.Panel3.TabIndex = 3
         '
         'TextBox2
         '
@@ -290,7 +288,7 @@ Partial Class admin
         Me.TextBox2.Location = New System.Drawing.Point(8, 3)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(189, 22)
-        Me.TextBox2.TabIndex = 9
+        Me.TextBox2.TabIndex = 0
         '
         'Panel6
         '
@@ -299,7 +297,7 @@ Partial Class admin
         Me.Panel6.Location = New System.Drawing.Point(565, 112)
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Size = New System.Drawing.Size(245, 28)
-        Me.Panel6.TabIndex = 50
+        Me.Panel6.TabIndex = 2
         '
         'TextBox5
         '
@@ -309,7 +307,7 @@ Partial Class admin
         Me.TextBox5.Location = New System.Drawing.Point(8, 3)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(189, 22)
-        Me.TextBox5.TabIndex = 9
+        Me.TextBox5.TabIndex = 0
         '
         'Panel4
         '
@@ -318,7 +316,7 @@ Partial Class admin
         Me.Panel4.Location = New System.Drawing.Point(565, 192)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(245, 28)
-        Me.Panel4.TabIndex = 52
+        Me.Panel4.TabIndex = 4
         '
         'TextBox3
         '
@@ -328,7 +326,7 @@ Partial Class admin
         Me.TextBox3.Location = New System.Drawing.Point(8, 3)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(189, 22)
-        Me.TextBox3.TabIndex = 9
+        Me.TextBox3.TabIndex = 0
         '
         'Panel5
         '
@@ -337,7 +335,7 @@ Partial Class admin
         Me.Panel5.Location = New System.Drawing.Point(565, 263)
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(245, 28)
-        Me.Panel5.TabIndex = 52
+        Me.Panel5.TabIndex = 6
         '
         'TextBox4
         '
@@ -347,7 +345,7 @@ Partial Class admin
         Me.TextBox4.Location = New System.Drawing.Point(8, 3)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(189, 22)
-        Me.TextBox4.TabIndex = 9
+        Me.TextBox4.TabIndex = 0
         '
         'Panel7
         '
@@ -356,7 +354,7 @@ Partial Class admin
         Me.Panel7.Location = New System.Drawing.Point(565, 226)
         Me.Panel7.Name = "Panel7"
         Me.Panel7.Size = New System.Drawing.Size(245, 28)
-        Me.Panel7.TabIndex = 52
+        Me.Panel7.TabIndex = 5
         '
         'TextBox6
         '
@@ -366,11 +364,7 @@ Partial Class admin
         Me.TextBox6.Location = New System.Drawing.Point(8, 3)
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.Size = New System.Drawing.Size(189, 22)
-        Me.TextBox6.TabIndex = 9
-        '
-        'NaloziTableAdapter
-        '
-        Me.NaloziTableAdapter.ClearBeforeFill = True
+        Me.TextBox6.TabIndex = 0
         '
         'Button1
         '
@@ -400,6 +394,24 @@ Partial Class admin
         Me.Panel8.Name = "Panel8"
         Me.Panel8.Size = New System.Drawing.Size(394, 466)
         Me.Panel8.TabIndex = 54
+        '
+        'DataSet1
+        '
+        Me.DataSet1.DataSetName = "NewDataSet"
+        '
+        'KaficDataSet
+        '
+        Me.KaficDataSet.DataSetName = "KaficDataSet"
+        Me.KaficDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'NaloziBindingSource2
+        '
+        Me.NaloziBindingSource2.DataMember = "Nalozi"
+        Me.NaloziBindingSource2.DataSource = Me.KaficDataSet
+        '
+        'NaloziTableAdapter
+        '
+        Me.NaloziTableAdapter.ClearBeforeFill = True
         '
         'admin
         '
@@ -435,7 +447,6 @@ Partial Class admin
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form2"
         CType(Me.NaloziBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.KaficDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NaloziBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ZaposleniBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
@@ -456,6 +467,9 @@ Partial Class admin
         Me.Panel7.PerformLayout()
         CType(Me.pictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel8.ResumeLayout(False)
+        CType(Me.DataSet1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.KaficDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NaloziBindingSource2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -494,10 +508,14 @@ Partial Class admin
     Friend WithEvents TextBox4 As TextBox
     Friend WithEvents Panel7 As Panel
     Friend WithEvents TextBox6 As TextBox
-    Friend WithEvents KaficDataSet As KaficDataSet
+
     Friend WithEvents NaloziBindingSource1 As BindingSource
-    Friend WithEvents NaloziTableAdapter As KaficDataSetTableAdapters.NaloziTableAdapter
+
     Friend WithEvents Button1 As Button
     Private WithEvents pictureBox1 As PictureBox
     Friend WithEvents Panel8 As Panel
+    Friend WithEvents DataSet1 As DataSet
+    Friend WithEvents KaficDataSet As KaficDataSet
+    Friend WithEvents NaloziBindingSource2 As BindingSource
+    Friend WithEvents NaloziTableAdapter As KaficDataSetTableAdapters.NaloziTableAdapter
 End Class
