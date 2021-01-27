@@ -91,6 +91,19 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>KaficDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="KaficDataSet2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KaficDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KaficDataSet2.vb">
+      <DependentUpon>KaficDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KaficDataSet3.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KaficDataSet3.xsd</DependentUpon>
+    </Compile>
     <Compile Include="menadzer.Designer.vb">
       <DependentUpon>menadzer.vb</DependentUpon>
     </Compile>
@@ -185,6 +198,28 @@
     </None>
     <None Include="KaficDataSet1.xss">
       <DependentUpon>KaficDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="KaficDataSet2.xsc">
+      <DependentUpon>KaficDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="KaficDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KaficDataSet2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KaficDataSet2.xss">
+      <DependentUpon>KaficDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="KaficDataSet3.xsc">
+      <DependentUpon>KaficDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="KaficDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KaficDataSet3.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KaficDataSet3.xss">
+      <DependentUpon>KaficDataSet3.xsd</DependentUpon>
     </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>

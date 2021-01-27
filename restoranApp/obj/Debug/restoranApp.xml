@@ -157,5 +157,135 @@ Update Order Option
 Used to sort self-referenced table's rows
 </summary>
 </member>
+<member name="T:restoranApp.KaficDataSet2">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:restoranApp.KaficDataSet2.SkladisteDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:restoranApp.KaficDataSet2.SkladisteRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:restoranApp.KaficDataSet2.SkladisteRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:restoranApp.KaficDataSet2TableAdapters.SkladisteTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:restoranApp.KaficDataSet2TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:restoranApp.KaficDataSet2TableAdapters.TableAdapterManager.UpdateUpdatedRows(restoranApp.KaficDataSet2,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:restoranApp.KaficDataSet2TableAdapters.TableAdapterManager.UpdateInsertedRows(restoranApp.KaficDataSet2,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:restoranApp.KaficDataSet2TableAdapters.TableAdapterManager.UpdateDeletedRows(restoranApp.KaficDataSet2,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:restoranApp.KaficDataSet2TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:restoranApp.KaficDataSet2TableAdapters.TableAdapterManager.UpdateAll(restoranApp.KaficDataSet2)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:restoranApp.KaficDataSet2TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:restoranApp.KaficDataSet2TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:restoranApp.KaficDataSet3">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:restoranApp.KaficDataSet3.NaloziDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:restoranApp.KaficDataSet3.NaloziRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:restoranApp.KaficDataSet3.NaloziRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:restoranApp.KaficDataSet3TableAdapters.NaloziTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:restoranApp.KaficDataSet3TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:restoranApp.KaficDataSet3TableAdapters.TableAdapterManager.UpdateUpdatedRows(restoranApp.KaficDataSet3,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:restoranApp.KaficDataSet3TableAdapters.TableAdapterManager.UpdateInsertedRows(restoranApp.KaficDataSet3,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:restoranApp.KaficDataSet3TableAdapters.TableAdapterManager.UpdateDeletedRows(restoranApp.KaficDataSet3,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:restoranApp.KaficDataSet3TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:restoranApp.KaficDataSet3TableAdapters.TableAdapterManager.UpdateAll(restoranApp.KaficDataSet3)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:restoranApp.KaficDataSet3TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:restoranApp.KaficDataSet3TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
 </members>
 </doc>

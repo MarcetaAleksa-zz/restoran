@@ -40,9 +40,21 @@ Public Class prijava
     End Sub
 
     Private Sub button1_Click(sender As Object, e As EventArgs) Handles button1.Click
+
+
+        'If 1 = 1 Then
+        '    konobar.Show()
+        '    Me.Hide()
+        '    imePrijavljenog = "tester"                             'debuging bez baze
+        '    KoJeOvajPokemon.Text = "tester 2"
+        'End If
+
+
+
+
         Enkripcija.EncryptPass()
         Dim command As New SqlCommand("select korisnickoIme, Lozinka, Pozicija  from zaposleni where 
-korisnickoIme = @korisnicki_id and  lozinka = '" + Enkripcija.HashPrijava + "' COLLATE Latin1_General_CS_AS", Baza.connection)
+        korisnickoIme = @korisnicki_id and  lozinka = '" + Enkripcija.HashPrijava + "' COLLATE Latin1_General_CS_AS", Baza.connection)
         'TextBox3.Text = Enkripcija.HashStore
         command.Parameters.Add("@korisnicki_id", SqlDbType.VarChar).Value = textBox1.Text
         command.Parameters.Add("@lozinka", SqlDbType.VarChar).Value = textBox2.Text
@@ -58,7 +70,7 @@ korisnickoIme = @korisnicki_id and  lozinka = '" + Enkripcija.HashPrijava + "' C
             Try
                 tipPozicije = tabela.Rows(0)(2)
 
-                Me.tipNaloga = tipPozicije
+                tipNaloga = tipPozicije
 
                 Select Case tipNaloga
                     Case 1

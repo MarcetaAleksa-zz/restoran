@@ -8,8 +8,10 @@ Public Class admin
     End Sub
 
     Private Sub admin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'TODO: This line of code loads data into the 'KaficDataSet3.Nalozi' table. You can move, or remove it, as needed.
+        Me.NaloziTableAdapter1.Fill(Me.KaficDataSet3.Nalozi)
         'TODO: This line of code loads data into the 'KaficDataSet.Nalozi' table. You can move, or remove it, as needed.
-        Me.NaloziTableAdapter.Fill(Me.KaficDataSet.Nalozi)
+        ' Me.NaloziTableAdapter.Fill(Me.KaficDataSet.Nalozi)
         'TODO: This line of code loads data into the 'KaficDataSet.Nalozi' table. You can move, or remove it, as needed.
         'Me.NaloziTableAdapter.Fill(Me.KaficDataSet.Nalozi)
 
@@ -88,5 +90,13 @@ VALUES ('" & TextBox5.Text & "','" & Enkripcija.HashNoviK & "', '" & holdit & "'
         Me.Controls.Clear() 'removes all the controls on the form
         InitializeComponent() 'load all the controls again
         admin_Load(e, e)
+    End Sub
+
+    Private Sub TextBox2_Enter(sender As Object, e As EventArgs) Handles TextBox2.Enter
+        TextBox2.PasswordChar = ""
+    End Sub
+
+    Private Sub TextBox2_Leave(sender As Object, e As EventArgs) Handles TextBox2.Leave
+        TextBox2.PasswordChar = "*"
     End Sub
 End Class

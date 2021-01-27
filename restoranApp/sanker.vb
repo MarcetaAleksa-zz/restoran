@@ -82,6 +82,14 @@ Public Class sanker
     Public Sub btnCreate_Click(ByVal sender As Object, ByVal e As EventArgs)
         'cCreate_Click
 
+        Dim sqlCommand1 As New SqlCommand("SELECT * FROM  narudzbaS", Baza.connection)
+        Dim adapter1 As New SqlDataAdapter(sqlCommand1)
+        Dim pica_tabel As New DataTable()
+
+        adapter1.Fill(pica_tabel)
+
+
+
         Dim sqlCommand As New SqlCommand("SELECT * FROM NarudzbaK ", Baza.connection)
         Dim adapter As New SqlDataAdapter(sqlCommand)
         Dim oprema_table As New DataTable()
@@ -99,7 +107,7 @@ Public Class sanker
         For i = 0 To brojacOpreme
             If b.Name = "b" + i.ToString Then
                 pregledNarudzbe.Show()
-                pregledNarudzbe.ucitaj(i)
+                pregledNarudzbe.ucitaj(pica_tabel.Rows(i)(0))
             End If
         Next
         Me.Enabled = False

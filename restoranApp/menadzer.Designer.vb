@@ -25,18 +25,23 @@ Partial Class menadzer
         Me.components = New System.ComponentModel.Container()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.KaficDataSet1 = New restoranApp.KaficDataSet1()
-        Me.SkladisteBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SkladisteTableAdapter = New restoranApp.KaficDataSet1TableAdapters.SkladisteTableAdapter()
         Me.NazivDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.KolicinaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.CijenaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.SkladisteBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.KaficDataSet1 = New restoranApp.KaficDataSet1()
+        Me.SkladisteTableAdapter = New restoranApp.KaficDataSet1TableAdapters.SkladisteTableAdapter()
+        Me.KaficDataSet2 = New restoranApp.KaficDataSet2()
+        Me.SkladisteBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.SkladisteTableAdapter1 = New restoranApp.KaficDataSet2TableAdapters.SkladisteTableAdapter()
         Me.Panel1.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.KaficDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SkladisteBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.KaficDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.KaficDataSet2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SkladisteBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button1
@@ -58,52 +63,6 @@ Partial Class menadzer
         Me.Panel1.Size = New System.Drawing.Size(467, 69)
         Me.Panel1.TabIndex = 1
         '
-        'DataGridView1
-        '
-        Me.DataGridView1.AllowUserToAddRows = False
-        Me.DataGridView1.AllowUserToDeleteRows = False
-        Me.DataGridView1.AutoGenerateColumns = False
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.NazivDataGridViewTextBoxColumn, Me.KolicinaDataGridViewTextBoxColumn, Me.CijenaDataGridViewTextBoxColumn})
-        Me.DataGridView1.DataSource = Me.SkladisteBindingSource
-        Me.DataGridView1.Location = New System.Drawing.Point(27, 87)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.ReadOnly = True
-        Me.DataGridView1.Size = New System.Drawing.Size(364, 308)
-        Me.DataGridView1.TabIndex = 2
-        '
-        'KaficDataSet1
-        '
-        Me.KaficDataSet1.DataSetName = "KaficDataSet1"
-        Me.KaficDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'SkladisteBindingSource
-        '
-        Me.SkladisteBindingSource.DataMember = "Skladiste"
-        Me.SkladisteBindingSource.DataSource = Me.KaficDataSet1
-        '
-        'SkladisteTableAdapter
-        '
-        Me.SkladisteTableAdapter.ClearBeforeFill = True
-        '
-        'NazivDataGridViewTextBoxColumn
-        '
-        Me.NazivDataGridViewTextBoxColumn.DataPropertyName = "Naziv"
-        Me.NazivDataGridViewTextBoxColumn.HeaderText = "Naziv"
-        Me.NazivDataGridViewTextBoxColumn.Name = "NazivDataGridViewTextBoxColumn"
-        '
-        'KolicinaDataGridViewTextBoxColumn
-        '
-        Me.KolicinaDataGridViewTextBoxColumn.DataPropertyName = "kolicina"
-        Me.KolicinaDataGridViewTextBoxColumn.HeaderText = "kolicina"
-        Me.KolicinaDataGridViewTextBoxColumn.Name = "KolicinaDataGridViewTextBoxColumn"
-        '
-        'CijenaDataGridViewTextBoxColumn
-        '
-        Me.CijenaDataGridViewTextBoxColumn.DataPropertyName = "cijena"
-        Me.CijenaDataGridViewTextBoxColumn.HeaderText = "cijena"
-        Me.CijenaDataGridViewTextBoxColumn.Name = "CijenaDataGridViewTextBoxColumn"
-        '
         'Label1
         '
         Me.Label1.AutoSize = True
@@ -114,6 +73,69 @@ Partial Class menadzer
         Me.Label1.Size = New System.Drawing.Size(197, 20)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "PREGLED SKLADISTA"
+        '
+        'DataGridView1
+        '
+        Me.DataGridView1.AllowUserToAddRows = False
+        Me.DataGridView1.AllowUserToDeleteRows = False
+        Me.DataGridView1.AutoGenerateColumns = False
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.NazivDataGridViewTextBoxColumn, Me.KolicinaDataGridViewTextBoxColumn, Me.CijenaDataGridViewTextBoxColumn})
+        Me.DataGridView1.DataSource = Me.SkladisteBindingSource1
+        Me.DataGridView1.Location = New System.Drawing.Point(27, 87)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.ReadOnly = True
+        Me.DataGridView1.Size = New System.Drawing.Size(364, 308)
+        Me.DataGridView1.TabIndex = 2
+        '
+        'NazivDataGridViewTextBoxColumn
+        '
+        Me.NazivDataGridViewTextBoxColumn.DataPropertyName = "Naziv"
+        Me.NazivDataGridViewTextBoxColumn.HeaderText = "Naziv"
+        Me.NazivDataGridViewTextBoxColumn.Name = "NazivDataGridViewTextBoxColumn"
+        Me.NazivDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'KolicinaDataGridViewTextBoxColumn
+        '
+        Me.KolicinaDataGridViewTextBoxColumn.DataPropertyName = "kolicina"
+        Me.KolicinaDataGridViewTextBoxColumn.HeaderText = "kolicina"
+        Me.KolicinaDataGridViewTextBoxColumn.Name = "KolicinaDataGridViewTextBoxColumn"
+        Me.KolicinaDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'CijenaDataGridViewTextBoxColumn
+        '
+        Me.CijenaDataGridViewTextBoxColumn.DataPropertyName = "cijena"
+        Me.CijenaDataGridViewTextBoxColumn.HeaderText = "cijena"
+        Me.CijenaDataGridViewTextBoxColumn.Name = "CijenaDataGridViewTextBoxColumn"
+        Me.CijenaDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'SkladisteBindingSource
+        '
+        Me.SkladisteBindingSource.DataMember = "Skladiste"
+        Me.SkladisteBindingSource.DataSource = Me.KaficDataSet1
+        '
+        'KaficDataSet1
+        '
+        Me.KaficDataSet1.DataSetName = "KaficDataSet1"
+        Me.KaficDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'SkladisteTableAdapter
+        '
+        Me.SkladisteTableAdapter.ClearBeforeFill = True
+        '
+        'KaficDataSet2
+        '
+        Me.KaficDataSet2.DataSetName = "KaficDataSet2"
+        Me.KaficDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'SkladisteBindingSource1
+        '
+        Me.SkladisteBindingSource1.DataMember = "Skladiste"
+        Me.SkladisteBindingSource1.DataSource = Me.KaficDataSet2
+        '
+        'SkladisteTableAdapter1
+        '
+        Me.SkladisteTableAdapter1.ClearBeforeFill = True
         '
         'menadzer
         '
@@ -130,8 +152,10 @@ Partial Class menadzer
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.KaficDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SkladisteBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.KaficDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.KaficDataSet2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.SkladisteBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -146,4 +170,7 @@ Partial Class menadzer
     Friend WithEvents KolicinaDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents CijenaDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents Label1 As Label
+    Friend WithEvents KaficDataSet2 As KaficDataSet2
+    Friend WithEvents SkladisteBindingSource1 As BindingSource
+    Friend WithEvents SkladisteTableAdapter1 As KaficDataSet2TableAdapters.SkladisteTableAdapter
 End Class

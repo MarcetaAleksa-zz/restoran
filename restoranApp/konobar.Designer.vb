@@ -130,7 +130,7 @@ Partial Class konobar
         Me.Button1.Size = New System.Drawing.Size(99, 49)
         Me.Button1.TabIndex = 0
         Me.Button1.Tag = "0"
-        Me.Button1.Text = "Coca Cola"
+        Me.Button1.Text = "CocaCola"
         Me.Button1.UseVisualStyleBackColor = False
         '
         'Button2
@@ -141,6 +141,7 @@ Partial Class konobar
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(99, 49)
         Me.Button2.TabIndex = 1
+        Me.Button2.Tag = "0"
         Me.Button2.Text = "Pepsi"
         Me.Button2.UseVisualStyleBackColor = False
         '
@@ -152,6 +153,7 @@ Partial Class konobar
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(99, 49)
         Me.Button3.TabIndex = 2
+        Me.Button3.Tag = "0"
         Me.Button3.Text = "Fanta"
         Me.Button3.UseVisualStyleBackColor = False
         '
@@ -183,6 +185,7 @@ Partial Class konobar
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(86, 38)
         Me.Button4.TabIndex = 6
+        Me.Button4.Tag = "0"
         Me.Button4.Text = "Nazad"
         Me.Button4.UseVisualStyleBackColor = True
         '
@@ -194,6 +197,7 @@ Partial Class konobar
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(274, 93)
         Me.Button5.TabIndex = 7
+        Me.Button5.Tag = "0"
         Me.Button5.Text = "NARUCI"
         Me.Button5.UseVisualStyleBackColor = True
         '
@@ -258,6 +262,7 @@ Partial Class konobar
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(99, 49)
         Me.Button6.TabIndex = 11
+        Me.Button6.Tag = "0"
         Me.Button6.Text = "Red Bull"
         Me.Button6.UseVisualStyleBackColor = False
         '
@@ -269,6 +274,7 @@ Partial Class konobar
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(99, 49)
         Me.Button7.TabIndex = 12
+        Me.Button7.Tag = "0"
         Me.Button7.Text = "Mineralna voda"
         Me.Button7.UseVisualStyleBackColor = False
         '
@@ -280,6 +286,7 @@ Partial Class konobar
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(99, 49)
         Me.Button8.TabIndex = 13
+        Me.Button8.Tag = "0"
         Me.Button8.Text = "Jabuka"
         Me.Button8.UseVisualStyleBackColor = False
         '
@@ -291,6 +298,7 @@ Partial Class konobar
         Me.Button9.Name = "Button9"
         Me.Button9.Size = New System.Drawing.Size(99, 49)
         Me.Button9.TabIndex = 14
+        Me.Button9.Tag = "0"
         Me.Button9.Text = "Voda s okusom"
         Me.Button9.UseVisualStyleBackColor = False
         '
@@ -302,6 +310,7 @@ Partial Class konobar
         Me.Button10.Name = "Button10"
         Me.Button10.Size = New System.Drawing.Size(99, 49)
         Me.Button10.TabIndex = 15
+        Me.Button10.Tag = "0"
         Me.Button10.Text = "Izvorska voda"
         Me.Button10.UseVisualStyleBackColor = False
         '
@@ -313,6 +322,7 @@ Partial Class konobar
         Me.Button11.Name = "Button11"
         Me.Button11.Size = New System.Drawing.Size(99, 49)
         Me.Button11.TabIndex = 16
+        Me.Button11.Tag = "0"
         Me.Button11.Text = "Juice"
         Me.Button11.UseVisualStyleBackColor = False
         '
@@ -324,6 +334,7 @@ Partial Class konobar
         Me.Button12.Name = "Button12"
         Me.Button12.Size = New System.Drawing.Size(99, 49)
         Me.Button12.TabIndex = 17
+        Me.Button12.Tag = "0"
         Me.Button12.Text = "Visnja"
         Me.Button12.UseVisualStyleBackColor = False
         '
@@ -335,6 +346,7 @@ Partial Class konobar
         Me.Button13.Name = "Button13"
         Me.Button13.Size = New System.Drawing.Size(99, 49)
         Me.Button13.TabIndex = 18
+        Me.Button13.Tag = "0"
         Me.Button13.Text = "Borovnica"
         Me.Button13.UseVisualStyleBackColor = False
         '
@@ -346,6 +358,7 @@ Partial Class konobar
         Me.Button14.Name = "Button14"
         Me.Button14.Size = New System.Drawing.Size(99, 49)
         Me.Button14.TabIndex = 19
+        Me.Button14.Tag = "0"
         Me.Button14.Text = "Cijedjeni sok"
         Me.Button14.UseVisualStyleBackColor = False
         '
@@ -357,6 +370,7 @@ Partial Class konobar
         Me.Button15.Name = "Button15"
         Me.Button15.Size = New System.Drawing.Size(99, 49)
         Me.Button15.TabIndex = 20
+        Me.Button15.Tag = "0"
         Me.Button15.Text = "Multivitamin"
         Me.Button15.UseVisualStyleBackColor = False
         '
@@ -368,6 +382,7 @@ Partial Class konobar
         Me.Button16.Name = "Button16"
         Me.Button16.Size = New System.Drawing.Size(99, 49)
         Me.Button16.TabIndex = 21
+        Me.Button16.Tag = "0"
         Me.Button16.Text = "Esspresso"
         Me.Button16.UseVisualStyleBackColor = False
         '
@@ -379,6 +394,7 @@ Partial Class konobar
         Me.Button17.Name = "Button17"
         Me.Button17.Size = New System.Drawing.Size(99, 49)
         Me.Button17.TabIndex = 22
+        Me.Button17.Tag = "0"
         Me.Button17.Text = "Cappuccino"
         Me.Button17.UseVisualStyleBackColor = False
         '
@@ -390,6 +406,7 @@ Partial Class konobar
         Me.Button18.Name = "Button18"
         Me.Button18.Size = New System.Drawing.Size(99, 49)
         Me.Button18.TabIndex = 23
+        Me.Button18.Tag = "0"
         Me.Button18.Text = "Caj"
         Me.Button18.UseVisualStyleBackColor = False
         '
@@ -401,6 +418,7 @@ Partial Class konobar
         Me.Button19.Name = "Button19"
         Me.Button19.Size = New System.Drawing.Size(99, 49)
         Me.Button19.TabIndex = 24
+        Me.Button19.Tag = "0"
         Me.Button19.Text = "Topla cokolada"
         Me.Button19.UseVisualStyleBackColor = False
         '
@@ -412,6 +430,7 @@ Partial Class konobar
         Me.Button20.Name = "Button20"
         Me.Button20.Size = New System.Drawing.Size(99, 49)
         Me.Button20.TabIndex = 25
+        Me.Button20.Tag = "0"
         Me.Button20.Text = "Esspreso s mlijekom"
         Me.Button20.UseVisualStyleBackColor = False
         '
@@ -423,6 +442,7 @@ Partial Class konobar
         Me.Button21.Name = "Button21"
         Me.Button21.Size = New System.Drawing.Size(99, 49)
         Me.Button21.TabIndex = 26
+        Me.Button21.Tag = "0"
         Me.Button21.Text = "Macchiato"
         Me.Button21.UseVisualStyleBackColor = False
         '
@@ -434,6 +454,7 @@ Partial Class konobar
         Me.Button22.Name = "Button22"
         Me.Button22.Size = New System.Drawing.Size(99, 49)
         Me.Button22.TabIndex = 27
+        Me.Button22.Tag = "0"
         Me.Button22.Text = "Nesscafe"
         Me.Button22.UseVisualStyleBackColor = False
         '
@@ -445,6 +466,7 @@ Partial Class konobar
         Me.Button23.Name = "Button23"
         Me.Button23.Size = New System.Drawing.Size(99, 49)
         Me.Button23.TabIndex = 28
+        Me.Button23.Tag = "0"
         Me.Button23.Text = "Nektar"
         Me.Button23.UseVisualStyleBackColor = False
         '
@@ -456,6 +478,7 @@ Partial Class konobar
         Me.Button24.Name = "Button24"
         Me.Button24.Size = New System.Drawing.Size(99, 49)
         Me.Button24.TabIndex = 29
+        Me.Button24.Tag = "0"
         Me.Button24.Text = "Belvedere"
         Me.Button24.UseVisualStyleBackColor = False
         '
@@ -467,6 +490,7 @@ Partial Class konobar
         Me.Button25.Name = "Button25"
         Me.Button25.Size = New System.Drawing.Size(99, 49)
         Me.Button25.TabIndex = 30
+        Me.Button25.Tag = "0"
         Me.Button25.Text = "Heineken"
         Me.Button25.UseVisualStyleBackColor = False
         '
@@ -478,6 +502,7 @@ Partial Class konobar
         Me.Button26.Name = "Button26"
         Me.Button26.Size = New System.Drawing.Size(99, 49)
         Me.Button26.TabIndex = 31
+        Me.Button26.Tag = "0"
         Me.Button26.Text = "Jack Daniels"
         Me.Button26.UseVisualStyleBackColor = False
         '
@@ -489,6 +514,7 @@ Partial Class konobar
         Me.Button27.Name = "Button27"
         Me.Button27.Size = New System.Drawing.Size(99, 49)
         Me.Button27.TabIndex = 32
+        Me.Button27.Tag = "0"
         Me.Button27.Text = "Viljamovka"
         Me.Button27.UseVisualStyleBackColor = False
         '
@@ -720,6 +746,7 @@ Partial Class konobar
         Me.Button28.Name = "Button28"
         Me.Button28.Size = New System.Drawing.Size(99, 49)
         Me.Button28.TabIndex = 33
+        Me.Button28.Tag = "0"
         Me.Button28.Text = "Schweppes"
         Me.Button28.UseVisualStyleBackColor = False
         '
@@ -731,6 +758,7 @@ Partial Class konobar
         Me.Button29.Name = "Button29"
         Me.Button29.Size = New System.Drawing.Size(99, 49)
         Me.Button29.TabIndex = 34
+        Me.Button29.Tag = "0"
         Me.Button29.Text = "Sprite"
         Me.Button29.UseVisualStyleBackColor = False
         '
@@ -742,6 +770,7 @@ Partial Class konobar
         Me.Button30.Name = "Button30"
         Me.Button30.Size = New System.Drawing.Size(99, 49)
         Me.Button30.TabIndex = 35
+        Me.Button30.Tag = "0"
         Me.Button30.Text = "Gin"
         Me.Button30.UseVisualStyleBackColor = False
         '
@@ -753,6 +782,7 @@ Partial Class konobar
         Me.Button31.Name = "Button31"
         Me.Button31.Size = New System.Drawing.Size(99, 49)
         Me.Button31.TabIndex = 36
+        Me.Button31.Tag = "0"
         Me.Button31.Text = "Jelen"
         Me.Button31.UseVisualStyleBackColor = False
         '
@@ -764,6 +794,7 @@ Partial Class konobar
         Me.Button32.Name = "Button32"
         Me.Button32.Size = New System.Drawing.Size(99, 49)
         Me.Button32.TabIndex = 37
+        Me.Button32.Tag = "0"
         Me.Button32.Text = "Staropramen"
         Me.Button32.UseVisualStyleBackColor = False
         '
@@ -775,6 +806,7 @@ Partial Class konobar
         Me.Button33.Name = "Button33"
         Me.Button33.Size = New System.Drawing.Size(99, 49)
         Me.Button33.TabIndex = 38
+        Me.Button33.Tag = "0"
         Me.Button33.Text = "Banjalucko pivo"
         Me.Button33.UseVisualStyleBackColor = False
         '
@@ -786,6 +818,7 @@ Partial Class konobar
         Me.Button34.Name = "Button34"
         Me.Button34.Size = New System.Drawing.Size(99, 49)
         Me.Button34.TabIndex = 39
+        Me.Button34.Tag = "0"
         Me.Button34.Text = "Tuborg"
         Me.Button34.UseVisualStyleBackColor = False
         '
@@ -797,6 +830,7 @@ Partial Class konobar
         Me.Button35.Name = "Button35"
         Me.Button35.Size = New System.Drawing.Size(99, 49)
         Me.Button35.TabIndex = 40
+        Me.Button35.Tag = "0"
         Me.Button35.Text = "Becks"
         Me.Button35.UseVisualStyleBackColor = False
         '
@@ -808,6 +842,7 @@ Partial Class konobar
         Me.Button36.Name = "Button36"
         Me.Button36.Size = New System.Drawing.Size(99, 49)
         Me.Button36.TabIndex = 41
+        Me.Button36.Tag = "0"
         Me.Button36.Text = "Grey Goose"
         Me.Button36.UseVisualStyleBackColor = False
         '
@@ -819,6 +854,7 @@ Partial Class konobar
         Me.Button37.Name = "Button37"
         Me.Button37.Size = New System.Drawing.Size(99, 49)
         Me.Button37.TabIndex = 42
+        Me.Button37.Tag = "0"
         Me.Button37.Text = "Vigor vodka"
         Me.Button37.UseVisualStyleBackColor = False
         '
@@ -830,6 +866,7 @@ Partial Class konobar
         Me.Button38.Name = "Button38"
         Me.Button38.Size = New System.Drawing.Size(99, 49)
         Me.Button38.TabIndex = 43
+        Me.Button38.Tag = "0"
         Me.Button38.Text = "Jagermeister"
         Me.Button38.UseVisualStyleBackColor = False
         '
@@ -841,6 +878,7 @@ Partial Class konobar
         Me.Button39.Name = "Button39"
         Me.Button39.Size = New System.Drawing.Size(99, 49)
         Me.Button39.TabIndex = 44
+        Me.Button39.Tag = "0"
         Me.Button39.Text = "Absinth"
         Me.Button39.UseVisualStyleBackColor = False
         '
@@ -852,6 +890,7 @@ Partial Class konobar
         Me.Button40.Name = "Button40"
         Me.Button40.Size = New System.Drawing.Size(99, 49)
         Me.Button40.TabIndex = 45
+        Me.Button40.Tag = "0"
         Me.Button40.Text = "Ledeni caj"
         Me.Button40.UseVisualStyleBackColor = False
         '
@@ -863,6 +902,7 @@ Partial Class konobar
         Me.Button41.Name = "Button41"
         Me.Button41.Size = New System.Drawing.Size(99, 49)
         Me.Button41.TabIndex = 46
+        Me.Button41.Tag = "0"
         Me.Button41.Text = "Badel konjak"
         Me.Button41.UseVisualStyleBackColor = False
         '
@@ -874,6 +914,7 @@ Partial Class konobar
         Me.Button42.Name = "Button42"
         Me.Button42.Size = New System.Drawing.Size(99, 49)
         Me.Button42.TabIndex = 47
+        Me.Button42.Tag = "0"
         Me.Button42.Text = "Rubinov vinjak"
         Me.Button42.UseVisualStyleBackColor = False
         '
@@ -1151,6 +1192,7 @@ Partial Class konobar
         Me.Button43.Name = "Button43"
         Me.Button43.Size = New System.Drawing.Size(147, 93)
         Me.Button43.TabIndex = 53
+        Me.Button43.Tag = "0"
         Me.Button43.Text = "PONISTI"
         Me.Button43.UseVisualStyleBackColor = False
         '

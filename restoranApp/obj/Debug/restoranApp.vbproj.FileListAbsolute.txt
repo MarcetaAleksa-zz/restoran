@@ -75,3 +75,4 @@ C:\Users\Riki\Desktop\PROJEKAT - JOHNNIE WALKER\restoran\restoranApp\obj\Debug\r
 C:\Users\Riki\Desktop\PROJEKAT - JOHNNIE WALKER\restoran\restoranApp\obj\Debug\restoranApp.exe
 C:\Users\Riki\Desktop\PROJEKAT - JOHNNIE WALKER\restoran\restoranApp\obj\Debug\restoranApp.xml
 C:\Users\Riki\Desktop\PROJEKAT - JOHNNIE WALKER\restoran\restoranApp\obj\Debug\restoranApp.pdb
+C:\Users\Administrator\Desktop\SUTUR\restoran\restoranApp\obj\Debug\restoranApp.menadzer.resources
